@@ -2193,7 +2193,175 @@ img#colar-- {
     color: white;
 }
 
+/* TABLETS */
+@media screen and (max-width: 980px) {
+    .titulo-sacola h1{
+        margin-left: 7vw;
+        font-size: 3vw;
+        font-weight: 500;
+    }
 
+    .itensresumo {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 3vh;
+    }
+
+    
+    .dados-pessoais {
+        width: 45vw;
+        padding-bottom: 0vh;
+        background-color: white;
+        padding: 2vh;
+        height: 100%;
+    }
+
+    .seu-carrinho, .seu-endereco {
+        width: 45vw;
+        padding-bottom: 0vh;
+        background-color: white;
+        height: auto;
+        padding: 1vh;
+    }
+
+    .inputbox p{
+        font-size: 2vw;
+        color: rgb(104, 103, 103);
+        margin-left: 0vw;
+        text-align: left;
+        margin-bottom: 1vh;
+    }
+
+    .pay-- {
+        width: 100%;
+        margin-top: 0vh;
+        background-color: white;
+        padding-top: 1vh;
+        padding-right: 1vw;
+    }
+
+    .pay-inside select {
+        width: 100%;
+        height: 4vh;
+        outline: none;
+        font-size: 1.6vw;
+        border: none;
+        margin-bottom: 1vh;
+        border: 0.1vw solid #e2e2e2;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    .pay-inside p {
+        font-size: 1vw;
+        text-align: center;
+        
+    }
+
+    .seu-carrinho button:nth-child(1){
+        background: #EF59A0;
+        color: white;
+        width: 55vw;
+        font-size: 3vw;
+        padding: 0.7vw;
+        border: none;
+        border-radius: 1vw;
+        margin: auto;
+    }
+
+    header {
+        font-size: 2vw;
+        padding: 1vw;
+        padding-right: 17vw;
+        padding-left: 17vw;
+        margin: auto;
+        justify-content: space-between;
+        position: relative;
+        display: flex;
+        width: 100%;
+        background-color: #ffff;
+        border-bottom: 0.1vw solid #e2e2e2;
+    }
+
+    .novidade-menu p.new {
+        color: red;
+        font-size: 3.5vw;
+        padding-left: 0vw;
+    }
+
+    
+    .novidade-menu {
+        justify-content: left;
+        display: flex;
+        text-align: left;
+    }
+
+    .options .titlemenu {
+        margin-top: 1vh;
+        margin-left: 1vh;
+        font-size: 2.5vw;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 2vh;
+    }
+
+    .options .opcoes p {
+        font-size: 2vw;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    header .icons {
+        font-size: 3vw;
+    }
+
+    .logo img {
+        width: 25vw;
+    }
+
+    .seu-carrinho {
+        margin-top: 1vh;
+        padding-top: 1vh;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 4vh;
+    }
+    
+
+
+    .seu-carrinho h1, .seu-endereco h1, .pay-- h1, .dados-pessoais h1 {
+        font-size: 2vw;
+        margin-top: 1vh;
+        text-align: left;
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+        width: 100%;
+        border-bottom: 0vw;
+    }
+    
+    .seu-carrinho p, .dados-pessoais p {
+        font-size: 2vw;
+        margin-top: 1vh;
+        color: gray;
+        cursor: default;
+    }
+
+    .seu-endereco input, .dados-pessoais input{
+        border: 0.1vw solid #e2e2e2;
+        background-color: rgb(238, 238, 238);
+        border-radius: 0vw;
+        margin-bottom: 0.5vw;
+        padding-left: 0.5vw;
+        font-size: 1.7vw;
+        width: 100%;
+        height: 3vh;
+    }
+}
+
+/* CELULARES */
 @media screen and (max-width: 800px) {
     .politica-dados {
         margin-left: 0;
