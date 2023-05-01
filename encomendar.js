@@ -3199,6 +3199,19 @@ function bracelete_lily_enco() {
   salvarNoLocalStorage()
 }
 
+function tornozeleirabolinha_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Tornozeleira Bolinha (Brinde: Extensor)'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
 function prata_pulseira_de_bolinha_enco() {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {

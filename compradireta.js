@@ -638,6 +638,13 @@ function prata_anel_trançado_comp() {
 
 }
 
+function tornozeleirabolinha_comp() {
+    tarefas.push('Tornozeleira Bolinha (Brinde: Extensor)'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
 
 
 function prata_pulseira_de_bolinha_comp() {
