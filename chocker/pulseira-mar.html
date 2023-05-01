@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix Pulseira Mar | LARI'S ACESSÓRIOS</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imgs/pulseira-mar.jpeg" type="image/x-icon">
+
+    <script src="../imagens.js"></script>
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <section class='notification-top'>
+        <p>CONFIRA NOSSA NOVA NOVIDADE: &nbsp;</p><label onclick="window.location.href = '../pratas.html'">PRATAS 925&nbsp;</label><i class="fas fa-chevron-right"></i>
+    </section>
+
+    <header class='menu-pc'>
+        <div class='logo' onclick="window.location.href = '../index.html'">
+            <img src="../imgs/Logo.webp" alt="">
+        </div>
+        <div class='icons'>
+            <a onclick="opencart()" class='cart' title="Sacola"><i class="fas fa-bag-shopping"></i></a>
+            <a onclick="openmenu()" class='menu' title="Acesso rápido"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <div id='backgroundinfo'></div>
+    <header class='headercell'>
+        <div class="top"><p>CONFIRA NOSSA NOVA NOVIDADE: PRATAS 925</p></div>
+        <div class="menu-cell">
+            <a onclick="openmenu()" class='menu' title="Acesso rápido"><i class="fas fa-bars"></i></a>
+                <div class='logo' onclick="window.location.href = '../index.html'">
+                    <img src="../imgs/Logo.webp" alt="">
+                </div>
+            <a onclick="opencart()" class='cart' title="Sacola"><i class="fas fa-bag-shopping"></i></a>
+        </div>
+    </header>
+
+    <div class='background-cart' onclick="fecharcart()"></div>
+    <div class='background-option' onclick="fecharmenu()"></div>
+
+    <div class='options'>
+        <div class='botaofecharsacola' onclick="fecharmenu()"><i class="fas fa-xmark"></i></div>
+        <p class="titlemenu">Acesso Rápido</p>
+        <div class='linesacola'></div>
+        <div class='opcoes'>
+            <a href="../micangas.html"><p>Miçangas</p></a>
+            <a href="../pratas.html"><p>Pratas 925</p></a>
+            <a href="../cetim.html">
+                <div class='novidade-menu'>
+                    <p>Cetim</p>
+                    <p class='new'>NOVIDADE</p>
+                </div></a>
+
+                
+        </div>
+    </div>
+
+    <div class='carrinhoshow'>
+        <div class='mobile'>
+            <p>PRODUTOS</p>
+        </div>
+        <div class='cheio'>
+            <div class='botaofecharsacola' onclick="fecharcart()"><i class="fas fa-xmark"></i></div>
+            <div class='sacola-top'>
+                <h1>Meus acessórios</h1>
+                <div class='linesacola'></div>
+            </div>
+            <div class='sides'>
+                <div class='side1'> 
+                    <div class='list'>
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='botoesfinais'>
+                <div class='obsfinal'><label>Pague com o Pix ou à vista</label></div>
+                <div class='botaofinal'>
+                    <button onclick="finalizar()">FINALIZAR COMPRA</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a onclick="limpar()"><i class="fas fa-trash-alt"></i> Limpar carrinho</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section>
+        <div class='sessoes-top'>
+            <div class='etapa'>
+                <i class="fa-solid fa-truck-fast"></i>
+                <div><p>Entrega com qualidade Lari's</p></div>
+            </div>
+            <div class='etapa'>
+                <i class="fa-solid fa-money-bill"></i>
+                <div><p>Pague na entrega ou por Pix</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="infocompra">
+            <img src="../imgs/infocompra.png" alt="">
+        </div>
+    </section>
+
+
+    <section>
+        <div class='item'>
+            <div class='backitem'>
+                <div class='imgitem'>
+                    <div class='opcoesdeimagem'>
+                        <div>
+                            <img onclick="" src="../imgs/pulseira-mar.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="imagemprincipal">
+                        <img src="../imgs/pulseira-mar.jpeg" alt="">
+                    </div>
+                </div>
+                <div class='itensdesc'>
+                    <p id='caminho'><a href="../index.html"> LARI'S</a> / <a href="../micangas-pulseiras.html">PULSEIRAS</a> / <a href="">PULSEIRA-MAR</a></p>
+                    <h1>Mix Pulseira Mar</h1>
+                    <div class="avaliacoes">
+                        <img src="../imgs/5 estrelas.png" alt=""><p>2 comentários</p>
+                    </div>
+                    <h2>Valor: R$40,00</h2>
+                    <h2>Quantidade: <select name="Quantidade" id="quant">
+                        <option value="1" selected>1 unidade</option>
+                    </select></h2>
+                    
+                    <div class='tamanhocenterleft'>
+                        <h2 class="tamanhofrase">Selecione Tamanho: <select name="Tamanho" id="tamanho">
+                            <option value="P - 16cm e 17cm" selected>P - 16cm e 17cm</option>
+                            <option value="M - 17cm e 19cm" >M - 17cm e 19cm</option>
+                            <option value="G - 19cm e 20cm" >G - 19cm e 20cm</option>
+                            <option value="GG - 20cm e 21,5cm" >GG - 20cm e 21,5cm</option>
+                        </select>
+                        </h2>
+                            <a href="../institucional/guia-de-tamanhos/pulseiras.html" target="_blank"><u>Guia de Tamanhos</u></a>
+                    </div>
+                    <label onclick="pulseiramar_comp()"><i class="fas fa-shopping-bag"></i> COMPRAR</label>
+                    <label id='cart' onclick="pulseiramar_enco()"><i class="fas fa-cart-plus"></i> ADICIONAR AO CARRINHO</label>
+                    <p id='entregue'>Este produto é vendido e entregue pela <a href=''>LARI'S</a>.</p>
+
+                    <p class="compartilhar">Compartilhe: <a href='https://api.whatsapp.com/send/?text=https://laris-acessorios.netlify.app/chocker/pulseira-mar.html' target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a></p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class='maisprodutos'>
+            <h1>Mais Produtos</h1>
+
+            <div class='produtoslista'>
+                <a href="../chocker/pulseira-disco.html">
+                    <div class='card-terceiros'>
+                        <img src="../imgs/pulseiradisco1.png" alt="">
+                        <h1>Pulseira Disco</h1>
+                        <p>Clique para ver esse produto</p>
+                    </div>
+                </a>
+
+                <a href="../chocker/pulseira-coracao.html">
+                    <div class='card-terceiros'>
+                        <img src="../imgs/pulseiracoracao1.png" alt="">
+                        <h1>Pulseira Coração</h1>
+                        <p>Clique para ver esse produto</p>
+                    </div>
+                </a>
+
+                <a href="../chocker/chockersalmao.html">
+                    <div class='card-terceiros'>
+                        <img src="../imgs/chocker2.png" alt="">
+                        <h1>CHOCKER SALMÃO</h1>
+                        <p>Clique para ver esse produto</p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class='informaçõesproduto'>
+            <div class='infoprod'>
+                <h2>Ficha técnica</h2>
+
+                <div>
+                    <ul>
+                        <div class='linetype'>
+                            <li id='first'>Tipo:</li><li id='second'>Pulseira</li>
+                        </div>
+                        <div class='linetype'>
+                            <li id='first'>Modelo:</li><li id='second'>Mar</li>
+                        </div>
+                        <div class='linetype'>
+                            <li id='first'>Fabricante:</li><li id='second'>LARI'S</li>
+                        </div>
+                        <div class='linetype'>
+                            <li id='first'>Marca:</li><li id='second'>LARI'S</li>
+                        </div>
+                        <div class='linetype'>
+                            <li id='first'>Sac:</li><li id='second'>(35) 9739-4181</li>
+                        </div>
+                        <div class='linetype'>
+                            <li id='first'>Tamanho:</li><li id='second'>Vários</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class='comentarios'>
+        <h1>Comentários</h1>
+        <div class='comentarios-sides'>
+            <div class="comentarios1">
+                <div class="barcoment"><p>5 estrelas:&nbsp;</p>2</div>
+                <div class="barcoment"><p>4 estrelas:&nbsp;</p>0</div>
+                <div class="barcoment"><p>3 estrelas:&nbsp;</p>0</div>
+                <div class="barcoment"><p>2 estrelas:&nbsp;</p>0</div>
+                <div class="barcoment"><p>1 estrelas:&nbsp;</p>0</div>
+            </div>
+            <div class="comentarios2">
+                <div class="comentarios2-top"><h2>5.0</h1><img src="../imgs/5 estrelas.png" alt=""></div>
+                <p>2 comentários</p>
+            </div>
+        </div>
+        <section class="comments">
+            <div class="comment-avaliation">
+                <img src="../imgs/5 estrelas.png" alt="">
+                <p>Meu Deus 😍😍😍😍😍</p>
+                <p><b>Por</b> Ana Júlia Moreira</p>
+                <div class="resp-loja">
+                    <p>Resposta da loja: Perfeita, né?❤️</p>
+                </div>
+            </div>
+            <div class="comment-avaliation">
+                <img src="../imgs/5 estrelas.png" alt="">
+                <p>Eu ameeeeei o meu mix ! Ficou exatamente como queria 😍❤️</p>
+                <p><b>Por</b> Sarah Alves Moreira</p>
+                <div class="resp-loja">
+                    <p>Resposta da loja: Muito feliz que gostou❤️</p>
+                </div>
+            </div>
+        </section>
+        <section class="obs-coments">
+            <a href="https://www.instagram.com/p/CWmOOpLLMdZ/?utm_source=ig_web_copy_link" target="_blank">ESCREVER UM COMENTÁRIO</a>
+        </section>
+    </section>
+
+    <section class='infoindex'>
+        <div class="infoindex1">
+            <img src="../imgs/anel-de-casamento-desenhado-a-mao-vetorial-com-elemento-de-logotipo-feminino-de-diamante-no-estilo-doodle_515275-1090-removebg-preview.png" alt="">
+            <div>
+                <h1>Limpeza</h1>
+                <p>Ganhe uma limpeza grátis em sua PRATA após o recebimento de seu acessório.</p>
+            </div>
+        </div>
+        <div class="infoindex1">
+            <img src="../imgs/entrega.webp" alt="">
+            <div>
+                <h1>Entrega</h1>
+                <p>Receba seus produtos em casa, com conforto e qualidade LARI'S.</p>
+            </div>
+        </div>
+        <div class="infoindex1">
+            <img src="../imgs/favoritos.webp" alt="">
+            <div>
+                <h1>Meus Favoritos</h1>
+                <p>Compartilhe seus acessórios favoritos e indique looks incríveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="redes-sociais">
+        <div class='side1'>
+            <a href="https://api.whatsapp.com/send/?phone=5535997394181&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.instagram.com/laris.acessorioss/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/@laris.acessorioss" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <h1>Receba as novidades da LARIS ACESSÓRIOS</h1>
+            <p>Inscreva-se e receba novidades e promoções exclusivas.</p>
+            <div class="emailsubscribe">
+                <input type="email" class="emailsubs" placeholder="Coloque seu e-mail">
+                <button onclick="emailsubs()">></button>
+            </div>
+            <div class="frasesucessoemail"><p>Obrigado!</p></div>
+            <div class="fraseerroemail"><p>EMAIL INVÁLIDO</p></div>
+
+        </div>
+        <div class='side2'>
+            <div class="side2-side1">
+                <h1>Ajuda</h1>
+                <a href="../institucional/duvidas-frequentes.html">Dúvidas frequentes</a>
+                <br>
+                <a href="../institucional/guia-de-tamanhos/colares.html">Guia de Tamanhos</a>
+                <br>
+                <a href="../institucional/cuidado-joias.html">Cuidados com as Jóias</a>
+                <br>
+                <a href="../institucional/fale-conosco.html">Fale conosco</a>
+            </div>
+            <div class="side2-side2">
+                <h1>Sobre Nós</h1>
+                <a href="../pages/privacidade-seguranca.html">Formulário de Proteção de Dados</a>
+            </div>
+            <div class="side2-side3">
+                <h1>SAC</h1>
+                <h2>(35) 99739-4181</h2>
+                <p>Gerente da LARI'S</p>
+                <h2>(35) 9955-3467</h2>
+                <p>Sócio da LARI'S</p>
+            </div>
+        </div>
+    </section>
+
+    <section class='formasdepag'>
+        <h2>Formas de pagamento</h2>
+        <div class="pagforms">
+            <img src="../imgs/payment-Pix.webp" alt="">
+            <img src="../imgs/payment-Money.png" alt="">
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+    <script src="../compradireta.js"></script>
+    <script src="../encomendar.js"></script>
+    <script src="../sweetalert.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_LFJAXNJjH0WCy5N2o9gl4");
+    })();
+    </script>
+
+</body>
+</html>

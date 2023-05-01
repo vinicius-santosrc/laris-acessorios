@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar compra</title>
+
+    <link rel="stylesheet" href="../resumo.css">
+    <link rel="shortcut icon" href="../Icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <span class="loader"><span class="loader-inner"></span></span>
+
+    <header class='menu-pc'>
+        <div class='logo' onclick="window.location.href = '../index.html'">
+            <img src="../imgs/Logo.webp" alt="">
+        </div>
+        <div class='icons'>
+            <a onclick="openmenu()" class='menu' title="Acesso rápido"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <div class='background-cart' onclick="fecharcart()"></div>
+    <div class='background-option' onclick="fecharmenu()"></div>
+    <div class='background-load'></div>
+
+    <div class='options'>
+        <h1>Acesso rápido</h1>
+        <div class='opcoes'>
+            <a href="../micangas.html"><p>Miçangas</p></a>
+            <a href="../pratas.html">
+                <div class='novidade-menu'>
+                    <p>Pratas 925</p>
+                    <p class='new'>NOVIDADE</p>
+                </div></a>
+        </div>
+    </div>
+
+    <div class='carrinhoshow'>
+        <div class='mobile'>
+            <p>PRODUTOS</p>
+        </div>
+        <div class='cheio'>
+            <div class='botaofecharsacola' onclick="fecharcart()"><i class="fas fa-xmark"></i></div>
+            <div class='sacola-top'>
+                <h1>Meus acessórios</h1>
+                <div class='linesacola'></div>
+            </div>
+            <div class='sides'>
+                <div class='side1'>
+                    <div class='list'>
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='botoesfinais'>
+                <div class='obsfinal'><label>Pague com o Pix ou à vista</label></div>
+                <div class='botaofinal'>
+                    <button onclick="finalizar()">FINALIZAR COMPRA</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a onclick="limpar()"><i class="fas fa-trash-alt"></i> Limpar carrinho</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class='titulo-sacola'><h1>Finalizar pedido</h1></div>
+
+    <div class='itensresumo'>
+        
+        <div class='dados-pessoais'>
+            <h1><i class="fa-solid fa-person-dress"></i> Dados pessoais</h1>
+            <div class="inputbox">
+                <p>Email:</p><input type="email" id='Email' placeholder="" required>
+                <p>Primeiro nome</p><input type="text" id='primeironome' placeholder="" required>
+                <p>Último nome</p><input type="text" id='ultimonome' placeholder="" required>
+                <p>CPF</p><input type="number" min="0" id="cpf" placeholder=""  required>
+                <p>Telefone</p><input type="tel" id='Numerocont' placeholder="" required>
+            </div>
+            <p>Atenção!</p>
+            <p>Seu telefone será usado qualquer contato sobre o pedido.</p>
+            
+        </div>
+
+        <div>
+            <div class='seu-endereco'>
+                <h1><i class="fa-solid fa-bag-shopping"></i> Entrega</h1>
+                <div class="inputbox">
+                    <p>CEP</p><input type="text" id="cep" placeholder=""  required>
+                    <p>Estado</p><input type="text" id="estado" placeholder=""  required>
+                    <p>Cidade</p><input type="text" id="cidade" placeholder=""  required>
+                    <p>Bairro</p><input type="text" id="bairro" placeholder=""  required>
+                    <p>Endereço</p><input type="text" id="endereco" placeholder=""  required>
+                    <p>Número</p><input type="text" id="numero" placeholder=""  required>
+                    <p>Referência</p><input type="text" id="referencia" placeholder=""  required>
+                </div>
+                
+            </div>
+
+            <div class='pay--'>
+                <h1><i class="fa-solid fa-money-bill"></i> Pagamento</h1>
+                <div class='pay-inside'>
+                    <select name="method" id="method">
+                        <option value="Dinheiro" selected>Dinheiro</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                    <p><strong>Obs: </strong>Pagamentos via dinheiro são realizados no momento da entrega</p>
+                    <p>Pagamentos via Pix são realizados antes da entrega</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class='seu-carrinho'>
+            <h1>Resumo do pedido </h1>
+            <div class='itens-cart'>
+                <p></p>
+            </div>
+            <div class='botoesseucart'>
+                <button onclick="finalizartudo()">Finalizar</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="../script.js"></script>
+    <script src="../encomendar.js"></script>
+    <script src="../sweetalert.js"></script>
+
+    <script>
+        'use strict';
+
+        const limparFormulario = (endereco) =>{
+            document.getElementById('endereco').value = '';
+            document.getElementById('bairro').value = '';
+            document.getElementById('cidade').value = '';
+            document.getElementById('estado').value = '';
+            document.getElementById('referencia').value = '';
+            document.getElementById('numero').value = ''
+        }
+
+
+        const preencherFormulario = (endereco) =>{
+            document.getElementById('endereco').value = endereco.logradouro;
+            document.getElementById('bairro').value = endereco.bairro;
+            document.getElementById('cidade').value = endereco.localidade;
+            document.getElementById('estado').value = endereco.uf;
+        }
+
+
+        const eNumero = (numero) => /^[0-9]+$/.test(numero);
+
+        const cepValido = (cep) => cep.length == 8 && eNumero(cep); 
+
+        const pesquisarCep = async() => {
+            limparFormulario();
+            
+            const cep = document.getElementById('cep').value.replace("-","");
+            const url = `https://viacep.com.br/ws/${cep}/json/`;
+            if (cepValido(cep)){
+                const dados = await fetch(url);
+                const endereco = await dados.json();
+                if (endereco.hasOwnProperty('erro')){
+
+                }else {
+                    preencherFormulario(endereco);
+                }
+            }else{
+
+            }
+            
+        }
+
+        document.getElementById('cep')
+                .addEventListener('focusout',pesquisarCep);
+    </script>
+
+    <script>
+        let itens = document.querySelector('.itens-cart p')
+        let produtos2 = localStorage.list_tarefas
+
+        if (produtos2 == '[]') {
+            itens.innerHTML = `<p>Sua sacola de compras está vazia.<p>`
+        }
+
+        else {
+            itens.innerHTML = produtos2.replace(/,/gi, '<div class="linha"></div>')
+        }
+
+        
+    </script>
+
+<script>
+
+</script>
+
+<script>
+            
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_LFJAXNJjH0WCy5N2o9gl4");
+})();
+</script>
+
+</body>
+</html>

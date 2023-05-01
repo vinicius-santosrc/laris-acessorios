@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pedido realizado! | LARI'S ACESSÓRIOS</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../Icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <section class='notification-top'>
+        <p>CONFIRA NOSSA NOVA NOVIDADE: &nbsp;</p><label onclick="window.location.href = '../pratas.html'">PRATAS 925&nbsp;</label><i class="fas fa-chevron-right"></i>
+    </section>
+
+    <header class='menu-pc'>
+        <div class='logo' onclick="window.location.href = '../index.html'">
+            <img src="../imgs/Logo.webp" alt="">
+        </div>
+        <div class='icons'>
+            <a onclick="opencart()" class='cart' title="Sacola"><i class="fas fa-bag-shopping"></i></a>
+            <a onclick="openmenu()" class='menu' title="Acesso rápido"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <header class='headercell'>
+        <div class="top"><p>CONFIRA NOSSA NOVA NOVIDADE: PRATAS 925</p></div>
+        <div class="menu-cell">
+            <a onclick="openmenu()" class='menu' title="Acesso rápido"><i class="fas fa-bars"></i></a>
+                <div class='logo' onclick="window.location.href = '../index.html'">
+                    <img src="../imgs/Logo.webp" alt="">
+                </div>
+            <a onclick="opencart()" class='cart' title="Sacola"><i class="fas fa-bag-shopping"></i></a>
+        </div>
+    </header>
+
+    <div class='background-cart' onclick="fecharcart()"></div>
+    <div class='background-option' onclick="fecharmenu()"></div>
+
+    <div class='options'>
+        <div class='botaofecharsacola' onclick="fecharmenu()"><i class="fas fa-xmark"></i></div>
+        <p class="titlemenu">Acesso Rápido</p>
+        <div class='linesacola'></div>
+        <div class='opcoes'>
+            <a href="../micangas.html"><p>Miçangas</p></a>
+            <a href="../pratas.html"><p>Pratas 925</p></a>
+            <a href="../cetim.html">
+                <div class='novidade-menu'>
+                    <p>Cetim</p>
+                    <p class='new'>NOVIDADE</p>
+                </div></a>
+
+                
+        </div>
+    </div>
+
+    <div class='carrinhoshow'>
+        <div class='mobile'>
+            <p>PRODUTOS</p>
+        </div>
+        <div class='cheio'>
+            <div class='botaofecharsacola' onclick="fecharcart()"><i class="fas fa-xmark"></i></div>
+            <div class='sacola-top'>
+                <h1>Meus acessórios</h1>
+                <div class='linesacola'></div>
+            </div>
+            <div class='sides'>
+                <div class='side1'>
+                    <div class='list'>
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class='botoesfinais'>
+                <div class='obsfinal'><label>Pague com o Pix ou à vista</label></div>
+                <div class='botaofinal'>
+                    <button onclick="finalizar()">FINALIZAR COMPRA</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a onclick="limpar()"><i class="fas fa-trash-alt"></i> Limpar carrinho</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class='alert'>
+        <div class='img'>
+            <i class="fas fa-star"></i>
+        </div>
+
+        <h1>Pedido realizado com sucesso!</h1>
+        <p>Agradecemos por fazer seu pedido na LARI'S</p>
+        <p>Para mais informações <a href="https://api.whatsapp.com/send/?phone=5535997394181&app_absent=0">clique aqui para ser redirecionado para o WhatsApp</a></p>
+
+        <div class='botaodevoltar'>
+            <a href="../index.html"><label>VOLTAR</label></a>
+        </div>
+
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../encomendar.js"></script>
+    <script src="../sweetalert.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_LFJAXNJjH0WCy5N2o9gl4')
+</script>
+
+</body>
+</html>
