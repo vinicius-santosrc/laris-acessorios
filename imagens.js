@@ -1095,3 +1095,8 @@ function colarpontodeluz4() {
     let piercing = '../imgs/colar-ponto-de-luz (4).jpeg'
     document.querySelector('.imagemprincipal').innerHTML = `<img src="` + piercing + `" alt="">`
 }
+
+function colarturmalinaimg() {
+    let colar = '../imgs/colar-turmalina.jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + colar + `"alt="">`
+}
