@@ -8,7 +8,7 @@
 /* BAR LEFT SIDE */
 
 .fixed-bar-left {
-    width: 20vw;
+    width: 16vw;
     background: #FF449E;
     position: fixed;
     display: block;
@@ -24,7 +24,7 @@
 }
 
 .fixed-bar-left .top img {
-    width: 12vw;
+    width: 8vw;
 }
 
 .fixed-bar-left .top label {
@@ -33,25 +33,26 @@
 }
 
 .options {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
 }
 
 .options h1{
     color: white;
-    font-size: 1.3vw;
+    font-size: 01vw;
     margin-bottom: 2vh;
 }
 
 .options .options-cards .card-bar {
-    background: white;
+    background: rgba(255, 220, 241, 0.726);
     margin-top: 1vh;
     margin-bottom: 1vh;
     display: flex;
     padding: 1vw;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1vw;
+    border-radius: 0vw;
+    border-left: 0.1vw solid white;
 }
 
 .options .options-cards .card-bar:hover {
@@ -60,7 +61,7 @@
 }
 
 .options .options-cards .card-bar h1 {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .options .options-cards a {
@@ -72,18 +73,18 @@
 /* PAGE */
 
 .overview-page {
-    margin-left: 20vw;
+    margin-left: 16vw;
 }
 
 .header-page {
     display: flex;
-    padding: 2vw;
+    padding: 1vw;
     justify-content: space-between;
     background-color: rgb(192, 188, 188);
 }
 
 .header-page h1 {
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .profile {
@@ -93,7 +94,7 @@
 }
 
 .profile i {
-    font-size: 1.4vw;
+    font-size: 1vw;
     cursor: pointer;
 }
 
@@ -111,17 +112,112 @@
 }
 
 .profile-change img {
-    width: 3vw;
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
     margin-right: 1vw;
     border-radius: 10vw;
+    border: 0.1vw solid black
 }
 
 .profile-change label {
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-right: 0.3vw;
     cursor: pointer;
 }
 
 .profile-change:hover, .profile-change i:hover {
     color: grey;
+}
+
+/* LOGIN PAGE */
+
+.form {
+    margin: auto;
+    width: 30vw;
+    justify-content: center;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 1vw;
+    margin-top: 10vh;
+    padding: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+}
+
+.form h1 {
+    font-size: 2.3vw;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+
+.form label {
+    font-size: 1vw;
+}
+
+.form .inputs-form .ipt-form{
+    display: block;
+    text-align: left;
+    
+}
+
+.form img {
+    width: 20vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.ipt-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    font-size: 1vw;
+}
+
+.iptinside {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1vw solid rgb(197, 197, 197);
+    align-items: center;
+}
+
+.iptinside i {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    color: rgb(126, 126, 126);
+    font-size: 1vw;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 5vh;
+    color: white;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: #FF449E;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.form button:hover {
+    background-color: white;
+    color: #FF449E;
+    border: 0.1vw solid #FF449E;
+    transition: 300ms;
+}
+
+.caixa-alerta-erro {
+    background-color: red;
+    color: white;
+    font-size: 1vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: none;
+    border-radius: 1vw;
 }

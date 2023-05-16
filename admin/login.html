@@ -10,9 +10,46 @@
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+    <script src="login.js"></script>
+
+    <script>
+        if(localStorage.getItem('login') == 'true') {
+            window.location.href = 'index.html'
+        }
+        else {
+            
+        }
+    </script>
+    
     <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="form">
+        
+        <img src="../imgs/Logo.webp" alt="">
+        
+        <div class="caixa-alerta-erro">
+            <label>Digite o usuário ou a senha de forma correta</label>
+        </div>
+
+        <div class="inputs-form">
+            <div class="ipt-form">
+                <label>Usuário</label><br>
+                <div class="iptinside">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" id="user" placeholder="Escreva seu usuário" required>
+                </div>
+            </div>
+            
+            <div class="ipt-form">
+                <label>Senha</label><br>
+                <div class="iptinside">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Escreva sua senha" required>
+                </div>
+            </div>
+        </div>
+        <button onclick="verifylogin()">ENTRAR</button>
+    </div>
 </body>
 </html>

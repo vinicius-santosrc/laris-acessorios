@@ -63,7 +63,7 @@
 
     <div class="overview-page">
         <div class="header-page">
-            <h1>Overview</h1>
+            <h1>Planilha</h1>
             <div class="profile">
                 <i class="fa-regular fa-bell"></i>
                 <div class="profile-change">
@@ -75,18 +75,32 @@
             </div>
         </div>
         <div class="content-page">
-            <div class="blocks-contents">
-                <div class="block">
-                    Nas próximas atualizações
-                </div>
-                <div class="block">
-                    Nas próximas atualizações
-                </div>
-                <div class="block">
-                    Nas próximas atualizações
-                </div>
+            <div class="planilha">
+                <h1>Planilha Básica 1</h1>
+                    <div class="lines-to-down">
+                        <td><input class="input1" type="text" value=""></label></td>
+                        <td><input class="input2" type="text" value=""></label></td>
+                        <td><input class="input3" type="text" value=""></label></td>
+                        <td><input class="input4" type="text" value=""></label></td>
+                        <td><input class="input5" type="text" value=""></label></td>
+                        <td><input class="input6" type="text" value=""></label></td>
+                        <td><input class="input7" type="text" value=""></label></td>
+                    </div>
+                    <button onclick="addlinhas()">ADD</button>
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Detalhe</th>
+                        <th>Preço Compra</th>
+                        <th>Preço Revenda</th>
+                        <th>Quantidade Compra</th>
+                        <th>Quantidade Estoque</th>
+                    </tr>
+                </table>
             </div>
             
+        <button onclick="savethis()">SALVAR</button>
         </div>
     </div>
 </body>
