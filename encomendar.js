@@ -2733,6 +2733,112 @@ function touca_cetim_dupla_face_azul_rosa_indisponivel() {
     })()
 }
 
+function brinco_trio_estrelinha_luz_indisponivel() {
+  (async () => {
+
+    const { value: formValues } = await Swal.fire({
+      title: 'Complete as opções abaixo para receber aviso quando esse produto estiver disponível.',
+      html:
+        '<input id="swal-input" class="swal2-input" placeholder=Nome>' +
+        '<input type="email" id="swal-input1" class="swal2-input" placeholder=Email>' +
+        '<input type="tel" id="swal-input2" class="swal2-input" placeholder=Telefone>',
+      focusConfirm: false,
+      confirmButtonText: 'Confirmar recebimento de notificações',
+      confirmButtonColor: '#EF59A0',
+      preConfirm: () => {
+        return [
+          document.getElementById('swal-input').value,
+          document.getElementById('swal-input1').value,
+          document.getElementById('swal-input2').value
+        ]
+      }
+    })
+
+    let nomeaviso = document.getElementById('swal-input').value
+    let emailaviso = document.getElementById('swal-input1').value
+    let numberaviso = document.getElementById('swal-input2').value
+    
+    if (emailaviso == '' || numberaviso == '' || nomeaviso == '' || emailaviso == undefined || numberaviso == undefined || nomeaviso == undefined || emailaviso == null || numberaviso == null || nomeaviso == null || emailaviso == 'null' || numberaviso == 'null' || nomeaviso == 'null' || emailaviso == ' ' || numberaviso == ' ' || nomeaviso == ' ' || emailaviso == '  ' || nomeaviso == '  ' || numberaviso == '  ' || emailaviso == '   ' || nomeaviso == '   ' || numberaviso == '   ') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Preenche todas as opções.',
+        })
+    }
+
+    else {
+        (function(){
+            emailjs.init("gpZLP0YsCZWO9dPoR"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+        })();
+        emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
+            user: nomeaviso,
+            product: 'Brinco Trio Estrelinha de Luz - Luminati Pratas',
+            email: emailaviso,
+            number: numberaviso,
+        });
+        Swal.fire(
+            'Sucesso!',
+            'Você será avisada(o) de quando o produto estiver disponível.',
+            'success'
+        )
+      }
+    
+    })()
+}
+
+function anel_trançado_indisponivel() {
+  (async () => {
+
+    const { value: formValues } = await Swal.fire({
+      title: 'Complete as opções abaixo para receber aviso quando esse produto estiver disponível.',
+      html:
+        '<input id="swal-input" class="swal2-input" placeholder=Nome>' +
+        '<input type="email" id="swal-input1" class="swal2-input" placeholder=Email>' +
+        '<input type="tel" id="swal-input2" class="swal2-input" placeholder=Telefone>',
+      focusConfirm: false,
+      confirmButtonText: 'Confirmar recebimento de notificações',
+      confirmButtonColor: '#EF59A0',
+      preConfirm: () => {
+        return [
+          document.getElementById('swal-input').value,
+          document.getElementById('swal-input1').value,
+          document.getElementById('swal-input2').value
+        ]
+      }
+    })
+
+    let nomeaviso = document.getElementById('swal-input').value
+    let emailaviso = document.getElementById('swal-input1').value
+    let numberaviso = document.getElementById('swal-input2').value
+    
+    if (emailaviso == '' || numberaviso == '' || nomeaviso == '' || emailaviso == undefined || numberaviso == undefined || nomeaviso == undefined || emailaviso == null || numberaviso == null || nomeaviso == null || emailaviso == 'null' || numberaviso == 'null' || nomeaviso == 'null' || emailaviso == ' ' || numberaviso == ' ' || nomeaviso == ' ' || emailaviso == '  ' || nomeaviso == '  ' || numberaviso == '  ' || emailaviso == '   ' || nomeaviso == '   ' || numberaviso == '   ') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Preenche todas as opções.',
+        })
+    }
+
+    else {
+        (function(){
+            emailjs.init("gpZLP0YsCZWO9dPoR"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+        })();
+        emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
+            user: nomeaviso,
+            product: 'Anel Trançado - Cy Pratas',
+            email: emailaviso,
+            number: numberaviso,
+        });
+        Swal.fire(
+            'Sucesso!',
+            'Você será avisada(o) de quando o produto estiver disponível.',
+            'success'
+        )
+      }
+    
+    })()
+}
+
 // PRODUTOS
 
 function chockersalmaoencomendar() {
