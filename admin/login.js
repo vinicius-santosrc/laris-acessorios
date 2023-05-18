@@ -27,7 +27,6 @@ function verifylogin() {
 }
 
 function loginapproved() {
-    console.log('aprovado')
     localStorage.setItem('login', 'true')
     window.location.href = 'index.html'
 }
@@ -38,3 +37,51 @@ function loginrecused() {
 
 }
 
+if(localStorage.getItem('continue') == 'vinicius_santosrc') {
+    document.querySelector('.continuewith').style.display = 'block'
+    document.querySelector('.inputs-form').style.display = 'none'
+    document.querySelector('button.buttonverify').style.display = 'none'
+
+    var img = document.querySelector('.accountcontinue img')
+    var nome = document.querySelector('.accountcontinue-details h1')
+    var user = document.querySelector('.accountcontinue-details p')
+
+    img.setAttribute('src', "img/vinicius-profile.jpeg")
+    nome.innerHTML = `Vinícius Santos`
+    user.innerHTML = '@' + localStorage.getItem('continue')
+}
+
+else if(localStorage.getItem('continue') == 'larissa.alves') {
+    document.querySelector('.continuewith').style.display = 'block'
+    document.querySelector('.inputs-form').style.display = 'none'
+    document.querySelector('button.buttonverify').style.display = 'none'
+
+    var img = document.querySelector('.accountcontinue img')
+    var nome = document.querySelector('.accountcontinue-details h1')
+    var user = document.querySelector('.accountcontinue-details p')
+
+    img.setAttribute('src', "img/larissa-profile.jpeg")
+    nome.innerHTML = `Larissa Alves`
+    user.innerHTML = '@' + localStorage.getItem('continue')
+}
+
+function continuewithaccount() {
+    if(localStorage.getItem('continue') == 'vinicius_santosrc') {
+        localStorage.setItem('user', 'vinicius_santosrc')
+        localStorage.setItem('login', 'true')
+        window.location.href = 'index.html'
+    }
+    else if(localStorage.getItem('continue') == 'larissa.alves') {
+        localStorage.setItem('user', 'larissa.alves')
+        localStorage.setItem('login', 'true')
+        window.location.href = 'index.html'
+    }
+    else {
+        document.querySelector('.continuewith').style.display = 'none'
+    }
+}
+
+function outroprofile() {
+    localStorage.removeItem('continue')
+    window.location.href = 'login.html'
+}

@@ -3,22 +3,83 @@ let username = localStorage.getItem('user')
 const userhtml = document.querySelector('#nameuser')
 const fotohtml = document.querySelector('.profile-change img')
 
+const fotominiprofile = document.querySelector('.account-show img')
+const nomeminiprofile = document.querySelector('.infoaccount h1')
+const userminiprofile = document.querySelector('.infoaccount p')
+
+function sairdoprofile() {
+    localStorage.setItem('continue', username)
+
+    localStorage.removeItem('user')
+    localStorage.removeItem('login')
+    window.location.href = 'login.html'
+
+}
 
 user_account()
 function user_account(){
     if(username == 'vinicius_santosrc') {
         userhtml.innerHTML = username
+
         fotohtml.setAttribute('src', "img/vinicius-profile.jpeg")
+
+
+        nomeminiprofile.innerHTML = `Vinícius Santos`
+        userminiprofile.innerHTML = `@` + username
+        fotominiprofile.setAttribute('src', "img/vinicius-profile.jpeg")
 
     }
     else if(username == 'larissa.alves') {
         userhtml.innerHTML = username
         fotohtml.setAttribute('src', "img/larissa-profile.jpeg")
+
+        nomeminiprofile.innerHTML = `Larissa Alves`
+        userminiprofile.innerHTML = `@` + username
+        fotominiprofile.setAttribute('src', "img/larissa-profile.jpeg")
     }
     else {
 
     }
 };
+
+if(username == 'vinicius_santosrc') {
+    document.querySelector('.form-profile img.fotoperfilprofile').setAttribute('src', 'img/vinicius-profile.jpeg')
+    document.querySelector('.titleprofile h1.nameuser').innerHTML = `Vinícius Santos`
+    document.querySelector('.titleprofile p.user').innerHTML = '@' + localStorage.getItem('user')
+
+    document.querySelector('p.nomecompleto').innerHTML = `<b>Nome completo:</b> Vinícius da Silva Santos`
+    document.querySelector('p.cpf').innerHTML = `<b>CPF:</b> Não informado`
+    document.querySelector('p.funcao').innerHTML = `<b>Função:</b> Sócio/Designer/Engenheiro do Software`
+}
+
+else if(username == 'larissa.alves') {
+    document.querySelector('.form-profile img.fotoperfilprofile').setAttribute('src', 'img/larissa-profile.jpeg')
+    document.querySelector('.titleprofile h1.nameuser').innerHTML = `Larissa Alves`
+    document.querySelector('.titleprofile p.user').innerHTML = '@' + localStorage.getItem('user')
+
+    document.querySelector('p.nomecompleto').innerHTML = `<b>Nome completo:</b> Larissa Alves de Andrade Moreira`
+    document.querySelector('p.cpf').innerHTML = `<b>CPF:</b> Não informado`
+    document.querySelector('p.funcao').innerHTML = `<b>Função:</b> Fundadora/Gerente`
+}
+
+function openmenuprofile() {
+    var menu = document.querySelector('.menu-profile-change')
+    menu.style.display = 'block'
+
+    var background = document.querySelector('.backgrond')
+
+    background.style.display = "block"
+}   
+
+function fecharmenuprofile() {
+    var menu = document.querySelector('.menu-profile-change')
+    menu.style.display = 'none'
+
+    var background = document.querySelector('.backgrond')
+
+    background.style.display = "none"
+    document.querySelector('.notifications').style.display = 'none'
+}
 
 function savethis() {
     localStorage.setItem('planilha', document.querySelector('.planilha').outerHTML)
@@ -66,3 +127,15 @@ function addlinhas() {
         <td><input type="text" disabled value="` + input7.value + `"></label></td>`
         cont = cont + 1 
 }   
+
+function notificacaoopen() {
+    var background = document.querySelector('.backgrond')
+    document.querySelector('.notifications').style.display = 'block'
+    background.style.display = 'block'
+}
+
+function fecharnotification() {
+    var background = document.querySelector('.backgrond')
+    background.style.display = 'none'
+    document.querySelector('.notifications').style.display = 'none'
+}

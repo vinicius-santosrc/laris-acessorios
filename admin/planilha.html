@@ -62,16 +62,52 @@
     </div>
 
     <div class="overview-page">
+        <div class="backgrond" onclick="fecharmenuprofile()"></div>
         <div class="header-page">
             <h1>Planilha</h1>
             <div class="profile">
-                <i class="fa-regular fa-bell"></i>
-                <div class="profile-change">
+                <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
+                <div class="profile-change" onclick="openmenuprofile()">
                     <img id='profile-image' src="img/usuario-sem-foto.png" alt="">
                     <label id='nameuser'>Usuário</label>
                     <i onclick="openmenuprofile()" class="fa-solid fa-caret-down"></i>
                 </div>
                 
+            </div>
+        </div>
+        <div class="notifications">
+            <h1>Notificações</h1>
+            <div class="notifications-blocks">
+                <div class="not-block">
+                    <h2>Atualização 0.1 (23:00 de 17/05/2022)</h2>
+                    <p>Mudanças no site oficial/admin</p>
+                    <p>Listagram oficial:</p>
+                    <p>* Mudanças no estoque das pratas</p>
+                    <p>* Mudanças na estrutura da página da administração</p>
+                    <p>* Mudanças no estilo da página da administração</p>
+                </div>
+            </div>
+        </div>
+        <div class='menu-profile-change'>
+            <div class="userprofileshow" onclick="window.location.href = 'account.html'">
+                <div class="account-show">
+                    <img src="img/usuario-sem-foto.png" alt="">
+                    <div class="infoaccount">
+                        <h1>Nome</h1>
+                        <p>usuário</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="userbuttonsprofile">
+                <div class="button-profile" onclick="window.location.href = 'account.html'">
+                    <label>AJUSTES</label>
+                </div>
+                <div class="button-profile" onclick="sairdoprofile()">
+                    <label>SAIR</label>
+                </div>
             </div>
         </div>
         <div class="content-page">

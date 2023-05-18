@@ -210,6 +210,55 @@
     transition: 300ms;
 }
 
+.continuewith {
+    display: none;
+}
+
+.accountcontinue img{
+    width: 4vw;
+    height: 4vw;
+    object-fit: cover;
+    border-radius: 100vw;
+    margin-right: 0.3vw;
+}
+
+.accountcontinue-details {
+    display: block;
+    
+
+}
+
+.accountcontinue-mini {
+    display: flex;
+    align-items: center;
+}
+
+.accountcontinue-details h1 {
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.accountcontinue-details p {
+    font-size: 0.8vw;
+}
+
+.accountcontinue i {
+    font-size: 1vw;
+}
+
+.labelaccount {
+    margin-top: 5vh;
+}
+
+.labelaccount label{
+    cursor: pointer;
+}
+
+.labelaccount label:hover{
+    color: #FF449E;
+}
+
 .caixa-alerta-erro {
     background-color: red;
     color: white;
@@ -220,4 +269,202 @@
     margin-bottom: 1vw;
     display: none;
     border-radius: 1vw;
+}
+
+.accountcontinue {
+    display: flex;
+    align-items: center;
+    background-color: #E7E7E7;
+    padding: 1vw;
+    justify-content: space-between;
+    padding-top: 0; 
+    padding-bottom: 0;
+    border-radius: 1vw;
+    height: 6vw;
+    cursor: pointer;
+}
+
+.accountcontinue:hover {
+    transition: 500ms;
+    background-color: #c5c5c5;
+}
+
+/* page */
+
+.menu-profile-change {
+    display: block;
+    position: absolute;
+    z-index: 200;
+    background: white;
+    border: 0.1vw solid rgba(0, 0, 0, 0.226);
+    border-radius: 0.7vw;
+    left: 76vw;
+    width: 23vw;
+    padding: 0.5vw;
+    margin-top: 0.5vh;
+    display: none;
+}
+
+.backgrond {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.userprofileshow {
+    display: flex;
+    align-items: center;
+    padding: 0.5vw;
+    border-radius: 5vw;
+}
+
+.account-show {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.userprofileshow:hover {
+    background: rgb(224, 223, 223);
+    cursor: pointer;
+}
+
+.userprofileshow i {
+    font-size: 1vw;
+}
+
+.account-show img {
+    width: 4vw;
+    height: 4vw;
+    object-fit: cover;
+    border-radius: 5vw;
+    margin-right: 0.4vw;
+}
+
+.infoaccount {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoaccount h1 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.infoaccount p {
+    font-size: 0.7vw;
+    font-weight: 400;
+}
+
+.userbuttonsprofile {
+    display: flex;
+    justify-content: right;
+    margin-top: 0.5vh;
+}
+
+.userbuttonsprofile .button-profile {
+    padding: 1vw;
+    background-color: #E7E7E7;
+    border-radius: 5vw;
+    font-size: 0.8vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-profile label {
+    cursor: pointer;
+}
+
+/* CONTA */
+
+.form-profile {
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+    border: 0.1vw solid rgb(110, 110, 110);
+    padding: 1vw;
+    margin-top: 1vh;
+    border-radius: 1vw;
+}
+
+.form-profile img {
+    width: 25vw;
+}
+
+.form-profile .fotoperfilprofile {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 10vw;
+    object-fit: cover;
+}
+
+.titleprofile {
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.titleprofile h1{
+    font-size: 2vw;
+}
+
+.titleprofile p {
+    font-size: 1vw;
+}
+
+.form-profile-items {
+    text-align: left;
+}
+
+.infogeralperfil{
+    border-left: 0.2vw solid black;
+    padding-left: 1vw;
+}
+
+.infogeralperfil h1{
+    font-size: 1.5vw;
+}
+
+.infogeralperfil p{
+    font-size: 0.9vw;
+}
+
+.form-profile-items img{
+    width: 10vw;
+    height: 10vw;
+    border: 0.1vw solid black;
+}
+
+.notifications {
+    position: absolute;
+    background-color: white;
+    border: 0.1vw solid;
+    padding: 0.8vw;
+    width: 20vw;
+    height: 15vw;
+    overflow-y: auto;
+    left: 70vw;
+    border-radius: 1vw;
+    display: none;
+    z-index: 200;
+}
+
+.notifications h1 {
+    font-size: 1.4vw;
+    margin-top: 1vh;
+}
+
+.notifications .not-block {
+    background-color: #D9D9D9;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-top: 2vh;
+}
+
+@media screen and (max-width: 980px) {
+
+    
 }

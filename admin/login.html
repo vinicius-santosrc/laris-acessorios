@@ -10,8 +10,6 @@
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-    <script src="login.js"></script>
-
     <script>
         if(localStorage.getItem('login') == 'true') {
             window.location.href = 'index.html'
@@ -32,6 +30,25 @@
             <label>Digite o usuário ou a senha de forma correta</label>
         </div>
 
+        <div class="continuewith">
+            <div class="accountcontinue" onclick="continuewithaccount()">
+                <div class="accountcontinue-mini">
+                    <img src="img/usuario-sem-foto.png" alt="">
+                    <div class="accountcontinue-details">
+                        <h1>Nome</h1>
+                        <p>@usuário</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="labelaccount">
+                <label onclick="outroprofile()">Entrar com outra conta</label>
+            </div>
+
+        </div>
+
         <div class="inputs-form">
             <div class="ipt-form">
                 <label>Usuário</label><br>
@@ -49,7 +66,8 @@
                 </div>
             </div>
         </div>
-        <button onclick="verifylogin()">ENTRAR</button>
+        <button class="buttonverify" onclick="verifylogin()">ENTRAR</button>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
