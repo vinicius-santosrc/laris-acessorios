@@ -3546,6 +3546,75 @@ function prata_pulseira_de_bolinha_enco() {
     })
   }
 
+function prata_colar_ponto_de_luz_pink_enco() {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+
+Swal.fire({
+    title: 'Você deseja adicionar <b>Extensor (+4cm)</b>',
+    icon: 'info',
+    html:
+      `
+      <div class='item-prata'>
+          <img src="../imgs/extensor (1).jpeg" alt="">
+          <div class="text-prata">
+              <p class='novidade-loja'>Novo</p>
+              <h1 class="nome-prata">Extensor (+4cm)</h1>
+              <div class='estrelas'>
+                  <img src="../imgs/Nenhuma estrela.png" alt="">
+              </div>
+              <div class="promocao">
+                  <p class="preço-promo"><s>R$ 13,00</s>
+                  <p class="preço-loja">R$ 8,50</p>
+                  <p class="opcoesdepaga">(comprado junto com produtos)</p>
+              </div>
+              
+          </div>
+      </div>
+` +
+      '+ R$ 8,50 na soma total',
+      showCancelButton: true,
+      confirmButtonColor: '#EF59A0',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'ADICIONAR',
+      cancelButtonText: 'NÃO '
+}).then((result) => {
+    if (result.isConfirmed) {
+        tarefas.push('Colar Ponto de Luz Pink'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+        mostraTarefas()
+        salvarNoLocalStorage()
+        tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
+        mostraTarefas()
+        salvarNoLocalStorage()
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Produto adicionado à sacola + Extensor(+4cm)',
+          showConfirmButton: false,
+          timer: 1500
+        })
+    } else if (
+        result.dismiss
+    ){
+        tarefas.push('Colar Ponto de Luz Pink' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+        mostraTarefas()
+        salvarNoLocalStorage()
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Produto adicionado à sacola',
+          showConfirmButton: false,
+          timer: 1500
+        })
+    }
+  })
+}
+
 function prata_colar_mao_de_fatima_enco() {
   const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
@@ -4212,6 +4281,44 @@ function prata_piercing_fake_laco_cravejado_enco() {
 tarefas.push('Piercing Fake Laço Cravejado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
+}
+
+function prata_anel_coracao_cravejado_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Anel Coração Cravejado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function prata_anel_dois_em_um_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Anel Dois em Um '  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+function prata_brinco_heart_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Brinco Heart '  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
 }
 
 // PERSONALIZADOS //
