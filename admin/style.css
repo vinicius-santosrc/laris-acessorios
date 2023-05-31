@@ -80,7 +80,7 @@
     display: flex;
     padding: 1vw;
     justify-content: space-between;
-    background-color: rgb(238, 236, 236);
+    background-color: transparent;
 }
 
 .header-page h1 {
@@ -565,6 +565,58 @@ tr th{
     padding: 1vw;
     cursor: pointer;
 }
+
+.block {
+    width: 22vw;
+    background-color: #e4e4e4;
+    border-radius: 0.5vw;
+    padding: 2vw;
+    font-size: 0.7vw;
+    margin-bottom: 1vh;
+
+}
+
+.block:hover {
+    background-color: #d4d4d4;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.block i {
+    background-color: #FF449E;
+    border-radius: 10vw;
+    font-size: 1vw;
+    padding: 1vw;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+.blocks-contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 45vw;
+}
+
+.contentoverview {
+    display: flex;
+    margin: 3vh;
+}
+
+.blocks-contents-right {
+    width: 35vw;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.block-content {
+    width: 100%;
+    background-color: #e4e4e4;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    font-size: 0.7vw;
+}
+
 
 
 @media screen and (max-width: 980px) {

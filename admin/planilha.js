@@ -89,12 +89,12 @@ function loadItens() {
 
 function getTotals() {
   const amountIncomes = items
-    .filter((item) => item.precorevenda === "Entrada")
-    .map((transaction) => Number(transaction.precorevenda));
+    .filter((item) => item.precorevenda)
+    .map((transaction) => Number(transaction.amount));
 
   const amountExpenses = items
-    .filter((item) => item.precocompra === "Saída")
-    .map((transaction) => Number(transaction.precocompra));
+    .filter((item) => item.precocompra)
+    .map((transaction) => Number(transaction.amount));
 
   const totalIncomes = amountIncomes
     .reduce((acc, cur) => acc + cur, 0)
@@ -109,10 +109,13 @@ function getTotals() {
   incomes.innerHTML = totalIncomes;
   expenses.innerHTML = totalExpenses;
   total.innerHTML = totalItems;
+
+  document.querySelector('.lucrototal').innerHTML = totalItems
 }
 
-const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
-const setItensBD = () =>
+
+  const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
+  const setItensBD = () =>
   localStorage.setItem("db_items", JSON.stringify(items));
 
 loadItens();
