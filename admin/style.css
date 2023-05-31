@@ -80,7 +80,7 @@
     display: flex;
     padding: 1vw;
     justify-content: space-between;
-    background-color: rgb(192, 188, 188);
+    background-color: rgb(238, 236, 236);
 }
 
 .header-page h1 {
@@ -464,7 +464,110 @@
     margin-top: 2vh;
 }
 
-@media screen and (max-width: 980px) {
+.newItem {
+    margin: 3vh;
+    padding: 3vh;
+    background-color: rgb(238, 236, 236);
+    border-radius: 1vw;
+}
 
+.newItem h1 {
+    font-size: 1.7vw;
+}
+
+.newItem p {
+    font-size: 0.7vw;
+}
+
+.exboxitem {
+    margin-top: 1.5vh;
+    padding-left: 1.5vw;
+}
+
+.boxitempla {
+    display: block;
+    padding: 0.8vw;
+    margin-bottom: 0.8vh;
+    font-size: 0.7vw;
+    background-color: rgb(226, 225, 225);
+    border-radius: 0.5vw;
+
+}
+
+.boxitempla input {
+    width: 100%;
+    background: transparent;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+}
+
+#btnNew {
+    margin: auto;
+    margin-top: 1vh;
+    padding: 0.5vw 2.5vw 0.5vw 2.5vw;
+    background-color: #FF449E;
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 0.7vw;
+    cursor: pointer;
+    border: 0.1vw solid transparent;
+}
+
+#btnNew:hover {
+    background-color: white;
+    color: #FF449E;
+    border: 0.1vw solid #FF449E;
+}
+
+.divTable {
+    margin: 3vh;
+    padding: 3vh;
+    background-color: rgb(238, 236, 236);
+    border-radius: 1vw;
+
+}
+
+.titlecolumns {
+    font-size: 1vw;
+    color: rgb(0, 0, 0);
+    background-color: #ffadd4;
+}
+
+tr th{
+    width: 30vw;
+    text-align: center;
+    justify-content: center; 
+}
+
+.headeritem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side2item {
+    font-size: 1vw;
+    border-radius: 55vw;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+.side2item:hover, .side3item:hover{
+    color: #FF449E;
+}
+
+.side3item {
+    display: none;
+    font-size: 1vw;
+    border-radius: 55vw;
+    padding: 1vw;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 980px) {
+    
     
 }

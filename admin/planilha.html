@@ -111,34 +111,77 @@
             </div>
         </div>
         <div class="content-page">
-            <div class="planilha">
-                <h1>Planilha Básica 1</h1>
-                    <div class="lines-to-down">
-                        <td><input class="input1" type="text" value=""></label></td>
-                        <td><input class="input2" type="text" value=""></label></td>
-                        <td><input class="input3" type="text" value=""></label></td>
-                        <td><input class="input4" type="text" value=""></label></td>
-                        <td><input class="input5" type="text" value=""></label></td>
-                        <td><input class="input6" type="text" value=""></label></td>
-                        <td><input class="input7" type="text" value=""></label></td>
+            <main>
+                
+                <div class="newItem">
+                  <div class="headeritem">
+                    <div class="side1item">
+                      <h1>Adicionar um Item</h1>
+                      <p>Preencha todos os dados para adicionar o item ao banco de dados.</p>
                     </div>
-                    <button onclick="addlinhas()">ADD</button>
-                <table>
-                    <tr>
-                        <th>Código</th>
-                        <th>Nome</th>
-                        <th>Detalhe</th>
-                        <th>Preço Compra</th>
-                        <th>Preço Revenda</th>
-                        <th>Quantidade Compra</th>
-                        <th>Quantidade Estoque</th>
-                    </tr>
-                </table>
-            </div>
-            
-        <button onclick="savethis()">SALVAR</button>
-        </div>
-    </div>
+                    <div class="side2item" onclick="hideadcitem()">
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="side3item" onclick="showadcitem()">
+                      <i class="fa-solid fa-plus"></i>
+                  </div>
+                  </div>
+                  <div class="hideitem">
+                    <div class="exboxitem">
+                      <div class="divCodigo boxitempla">
+                        <label for="codigo">Código</label>
+                        <input type="text" id="codigo" />
+                      </div>
+                      <div class="divNome boxitempla">
+                        <label for="nameofitem">Nome</label>
+                        <input type="text" id="nameofitem" />
+                      </div>
+                      <div class="divDetails boxitempla">
+                        <label for="detalhe">Detalhe</label>
+                        <input type="text" id="detalhe" />
+                      </div>
+                      <div class="divPrecoCompra boxitempla">
+                        <label for="precocompra">Preço Compra</label>
+                        <input type="number" id="precocompra" />
+                      </div>
+                      <div class="divPrecoRevenda boxitempla">
+                        <label for="precorevenda">Preço Revenda</label>
+                        <input type="number" id="precorevenda" />
+                      </div>
+                      <div class="divQuantidadeCompra boxitempla">
+                        <label for="quantcompra">Quantidade Compra</label>
+                        <input type="number" id="quantcompra" />
+                      </div>
+                      <div class="divQuantidadeEstoque boxitempla">
+                        <label for="quantestoque">Quantidade Estoque</label>
+                        <input type="number" id="quantestoque" />
+                      </div>
+                    </div>
+
+
+                    
+                    <button id="btnNew">Adicionar</button>
+                  </div>
+                </div>
+                <div class="divTable">
+                  <table>
+                    <thead class="titlecolumns">
+                      <tr>
+                        <th class="columnCodigo">Código</th>
+                        <th class="columnNome">Nome</th>
+                        <th class="columnDetalhe">Detalhe</th>
+                        <th class="columnPrecoCompra">Preço Compra</th>
+                        <th class="columnPrecoRevenda">Preço Revenda</th>
+                        <th class="columnQuantidadeCompra">Quantidade Compra</th>
+                        <th class="columnQuantidade Estoque">Quantidade Estoque</th>
+                        <th class="columnAction"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+              </main>  
 </body>
     <script src="script.js"></script>
+    <script src="planilha.js"></script>
 </html>
