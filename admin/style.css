@@ -1,3 +1,8 @@
+:root {
+    --rosaprimario: #FF449E;
+    --brancoprimario:  white
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +34,7 @@
 
 .fixed-bar-left .top label {
     font-size: 1.2vw;
-    color: white;
+    color:  var(--brancoprimario);
 }
 
 .options {
@@ -76,7 +81,7 @@
 }
 
 #selectedcardbar, #selectedcardbar h1 {
-    color: #FF449E;
+    color: var(--rosaprimario);
 }
 /* PAGE */
 
@@ -107,7 +112,7 @@
 }
 
 .profile i:hover {
-    color: #FF449E;
+    color: var(--rosaprimario);
 }
 
 .profile-change {
@@ -201,20 +206,20 @@
 .form button {
     width: 100%;
     margin-top: 5vh;
-    color: white;
+    color:  var(--brancoprimario);
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-radius: 1vw;
     border: none;
-    background-color: #FF449E;
+    background-color: var(--rosaprimario);
     cursor: pointer;
     font-size: 1vw;
 }
 
 .form button:hover {
-    background-color: white;
-    color: #FF449E;
-    border: 0.1vw solid #FF449E;
+    background-color:  var(--brancoprimario);
+    color: var(--rosaprimario);
+    border: 0.1vw solid var(--rosaprimario);
     transition: 300ms;
 }
 
@@ -264,12 +269,12 @@
 }
 
 .labelaccount label:hover{
-    color: #FF449E;
+    color: var(--rosaprimario);
 }
 
 .caixa-alerta-erro {
     background-color: red;
-    color: white;
+    color:  var(--brancoprimario);
     font-size: 1vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -303,7 +308,7 @@
     display: block;
     position: absolute;
     z-index: 200;
-    background: white;
+    background:  var(--brancoprimario);
     border: 0.1vw solid rgba(0, 0, 0, 0.226);
     border-radius: 0.7vw;
     left: 76vw;
@@ -448,7 +453,7 @@
 
 .notifications {
     position: absolute;
-    background-color: white;
+    background-color:  var(--brancoprimario);
     border: 0.1vw solid;
     padding: 0.8vw;
     width: 20vw;
@@ -514,8 +519,8 @@
     margin: auto;
     margin-top: 1vh;
     padding: 0.5vw 2.5vw 0.5vw 2.5vw;
-    background-color: #FF449E;
-    color: white;
+    background-color: var(--rosaprimario);
+    color:  var(--brancoprimario);
     border: none;
     border-radius: 0.5vw;
     font-size: 0.7vw;
@@ -524,9 +529,9 @@
 }
 
 #btnNew:hover {
-    background-color: white;
-    color: #FF449E;
-    border: 0.1vw solid #FF449E;
+    background-color:  var(--brancoprimario);
+    color: var(--rosaprimario);
+    border: 0.1vw solid var(--rosaprimario);
 }
 
 .divTable {
@@ -563,7 +568,7 @@ tr th{
 }
 
 .side2item:hover, .side3item:hover{
-    color: #FF449E;
+    color: var(--rosaprimario);
 }
 
 .side3item {
@@ -592,12 +597,12 @@ tr th{
 }
 
 .block i {
-    background-color: #FF449E;
+    background-color: var(--rosaprimario);
     border-radius: 10vw;
     font-size: 1vw;
     padding: 1vw;
     margin-bottom: 1vh;
-    color: white;
+    color:  var(--brancoprimario);
 }
 
 .blocks-contents {
@@ -625,6 +630,39 @@ tr th{
     align-items: center;
 }
 
+.fornecedor img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20vw;
+    margin-right: 1vw;
+}
+
+.flexfornecedor {
+    display: flex;
+    align-items: center;
+}
+
+.fornecedoreslist {
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+.fornecedoreslist .fornecedor {
+    background: #e4e4e4;
+    padding: 2vw;
+    margin-bottom: 1vh;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fornecedor iframe {
+    width: 50%;
+    height: 50vh;
+    border-radius: 1vw;
+}
+
 .toptitlecardmobile {
     display: none;
 }
@@ -634,20 +672,20 @@ tr th{
 }
 
 .toptitlecard label {
-    color: #FF449E;
+    color: var(--rosaprimario);
     font-size: 0.8vw;
     cursor: pointer;
     border-bottom: 0.1vw solid transparent;
 }
 
 .toptitlecard label:hover {
-    border-bottom: 0.1vw solid #FF449E;
+    border-bottom: 0.1vw solid var(--rosaprimario);
 }
 
 .planilha-recents {
     width: 54vw;
     background-color: #e4e4e4;
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 2vw;
 }
 
@@ -678,8 +716,8 @@ tr th{
     text-align: center;
     margin: auto;
     margin-top: 1vh;
-    color: #FF449E;
-    border: 0.1vw dashed #FF449E;
+    color: var(--rosaprimario);
+    border: 0.1vw dashed var(--rosaprimario);
     border-radius: 10vh;
     font-size: 1vw;
     font-weight: 400;
@@ -715,7 +753,7 @@ tr th{
 .columsplanilha {
     font-size: 1vw;
     font-weight: 500;
-    color: #FF449E;
+    color: var(--rosaprimario);
 }
 
 .blockfornecedores {
@@ -729,12 +767,12 @@ tr th{
 }
 
 .blockfornecedores-add h1 {
-    border: 0.1vw dashed #FF449E;
+    border: 0.1vw dashed var(--rosaprimario);
     font-size: 1vw;
     padding: 1vw;
     margin-top: 1vh;
     text-align: center;
-    color: #FF449E;
+    color: var(--rosaprimario);
     border-radius: 2vw;
     cursor: pointer;
     font-weight: 500;
@@ -757,7 +795,7 @@ h1.title-opcoes-pc{
     font-weight: 500;
     padding-left: 1vh;
     color: #ffffff;
-    background-color: #FF449E;
+    background-color: var(--rosaprimario);
     border-radius: 1vw;
     padding: 1vh;
     margin-bottom: 1vh;
@@ -793,7 +831,7 @@ label#embreve {
     }
     .fixed-bar-left {
         width: 16vw;
-        background: #FF449E;
+        background: var(--rosaprimario);
         position: fixed;
         display: none;
         height: 100vh;
@@ -863,15 +901,15 @@ label#embreve {
     }
 
     .item-opcoes-down#selectedpage{
-        border-left: 0vw solid #FF449E;
-        color: #FF449E;
+        border-left: 0vw solid var(--rosaprimario);
+        color: var(--rosaprimario);
         background-color: #ffdbed;
         border-radius: 3vw;
 
     }
 
     .item-opcoes-down#selectedpage a {
-        color: #FF449E;
+        color: var(--rosaprimario);
     }
 
     .title-opcoes {
@@ -879,7 +917,7 @@ label#embreve {
         font-weight: 600;
         padding-left: 1vh;
         color: #ffffff;
-        background-color: #FF449E;
+        background-color: var(--rosaprimario);
 
         padding: 1vh;
         margin-bottom: 1vh;
@@ -951,22 +989,23 @@ label#embreve {
         .form button {
             width: 100%;
             margin-top: 10vh;
-            color: white;
+            color:  var(--brancoprimario);
             padding-top: 3vw;
             padding-bottom: 3vw;
             border-radius: 2vw;
             border: none;
-            background-color: #FF449E;
+            background-color: var(--rosaprimario);
             cursor: pointer;
             font-size: 3vw;
         }
 
         .form button:hover {
-            background-color: white;
-            color: #FF449E;
-            border: 0.5vw solid #FF449E;
+            background-color:  var(--brancoprimario);
+            color: var(--rosaprimario);
+            border: 0.5vw solid var(--rosaprimario);
             transition: 300ms;
         }
+        
 
         .continuewith {
             display: none;
@@ -1014,12 +1053,12 @@ label#embreve {
         }
 
         .labelaccount label:hover{
-            color: #FF449E;
+            color: var(--rosaprimario);
         }
 
         .caixa-alerta-erro {
             background-color: red;
-            color: white;
+            color:  var(--brancoprimario);
             font-size: 1vw;
             padding-top: 2vh;
             padding-bottom: 2vh;
@@ -1061,7 +1100,7 @@ label#embreve {
 
         .header-page h1 {
             font-size: 5vw;
-            color: #FF449E;
+            color: var(--rosaprimario);
         }
 
         .profile {
@@ -1076,7 +1115,7 @@ label#embreve {
         }
 
         .profile i:hover {
-            color: #FF449E;
+            color: var(--rosaprimario);
         }
 
         .profile-change {
@@ -1113,7 +1152,7 @@ label#embreve {
             display: block;
             position: absolute;
             z-index: 200;
-            background: white;
+            background:  var(--brancoprimario);
             border: 0.1vw solid rgba(0, 0, 0, 0.226);
             border-radius: 0.7vw;
             left: 45vw;
@@ -1199,7 +1238,7 @@ label#embreve {
 
         .notifications {
             position: absolute;
-            background-color: white;
+            background-color:  var(--brancoprimario);
             border: 0.1vw solid;
             padding: 2vw;
             width: 50vw;
@@ -1276,8 +1315,8 @@ label#embreve {
             margin: auto;
             margin-top: 1vh;
             padding: 0.5vw 2.5vw 0.5vw 2.5vw;
-            background-color: #FF449E;
-            color: white;
+            background-color: var(--rosaprimario);
+            color:  var(--brancoprimario);
             border: none;
             border-radius: 0.5vw;
             font-size: 4vw;
@@ -1286,9 +1325,9 @@ label#embreve {
         }
         
         #btnNew:hover {
-            background-color: white;
-            color: #FF449E;
-            border: 0.1vw solid #FF449E;
+            background-color:  var(--brancoprimario);
+            color: var(--rosaprimario);
+            border: 0.1vw solid var(--rosaprimario);
         }
         
         .divTable {
@@ -1333,7 +1372,7 @@ label#embreve {
         }
 
         .side2item:hover, .side3item:hover{
-            color: #FF449E;
+            color: var(--rosaprimario);
         }
 
         tbody{
@@ -1365,8 +1404,8 @@ label#embreve {
         .graphcircle {
             width: 20vw;
             height: 20vw;
-            background-color: white;
-            border: 3vw solid #FF449E;
+            background-color:  var(--brancoprimario);
+            border: 3vw solid var(--rosaprimario);
             border-radius: 10vw;
             text-align: center;
 
@@ -1386,12 +1425,12 @@ label#embreve {
         }
         
         .block i {
-            background-color: #FF449E;
+            background-color: var(--rosaprimario);
             border-radius: 10vw;
             font-size: 3vw;
             padding: 1vw;
             margin-bottom: 1vh;
-            color: white;
+            color:  var(--brancoprimario);
         }
 
         .blocks-contents {
@@ -1429,14 +1468,14 @@ label#embreve {
         }
         
         .toptitlecard label {
-            color: #FF449E;
+            color: var(--rosaprimario);
             font-size: 4vw;
             cursor: pointer;
             border-bottom: 0.1vw solid transparent;
         }
         
         .toptitlecard label:hover {
-            border-bottom: 0.1vw solid #FF449E;
+            border-bottom: 0.1vw solid var(--rosaprimario);
         }
         
         
@@ -1457,14 +1496,14 @@ label#embreve {
         }
         
         .toptitlecardmobile label {
-            color: #FF449E;
+            color: var(--rosaprimario);
             font-size: 4vw;
             cursor: pointer;
             border-bottom: 0.1vw solid transparent;
         }
         
         .toptitlecardmobile label:hover {
-            border-bottom: 0.1vw solid #FF449E;
+            border-bottom: 0.1vw solid var(--rosaprimario);
         }
         
         .planilha-recents {
@@ -1501,8 +1540,8 @@ label#embreve {
             text-align: center;
             margin: auto;
             margin-top: 1vh;
-            color: #FF449E;
-            border: 0.1vw dashed #FF449E;
+            color: var(--rosaprimario);
+            border: 0.1vw dashed var(--rosaprimario);
             border-radius: 10vh;
             font-size: 3.5vw;
             font-weight: 400;
@@ -1538,7 +1577,7 @@ label#embreve {
         .columsplanilha {
             font-size: 2.7vw;
             font-weight: 500;
-            color: #FF449E;
+            color: var(--rosaprimario);
         }
         
         .blockfornecedores {
@@ -1552,12 +1591,12 @@ label#embreve {
         }
         
         .blockfornecedores-add h1 {
-            border: 0.1vw dashed #FF449E;
+            border: 0.1vw dashed var(--rosaprimario);
             font-size: 3vw;
             padding: 3vw;
             margin-top: 1vh;
             text-align: center;
-            color: #FF449E;
+            color: var(--rosaprimario);
             border-radius: 2vw;
             cursor: pointer;
             font-weight: 500;
@@ -1570,4 +1609,133 @@ label#embreve {
             border-radius: 10vw;
             margin-right: 1.5vw;
         }
+
+        .fornecedoreslist {
+            margin: auto;
+            justify-content: center;
+        }
+
+        .fornecedor iframe {
+            width: 90%;
+            height: 100vh;
+        }
+
+        /* CONTA */
+
+        .form-profile {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            border:  none;
+            padding: 1vw;
+            margin-top: 1vh;
+            border-radius: 1vw;
+            display: block;
+        }
+
+        .form-profile img {
+            width: 45vw;
+            display: block;
+            margin: auto;
+        }
+
+        .form-profile .fotoperfilprofile {
+            width: 45vw;
+            height: 45vw;
+            border-radius: 40vw;
+            object-fit: cover;
+        }
+
+        .titleprofile {
+            text-align: center;
+            margin-bottom: 3vh;
+        }
+
+        .titleprofile h1{
+            font-size: 4vw;
+        }
+
+        .titleprofile p {
+            font-size: 3vw;
+        }
+
+        .form-profile-items {
+            text-align: left;
+        }
+
+        .infogeralperfil{
+            border-left: 1vw solid black;
+            padding-left: 3vw;
+        }
+
+        .infogeralperfil h1{
+            font-size: 4vw;
+        }
+
+        .infogeralperfil p{
+            font-size: 3vw;
+        }
+
+        .form-profile-items img{
+            width: 50vw;
+            height: 10vw;
+            border: 0.1vw solid black;
+        }
+
+        .fornecedor img {
+            width: 20vw;
+            height: 20vw;
+            border-radius: 20vw;
+            margin-right: 1vw;
+        }
+        
+        .flexfornecedor {
+            display: block;
+            align-items: center;
+        }
+        
+        .fornecedoreslist {
+            width: 90%;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        .fornecedoreslist .fornecedor {
+            background: #e4e4e4;
+            padding: 5vw;
+            margin-bottom: 1vh;
+            border-radius: 2vw;
+            display: block;
+            justify-content: center;
+        }
+
+        .fornecedoradd {
+            border: var(--rosaprimario) dashed 1vw;
+            color: var(--rosaprimario);
+            text-align: center;
+            padding: 5vw;
+            margin-bottom: 1vh;
+            border-radius: 2vw;
+            display: block;
+            justify-content: center;
+        }
+        
+        .fornecedor iframe {
+            width: 100%;
+            height: 60vh;
+            margin-top: 2vh;
+            border-radius: 5vw;
+        }
+
+        .cyabrir, .lumiabrir {
+            display: none;
+        }
+
+        .fornecedoresblock .titlefor {
+            font-size: 6vw;
+            padding-left: 5vw;
+            margin-bottom: 2vh;
+        }
+
+
 }

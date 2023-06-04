@@ -93,3 +93,11 @@ const setItensBD = () =>
   localStorage.setItem("db_items", JSON.stringify(items));
 
 loadItens();
+
+function openluminati() {
+  document.querySelector('.lumiabrir').style.display = 'block'
+}
+
+function opency() {
+  document.querySelector('.cyabrir').style.display = 'block'
+}
