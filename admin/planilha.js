@@ -1,4 +1,5 @@
 const tbody = document.querySelector("tbody");
+const tbodyindex = document.querySelector('.planilha-home tbody')
 
 const descItem = document.querySelector("#desc");
 const amount = document.querySelector("#amount");
@@ -17,7 +18,7 @@ const btnNew = document.querySelector("#btnNew");
 
 const incomes = document.querySelector(".incomes");
 const expenses = document.querySelector(".expenses");
-const total = document.querySelector(".total");
+const total = document.querySelector(".lucrototal");
 
 let items;
 
@@ -87,32 +88,6 @@ function loadItens() {
   getTotals();
 }
 
-function getTotals() {
-  const amountIncomes = items
-    .filter((item) => item.precorevenda)
-    .map((transaction) => Number(transaction.amount));
-
-  const amountExpenses = items
-    .filter((item) => item.precocompra)
-    .map((transaction) => Number(transaction.amount));
-
-  const totalIncomes = amountIncomes
-    .reduce((acc, cur) => acc + cur, 0)
-    .toFixed(2);
-
-  const totalExpenses = Math.abs(
-    amountExpenses.reduce((acc, cur) => acc + cur, 0)
-  ).toFixed(2);
-
-  const totalItems = (totalIncomes - totalExpenses).toFixed(2);
-
-  incomes.innerHTML = totalIncomes;
-  expenses.innerHTML = totalExpenses;
-  total.innerHTML = totalItems;
-
-  document.querySelector('.lucrototal').innerHTML = totalItems
-}
-
 
   const getItensBD = () => JSON.parse(localStorage.getItem("db_items")) ?? [];
   const setItensBD = () =>
@@ -143,3 +118,27 @@ function showadcitem() {
 
   localStorage.setItem('planilha', 'aberta')
 }
+
+function getTotals() {
+  const amountIncomes = items
+      .filter((item) => item.precovenda)
+      .map((transaction) => Number(transaction.amount));
+
+  const amountExpenses = items
+      .filter((item) => item.precocompra)
+      .map((transaction) => Number(transaction.amount));
+
+  const totalIncomes = amountIncomes
+      .reduce((acc, cur) => acc + cur, 0)
+      .toFixed(2);
+
+  const totalExpenses = Math.abs(
+      amountExpenses.reduce((acc, cur) => acc + cur, 0)
+  ).toFixed(2);
+
+  const totalItems = (totalIncomes - totalExpenses).toFixed(2);
+
+  incomes.innerHTML = totalIncomes;
+  expenses.innerHTML = totalExpenses;
+  total.innerHTML = totalItems;
+  }

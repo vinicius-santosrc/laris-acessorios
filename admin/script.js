@@ -79,6 +79,8 @@ function fecharmenuprofile() {
 
     background.style.display = "none"
     document.querySelector('.notifications').style.display = 'none'
+
+    document.querySelector('.fixed-bar-left-mobile').style.display = 'none'
 }
 
 function savethis() {

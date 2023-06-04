@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="login.js"></script>
-
+    <script src="../sweetalert.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -26,44 +26,16 @@
         
     </div>
 
-    <div class="fixed-bar-left">
-        <div class="top">
-            <img src="img/logowhite.png" alt="">
-            <label>ADMINISTRAÇÃO</label>
-        </div>
-        <div class="options">
-            <h1>GERAL</h1>
-            <div class="options-cards">
-                <a href="index.html"><div class="card-bar">
-                    <h1>Overview</h1>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div></a>
-                <a href="planilha.html"><div class="card-bar">
-                    <h1>Planilha</h1>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div></a>
-                <a href="lembretes.html"><div class="card-bar">
-                    <h1>Lembretes</h1>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div></a>
-                <a href="new-itens.html"><div class="card-bar">
-                    <h1>Novos Itens</h1>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div></a>
-            </div>
-            <h1>HOST</h1>
-            <div class="options-cards">
-                <a href="conection.html"><div class="card-bar">
-                    <h1>Conexão</h1>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div></a>
-            </div>
-        </div>
+    <div class="barscript">
     </div>
+
 
     <div class="overview-page">
         <div class="backgrond" onclick="fecharmenuprofile()"></div>
         <div class="header-page">
+            <div class="openmenumobile" onclick="abrirmenumobile()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
             <h1>Planilha</h1>
             <div class="profile">
                 <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
@@ -78,14 +50,7 @@
         <div class="notifications">
             <h1>Notificações</h1>
             <div class="notifications-blocks">
-                <div class="not-block">
-                    <h2>Atualização 0.1 (23:00 de 17/05/2022)</h2>
-                    <p>Mudanças no site oficial/admin</p>
-                    <p>Listagram oficial:</p>
-                    <p>* Mudanças no estoque das pratas</p>
-                    <p>* Mudanças na estrutura da página da administração</p>
-                    <p>* Mudanças no estilo da página da administração</p>
-                </div>
+                
             </div>
         </div>
         <div class='menu-profile-change'>
@@ -180,8 +145,11 @@
                     <tbody>
                     </tbody>
                   </table>
+                </div>
               </main>  
 </body>
+  <script src="leftsidebar.js"></script>
     <script src="script.js"></script>
     <script src="planilha.js"></script>
+    <script src="notifications.js"></script>
 </html>
