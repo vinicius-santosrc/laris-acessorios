@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido 164 LARI'S ACESSÓRIOS</title>
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <div class="img">
+        <img src="../imgs/logolaris.png" width="400px" height="200px" alt="">
+    </div>
+
+    <div class="pedido">
+        <h1>COMPROVANTE DE VENDA - PEDIDO #164</h1>
+        <p>COMPROVANTE DE VENDA DA LOJA LARI'S ACESSÓRIOS</p>
+        <p>DATA DA EMISSÃO DO COMPROVANTE: 06/06/2023 AS 20:17</p>
+        <p>CONSUMIDOR: VINÍCIUS DA SILVA SANTOS</p>
+        <p>NÚMERO DO PEDIDO: #164</p>
+        <p>PEDIDO REALIZADO POR WHATS-APP </p>
+        <p>LINK PARA VISUALIZAÇÃO DO COMPROVANTE DO PEDIDO: <a href="HTTPS://LARIS-ACESSORIOS.NETLIFY.APP/pedidos/164.html">HTTPS://LARIS-ACESSOÓRIOS.NETLIFY.APP/PEDIDOS/164</a></p>
+        <p>COMPROVANTE FEITO E REVISADO(RESPECTIVAMENTE) POR: VINÍCIUS DA SILVA SANTOS E LARISSA ALVES DE ANDRADE MOREIRA</p>
+        <p></p>
+        <h3>INFORMAÇÕES DO PEDIDO</h3>
+        <table>
+            <tr>
+                <th>QNT</th>
+                <th>DESCRIÇÃO</th>
+                <th>PREÇO</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th>PULSEIRA PERSONALIZADA VERDE</th>
+                <th>20,00</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>TOTAL: R$15,00</th>
+            </tr>
+        </table>
+        <h3>FORMA DE PAGAMENTO</h3>
+        <p>
+            FORMA DE PAGAMENTO SELECIONADA: PIX
+        </p>
+        <p>
+            FORMAS DE PAGAMENTOS DISPONÍVEIS: PIX, DINHEIRO OU CARTÃO DE CRÉDITO/DÉBITO
+        </p>
+        <h3>QR CODE GERADO AUTOMÁTICAMENTE</h3>
+        <img src="qrcodes/164.png" alt="">
+        <p>DATA DA EMISSÃO DO QRCODE: 06/06/2023 AS 20:17</p>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="encomendar.js"></script>
+    <script src="sweetalert.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_LFJAXNJjH0WCy5N2o9gl4");
+    })();
+    </script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".pc-slider").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                arrows: false,
+            });
+        })
+
+        $(function() {
+            $(".cell-slider").slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            })
+        })
+    </script>
+
+    <script>
+         var angle = 0;
+        function galleryspin(sign) { 
+        spinner = document.querySelector("#spinner");
+        if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+        spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+        }
+    </script>
+</body>
+</html>
