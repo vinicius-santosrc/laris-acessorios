@@ -18,10 +18,13 @@
 
     <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
 
-    
+    <script src="js.js"></script>
+
     <script>
         loginrequired()
-        
+        lucrototal()
+        document.querySelector('.incomes input').value = localStorage.getItem('entradas')
+        document.querySelector('.expenses input').value = localStorage.getItem('saidas')
     </script>
 
 </head>
@@ -89,7 +92,7 @@
                         <div>
                             <i class="fa-solid fa-money-bill"></i>
                             <h1>Lucro total</h1>
-                            <h2 class="lucrototal">R$ 00,00</h2>
+                            <h2 class="lucrototal"><label class="lucrototalnumber">R$ 00,00</label></h2>
                         </div>
                         <div class="graphcircle graphcircle-total">
                             <div><p>100%</p></div>
@@ -99,20 +102,20 @@
                         <div>
                             <i class="fa-solid fa-piggy-bank"></i>
                             <h1>Entradas</h1>
-                            <h2 class="incomes">R$ 00,00</h2>
+                            <h2 class="incomes"><label>R$</label><input type="number" placeholder="00,00" onchange="submitentradas()"></h2>
                         </div>
                         <div class="graphcircle graphcircle-entradas">
-                            <div><p>100%</p></div>
+                            <div><p class="porcentagementrada">0%</p></div>
                         </div>
                     </div>
                     <div class="block">
                         <div>
                             <i class="fa-solid fa-piggy-bank"></i>
                             <h1>Saídas</h1>
-                            <h2 class="expenses">R$ 00,00</h2>
+                            <h2 class="expenses"><label>R$</label><input type="number" placeholder="00,00" onchange="submitsaidas()"></h2>
                         </div>
                         <div class="graphcircle graphcircle-saidas">
-                            <div><p>100%</p></div>
+                            <div><p class="porcentagemsaida">0%</p></div>
                         </div>
                     </div>
                 </div>
@@ -230,6 +233,7 @@
     <script src="planilha.js"></script>
     <script src="index.js"></script>
     <script src="notifications.js"></script>
+    <script src="js.js"></script>
     <script>
         planilha = JSON.parse(localStorage.getItem('db_items'))
         planilha.forEach(item => {

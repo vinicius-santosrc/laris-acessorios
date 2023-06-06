@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido 958 LARI'S ACESSÓRIOS</title>
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <div class="pedido">
+        <h1>PEDIDO 958 - NOTA FISCAL ELETRÔNICA LARI'S ACESSÓRIOS</h1>
+        <p>NOTA FISCAL ELETRÔNICA EMITIDA</p>
+        <p>DATA DA EMISSÃO DA NOTA FISCAL: 05/06/2023 AS 23:00</p>
+        <p>CONSUMIDOR: ANA LUISA OZANAN</p>
+        <p>NÚMERO DO PEDIDO: #958</p>
+        <p>PROTOCOLO DE AUTORIZAÇÃO: 457649204000475</p>
+        <p>PEDIDO REALIZADO PESSOALMENTE </p>
+        <p>LINK PARA VISUALIZAÇÃO DA NOTA FISCAL DO PEDIDO: <a href="HTTPS://LARIS-ACESSORIOS.NETLIFY.APP/pedidos/935.html">HTTPS://LARIS-ACESSOÓRIOS.NETLIFY.APP/PEDIDOS/935.html</a></p>
+        <p>NOTA FISCAL EMITIDA E REVISADA(RESPECTIVAMENTE): VINÍCIUS DA SILVA SANTOS E LARISSA ALVES DE ANDRADE MOREIRA</p>
+        <p></p>
+        <h3>INFORMAÇÕES DO PEDIDO</h3>
+        <table>
+            <tr>
+                <th>QNT</th>
+                <th>DESCRIÇÃO</th>
+                <th>PREÇO</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                <th>PHONE STRAP PERSONALIZADO</th>
+                <th>20,00</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>COLAR PÉROLAS COM OLHO GREGO</th>
+                <th>15,00</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>TOTAL: R$30,00</th>
+            </tr>
+        </table>
+        <h3>FORMA DE PAGAMENTO</h3>
+        <p>
+            SERÁ DEFINIDO NO MOMENTO DA ENTREGA DOS ITENS.
+        </p>
+        <p>
+            FORMAS DE PAGAMENTOS DISPONÍVEIS: PIX, DINHEIRO OU CARTÃO DE CRÉDITO/DÉBITO
+        </p>
+        <h3>QR CODE GERADO AUTOMÁTICAMENTE</h3>
+        <img src="qrcodes/958.png" alt="">
+        <p>DATA DA EMISSÃO DO QRCODE: 05/06/2023 AS 23:00</p>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="encomendar.js"></script>
+    <script src="sweetalert.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_LFJAXNJjH0WCy5N2o9gl4");
+    })();
+    </script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".pc-slider").slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                arrows: false,
+            });
+        })
+
+        $(function() {
+            $(".cell-slider").slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            })
+        })
+    </script>
+
+    <script>
+         var angle = 0;
+        function galleryspin(sign) { 
+        spinner = document.querySelector("#spinner");
+        if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+        spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+        }
+    </script>
+</body>
+</html>

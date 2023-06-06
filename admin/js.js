@@ -101,3 +101,20 @@ function openluminati() {
 function opency() {
   document.querySelector('.cyabrir').style.display = 'block'
 }
+
+function submitentradas() {
+  let incomes = document.querySelector('.incomes input').value
+  localStorage.setItem('entradas', incomes)
+  lucrototal()  
+}
+
+function submitsaidas() {
+  let expenses = document.querySelector('.expenses input').value
+  localStorage.setItem('saidas', expenses)
+  lucrototal()
+}
+
+function lucrototal() {
+  let lucrolabel = document.querySelector('.lucrototalnumber')
+  lucrolabel.innerHTML = `R$ ${localStorage.getItem('entradas') - localStorage.getItem('saidas')}`
+}
