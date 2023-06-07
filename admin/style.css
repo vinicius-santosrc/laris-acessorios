@@ -395,17 +395,19 @@
 /* CONTA */
 
 .form-profile {
-    width: 40vw;
+    width: 100%;
     margin: auto;
     text-align: center;
-    border: 0.1vw solid rgb(110, 110, 110);
+    border: 0.1vw solid rgb(219, 219, 219);
     padding: 1vw;
     margin-top: 1vh;
-    border-radius: 1vw;
+    border-radius: 0.2vw;
+    margin-left: 1vw;
+    margin-top: 0vh;
 }
 
 .form-profile img {
-    width: 25vw;
+    width: 15vw;
 }
 
 .form-profile .fotoperfilprofile {
@@ -560,6 +562,25 @@ tr th{
     justify-content: space-between;
 }
 
+.incomes {
+    color: green;
+}
+
+.expenses {
+    color: red;
+}
+
+.resume {
+    margin: auto;
+
+    margin: 3vh;
+    padding: 2vw;
+    background-color: rgb(238, 236, 236);
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
 .side2item {
     font-size: 1vw;
     border-radius: 55vw;
@@ -663,6 +684,8 @@ tr th{
     border-radius: 1vw;
 }
 
+
+
 .toptitlecardmobile {
     display: none;
 }
@@ -696,6 +719,42 @@ tr th{
     padding: 1vw;
     font-size: 0.7vw;
 }
+
+.titleplanilhas {
+    background-color: #e4e4e4;
+    margin: auto;
+    padding: 2vw;
+    width: 65vw;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+    font-size: 0.8vw;
+}
+
+.planilhablock-a {
+    background-color: #e4e4e4;
+    margin: auto;
+    padding: 2vw;
+    width: 50vw;
+    border-radius: 1vw;
+    margin-bottom: 1vh;
+    cursor: pointer;
+}
+
+.planilhablock-a h1 {
+    color: var(--rosaprimario);
+}
+
+.planilhablock-a:hover {
+    background-color: #cecece;
+    transition: 500ms;
+}
+
+.planilhablock-a a {
+    color: black;
+    text-decoration: none;
+}
+
+
 
 .orders-recents {
     width: 100%;
@@ -817,8 +876,90 @@ label#embreve {
     display: none;
 }
 
+.topsettings {
+    display: flex;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+.contashow {
+    display: flex;
+    align-items: center;
+}
+
+.contashow img {
+    margin-right: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 10vw;
+    object-fit: cover;
+}
+
+.contashow p{
+    font-size: 0.9vw;
+    color: grey;
+}
+
+.contashow h1 {
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.titleoption h2{
+    font-weight: 600;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+}
+
+.contentinsidesettings {
+    display: flex;
+}
+
+.leftsidesettingsbar a {
+    display: block;
+    padding: 1vw 2vw 1vw 2vw;
+    background-color: transparent;
+    border: 0.1vw solid rgb(241, 241, 241);
+    text-align: left;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 0.9vw;
+    color: rgb(68, 67, 67);
+}
+
+a.optionselectedsettings {
+    font-weight: 500;
+    border-left: 0.2vw solid var(--rosaprimario);
+    color: black;
+}
+
+.divTable i {
+    font-size: 1vw;
+  }
+  
+  .bxs-chevron-up-circle {
+    color: #00C9A7;
+  }
+  
+  .bxs-chevron-down-circle {
+    color: #D83121;
+  }
+
 
 @media screen and (max-width: 980px) {
+    .divTable i {
+        font-size: 4vw;
+      }
+      
+      .bxs-chevron-up-circle {
+        color: #00C9A7;
+      }
+      
+      .bxs-chevron-down-circle {
+        color: #D83121;
+      }
+
+      
     label#embreve {
         color: rgb(255, 255, 255);
         font-size: 2vw;
@@ -835,6 +976,15 @@ label#embreve {
         position: fixed;
         display: none;
         height: 100vh;
+    }
+
+    .resume {
+        margin: auto;
+        width: 85vw;
+        padding: 5vw;
+        background-color: rgb(238, 236, 236);
+        border-radius: 1vw;
+        font-size: 4vw;
     }
 
     .fixed-bar-left-mobile {
@@ -1066,6 +1216,41 @@ label#embreve {
             margin-bottom: 1vw;
             display: none;
             border-radius: 1vw;
+        }
+
+        .titleplanilhas {
+            background-color: #e4e4e4;
+            margin: auto;
+            padding: 2vw;
+            width: 90vw;
+            border-radius: 1vw;
+            margin-bottom: 2vh;
+            font-size: 2.5vw;
+        }
+        
+        .planilhablock-a {
+            background-color: #e4e4e4;
+            margin: auto;
+            padding: 8vw 4vw 8vw 4vw;
+            width: 90vw;
+            border-radius: 1vw;
+            margin-bottom: 1vh;
+            cursor: pointer;
+            font-size: 3vw;
+        }
+        
+        .planilhablock-a h1 {
+            color: var(--rosaprimario);
+        }
+        
+        .planilhablock-a:hover {
+            background-color: #cecece;
+            transition: 500ms;
+        }
+        
+        .planilhablock-a a {
+            color: black;
+            text-decoration: none;
         }
 
         .accountcontinue {
@@ -1628,9 +1813,11 @@ label#embreve {
             text-align: center;
             border:  none;
             padding: 1vw;
-            margin-top: 1vh;
-            border-radius: 1vw;
+            margin-top: 0vh;
+            border-radius: 0.2vw;
             display: block;
+            border: 0.5vw solid rgb(218, 218, 218);
+            margin-top: 3vh;
         }
 
         .form-profile img {
@@ -1640,8 +1827,8 @@ label#embreve {
         }
 
         .form-profile .fotoperfilprofile {
-            width: 45vw;
-            height: 45vw;
+            width: 35vw;
+            height: 35vw;
             border-radius: 40vw;
             object-fit: cover;
         }
@@ -1652,11 +1839,11 @@ label#embreve {
         }
 
         .titleprofile h1{
-            font-size: 4vw;
+            font-size: 3vw;
         }
 
         .titleprofile p {
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
 
         .form-profile-items {
@@ -1669,15 +1856,15 @@ label#embreve {
         }
 
         .infogeralperfil h1{
-            font-size: 4vw;
-        }
-
-        .infogeralperfil p{
             font-size: 3vw;
         }
 
+        .infogeralperfil p{
+            font-size: 2.5vw;
+        }
+
         .form-profile-items img{
-            width: 50vw;
+            width: 30vw;
             height: 10vw;
             border: 0.1vw solid black;
         }
@@ -1737,5 +1924,69 @@ label#embreve {
             margin-bottom: 2vh;
         }
 
+
+        .topsettings {
+            display: block;
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+        
+        .contashow {
+            display: flex;
+            align-items: center;
+            margin-left: 3vw;
+        }
+        
+        .contashow img {
+            margin-right: 2vw;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 10vw;
+            object-fit: cover;
+        }
+        
+        .contashow p{
+            font-size: 3vw;
+            color: grey;
+        }
+        
+        .contashow h1 {
+            font-size: 4vw;
+            font-weight: 500;
+        }
+        
+        .titleoption h2{
+            font-weight: 600;
+            font-size: 7vw;
+            margin-left: 0vw;
+            margin-bottom: 3vh;
+            margin-top: 3vh;
+            margin-left: 3vw;
+            border-left: 0vw solid var(--rosaprimario);
+            padding-left: 0vw;
+        }
+        
+        .contentinsidesettings {
+            display: block;
+            margin-left: 3vw;
+        }
+        
+        .leftsidesettingsbar a {
+            display: block;
+            padding: 2vw 3vw 2vw 3vw;
+            background-color: transparent;
+            border: 0.5vw solid rgb(241, 241, 241);
+            text-align: left;
+            justify-content: space-between;
+            cursor: pointer;
+            font-size: 4vw;
+            color: rgb(68, 67, 67);
+        }
+        
+        a.optionselectedsettings {
+            font-weight: 500;
+            border-left: 1vw solid var(--rosaprimario);
+            color: black;
+        }
 
 }

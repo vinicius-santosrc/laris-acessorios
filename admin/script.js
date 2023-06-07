@@ -50,6 +50,11 @@ if(username == 'vinicius_santosrc') {
     document.querySelector('p.nomecompleto').innerHTML = `<b>Nome completo:</b> Vinícius da Silva Santos`
     document.querySelector('p.cpf').innerHTML = `<b>CPF:</b> Não informado`
     document.querySelector('p.funcao').innerHTML = `<b>Função:</b> Sócio/Designer/Engenheiro do Software`
+
+    let imgperfilsettings = document.querySelector('.contashowimage img')
+    imgperfilsettings.setAttribute('src', "img/vinicius-profile.jpeg")
+    let nomeusersettings = document.querySelector('.contashowdados h1')
+    nomeusersettings.innerHTML = `Vinícius Santos` 
 }
 
 else if(username == 'larissa.alves') {
@@ -60,6 +65,11 @@ else if(username == 'larissa.alves') {
     document.querySelector('p.nomecompleto').innerHTML = `<b>Nome completo:</b> Larissa Alves de Andrade Moreira`
     document.querySelector('p.cpf').innerHTML = `<b>CPF:</b> Não informado`
     document.querySelector('p.funcao').innerHTML = `<b>Função:</b> Fundadora/Gerente`
+
+    let imgperfilsettings = document.querySelector('.contashowimage img')
+    imgperfilsettings.setAttribute('src', "img/larissa-profile.jpeg")
+    let nomeusersettings = document.querySelector('.contashowdados h1')
+    nomeusersettings.innerHTML = `Larissa Alves` 
 }
 
 function openmenuprofile() {

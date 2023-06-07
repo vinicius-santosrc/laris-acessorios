@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class='menu-profile-change'>
-            <div class="userprofileshow" onclick="window.location.href = 'account.html'">
+            <div class="userprofileshow" onclick="window.location.href = 'settings.html'">
                 <div class="account-show">
                     <img src="img/usuario-sem-foto.png" alt="">
                     <div class="infoaccount">
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="userbuttonsprofile">
-                <div class="button-profile" onclick="window.location.href = 'account.html'">
+                <div class="button-profile" onclick="window.location.href = 'settings.html'">
                     <label>AJUSTES</label>
                 </div>
                 <div class="button-profile" onclick="sairdoprofile()">
@@ -76,10 +76,10 @@
             </div>
         </div>
         <div class="content-page">
-            <div>
+            <div class="topsettings">
                 <div class="contashow">
                     <div class="contashowimage">
-                        <img src="" alt="">
+                        <img src="img/usuario-sem-foto.png" alt="">
                     </div>
                     <div class="contashowdados">
                         <p>Olá,</p>
@@ -89,7 +89,37 @@
                 <div class="titleoption">
                     <h2>Dados pessoais</h2>
                 </div>  
-            </div>     
+            </div> 
+            <div class="contentinsidesettings">
+                <div class="leftsidesettingsbar">
+                    <a class="optionselectedsettings">Dados pessoais</a>
+                    <a onclick="sairdoprofile()">Sair</a>
+                </div>   
+                <div class="contentselectedoption">
+                    <div class="blocks-contents">
+                        <div class='form-profile'>
+                            <div>
+                                <img src="../imgs/Logo.webp" alt="">
+                                <br><img class="fotoperfilprofile" src="img/usuario-sem-foto.png" alt="">
+                            </div>
+                            <div class="form-profile-items">
+                                <div class="titleprofile">
+                                    <h1 class="nameuser">Nome</h1>
+                                    <p class="user">user</p>
+                                </div>
+                                <div class="infogeralperfil">
+                                    <h1>Informações Gerais</h1>
+                                    <p class="nomecompleto">Nome completo: </p>
+                                    <p class="cpf">CPF: não cadastrado</p>
+                                    <p class="funcao">Função: </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+             
         </div>
     </div>
 </body>

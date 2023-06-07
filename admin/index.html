@@ -11,6 +11,7 @@
 
     <script src="login.js"></script>
 
+    
 
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 
@@ -56,7 +57,7 @@
             </div>
         </div>
         <div class='menu-profile-change'>
-            <div class="userprofileshow" onclick="window.location.href = 'account.html'">
+            <div class="userprofileshow" onclick="window.location.href = 'settings.html'">
                 <div class="account-show">
                     <img src="img/usuario-sem-foto.png" alt="">
                     <div class="infoaccount">
@@ -69,7 +70,7 @@
                 </div>
             </div>
             <div class="userbuttonsprofile">
-                <div class="button-profile" onclick="window.location.href = 'account.html'">
+                <div class="button-profile" onclick="window.location.href = 'settings.html'">
                     <label>AJUSTES</label>
                 </div>
                 <div class="button-profile" onclick="sairdoprofile()">
@@ -87,27 +88,27 @@
                         <div>
                             <i class="fa-solid fa-money-bill"></i>
                             <h1>Lucro total</h1>
-                            <h2 class="lucrototal"><label class="lucrototalnumber">R$ 00,00</label></h2>
+                            <h2 class="lucrototal"></h2>
                         </div>
                         <div class="graphcircle graphcircle-total">
                             <div><p>100%</p></div>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
                         <div>
                             <i class="fa-solid fa-piggy-bank"></i>
                             <h1>Entradas</h1>
-                            <h2 class="incomes"><label>R$</label><input type="number" placeholder="00,00" onchange="submitentradas()"></h2>
+                            <h2 class="incomes">R$</h2>
                         </div>
                         <div class="graphcircle graphcircle-entradas">
                             <div><p class="porcentagementrada">0%</p></div>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
                         <div>
                             <i class="fa-solid fa-piggy-bank"></i>
                             <h1>Saídas</h1>
-                            <h2 class="expenses"><label>R$</label><input type="number" placeholder="00,00" onchange="submitsaidas()"></h2>
+                            <h2 class="expenses">R$</h2>
                         </div>
                         <div class="graphcircle graphcircle-saidas">
                             <div><p class="porcentagemsaida">0%</p></div>
@@ -215,7 +216,7 @@
                             </table>
                           </div>
                           <div class="vermaisplanilha">
-                            <a href="planilha.html"><h1>VER MAIS</h1></a>
+                            <a href="planilhaitems.html"><h1>VER MAIS</h1></a>
                           </div>
                     </div>
                 </div>
@@ -223,15 +224,25 @@
         </div>
     </div>
 </body>
+<script>
+    document.querySelector('.lucrototal').innerHTML = 'R$ ' + localStorage.getItem('total')
+    if (localStorage.getItem('total') < 0) {
+        document.querySelector('.lucrototal').style.color = 'red'
+    }
+    else if (localStorage.getItem('total') > 0) {
+        document.querySelector('.lucrototal').style.color = 'green'
+    }
+
+    document.querySelector('.incomes').innerHTML = 'R$ '+ localStorage.getItem('entradas')
+    document.querySelector('.expenses').innerHTML = 'R$ ' + localStorage.getItem('saidas')
+</script>
 <script src="js.js"></script>
-    <script>
-        document.querySelector('.lucrototalnumber').innerHTML = 'R$ ' + (localStorage.getItem('entradas') - localStorage.getItem('saidas'))
-    </script>
     <script src="leftsidebar.js"></script>
     <script src="script.js"></script>
     <script src="planilha.js"></script>
     <script src="index.js"></script>
     <script src="notifications.js"></script>
+    
     <script>
         planilha = JSON.parse(localStorage.getItem('db_items'))
         planilha.forEach(item => {

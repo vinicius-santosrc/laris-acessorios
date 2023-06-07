@@ -19,7 +19,17 @@ configpc = ''
 product = ''
 productpc = ''
 
-if (document.location.pathname == '/admin/planilha.html') {
+if (document.location.pathname == '/admin/planilhas.html') {
+    selectedplanilha = 'id="selectedpage"'
+    selectedplanilhapc = 'id="selectedcardbar"'
+}
+
+if (document.location.pathname == '/admin/planilhaexpenses.html') {
+    selectedplanilha = 'id="selectedpage"'
+    selectedplanilhapc = 'id="selectedcardbar"'
+}
+
+if (document.location.pathname == '/admin/planilhaitems.html') {
     selectedplanilha = 'id="selectedpage"'
     selectedplanilhapc = 'id="selectedcardbar"'
 }
@@ -42,16 +52,9 @@ else if (document.location.pathname == '/admin') {
     
 }
 
-else if (document.location.pathname == '/admin/account.html') {
-    config = 'id="selectedpage"'
-    configpc = 'id="selectedcardbar"'
-    
-}
-
 else if (document.location.pathname == '/admin/settings.html') {
     config = 'id="selectedpage"'
     configpc = 'id="selectedcardbar"'
-    
 }
 
 document.querySelector('.barscript').innerHTML = `
@@ -70,7 +73,7 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="index.html"><i class="fa-solid fa-globe"></i> Dashboard</a>
             </div>
             <div class="item-opcoes-down" ${selectedplanilha}>
-                <a href="planilha.html"><i class="fa-regular fa-calendar-days"></i> Planilha</a>
+                <a href="planilhas.html"><i class="fa-regular fa-calendar-days"></i> Planilha</a>
             </div>
             <div class="item-opcoes-down" ${pedidospen}>
                 <a href="orders.html"><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes <label id="embreve">EM BREVE</label></a>
@@ -101,11 +104,11 @@ document.querySelector('.barscript').innerHTML = `
                     <h1><i class="fa-solid fa-globe"></i> Dashboard</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
-                <a href="planilha.html"><div class="card-bar" ${selectedplanilhapc}>
+                <a href="planilhas.html"><div class="card-bar" ${selectedplanilhapc}>
                     <h1><i class="fa-regular fa-calendar-days"></i> Planilha</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
-                <a href="planilha.html"><div class="card-bar" ${pedidospenpc}>
+                <a href="planilhas.html"><div class="card-bar" ${pedidospenpc}>
                     <h1><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes <label id="embreve">EM BREVE</label></h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
