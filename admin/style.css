@@ -636,7 +636,7 @@ tr th{
 .contentoverview {
     display: flex;
     justify-content: space-between;
-    margin: 3vh;
+    margin: 1vh;
 }
 
 .blocks-contents-right {
@@ -739,6 +739,70 @@ tr th{
     margin-bottom: 1vh;
     cursor: pointer;
 }
+
+.cardmetames {
+    background-color: rgb(238, 236, 236);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 53vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.metasblock {
+    background-color: rgb(238, 236, 236);
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 1vw;
+}
+
+.metasblock {
+    font-size: 0.8vw;
+}
+
+.metaslist {
+    display: block;
+
+}
+
+.metaslist input {
+    width: 100%;
+    background: transparent;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+}
+
+.inputboxmetas {
+    padding: 1vw;
+    background-color: rgb(226, 225, 225);
+    border-radius: 1vw;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
+}
+
+.metasrightside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.metasrightside i {
+    font-size: 1.5vw;
+}
+
+.metasrightside:hover {
+    color: var(--rosaprimario);
+}
+
+.metasblock {
+    margin-right: 1vw;
+    
+}
+
 
 .planilhablock-a h1 {
     color: var(--rosaprimario);

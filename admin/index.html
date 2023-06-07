@@ -79,10 +79,21 @@
             </div>
         </div>
         <div class="content-page">
+            <div class="cardmetames" onclick="window.location.href='goals.html'">
+                <div>
+                    <h1><i class="fa-solid fa-bullseye"></i> Suas Metas:</h1>
+                    <p class="panual">Anual: </p>
+                    <p class="pmes">Mensal: </p>
+                </div>
+                <div class="metasrightside">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
             <div class="contentoverview">
                 <div class="toptitlecardmobile">
                     <h1>Dashboard</h1>
                 </div>
+                
                 <div class="blocks-contents">
                     <div class="block">
                         <div>
@@ -199,7 +210,7 @@
                         <div class="planilhablockindex">
                             <a href="planilhaitems.html">
                                 <h2>Planilha de Itens</h2>
-                                <p>Armazenamento de dados de items para compras.</p>
+                                <p>Armazenamento de dados de itens para compras.</p>
                             </a>
                         </div>
                         <div class="planilhablockindex">
@@ -226,6 +237,10 @@
 
     document.querySelector('.incomes').innerHTML = 'R$ '+ localStorage.getItem('entradas')
     document.querySelector('.expenses').innerHTML = 'R$ ' + localStorage.getItem('saidas')
+</script>
+<script>
+    document.querySelector('.panual').innerHTML = 'Anual: ' + localStorage.getItem('meta_anual')
+    document.querySelector('.pmes').innerHTML = 'Mensal: ' + localStorage.getItem('meta_mes')
 </script>
 <script src="js.js"></script>
     <script src="leftsidebar.js"></script>

@@ -35,7 +35,7 @@
             <div class="openmenumobile" onclick="abrirmenumobile()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <h1>Planilha</h1>
+            <h1>Metas</h1>
             <div class="profile">
                 <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
 
@@ -76,31 +76,39 @@
             </div>
         </div>
         <div class="content-page">
-            <div class="titleplanilhas">
-                <h1>Selecione uma planilha</h1>
-                <p>Escolha uma opção de planilha</p>
-            </div>
-            <div class="planilhaslist">
-                <div class="planilhablock-a">
-                    <a href="planilhaitems.html">
-                        <div class="planilhablock">
-                            <h1><i class="fa-regular fa-gem"></i> Planilha de Itens</h1>
-                            <p>Armazenamento de dados de itens para compras</p>
-                        </div>
-                    </a>
+            <div class="metasblock">
+                <h1>Adicione suas Metas</h1>
+                <p>Coloque as informações necessárias.</p>
+                <P>Não precisa colocar "R$".</P>
+                <div class="metaslist">
+                    <div class="inputboxmetas">
+                        <label>Anual</label><br>
+                        <input type="text" id="anual" placeholder="R$" onchange="newanualmeta()">
+                    </div>
+                    
+                    <div class="inputboxmetas">
+                        <label>Mensal</label><br>
+                        <input type="text" id="mensal" placeholder="R$" onchange="newmesmeta()">
+                    </div>
                 </div>
-                <div class="planilhablock-a">
-                    <a href="planilhaexpenses.html">
-                        <div class="planilhablock">
-                            <h1><i class="fa-solid fa-hand-holding-dollar"></i> Planilha de Despesas</h1>
-                            <p>Despesas e Receitas</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
 </body>
+    <script>
+        let meta_anual = document.querySelector('#anual')
+        let meta_mes = document.querySelector('#mensal')
+
+        function newanualmeta() {
+            localStorage.setItem('meta_anual', meta_anual.value)
+        }
+        function newmesmeta() {
+            localStorage.setItem('meta_mes', meta_mes.value)
+        }
+
+        meta_anual.value = localStorage.getItem('meta_anual')
+        meta_mes.value = localStorage.getItem('meta_mes')
+    </script>
     <script src="script.js"></script>
     <script src="leftsidebar.js"></script>
     <script src="notifications.js"></script>

@@ -40,6 +40,12 @@ else if (document.location.pathname == '/admin/index.html') {
     
 }
 
+else if (document.location.pathname == '/admin/goals.html') {
+    selectdashboard = 'id="selectedpage"'
+    selectdashboardpc = 'id="selectedcardbar"'
+    
+}
+
 else if (document.location.pathname == '/admin/') {
     selectdashboard = 'id="selectedpage"'
     selectdashboardpc = 'id="selectedcardbar"'
