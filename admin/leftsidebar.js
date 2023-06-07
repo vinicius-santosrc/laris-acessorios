@@ -30,7 +30,25 @@ else if (document.location.pathname == '/admin/index.html') {
     
 }
 
+else if (document.location.pathname == '/admin/') {
+    selectdashboard = 'id="selectedpage"'
+    selectdashboardpc = 'id="selectedcardbar"'
+    
+}
+
+else if (document.location.pathname == '/admin') {
+    selectdashboard = 'id="selectedpage"'
+    selectdashboardpc = 'id="selectedcardbar"'
+    
+}
+
 else if (document.location.pathname == '/admin/account.html') {
+    config = 'id="selectedpage"'
+    configpc = 'id="selectedcardbar"'
+    
+}
+
+else if (document.location.pathname == '/admin/settings.html') {
     config = 'id="selectedpage"'
     configpc = 'id="selectedcardbar"'
     

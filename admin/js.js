@@ -23,7 +23,7 @@ function submitsaidas() {
 }
 
 function lucrototal() {
-  document.querySelector('.lucrototalnumber').innerHTML = localStorage.getItem('entradas') - localStorage.getItem('saidas')
+  document.querySelector('.lucrototalnumber').innerHTML = 'R$ ' + (localStorage.getItem('entradas') - localStorage.getItem('saidas'))
 }
 
 document.querySelector('.incomes input').value = localStorage.getItem('entradas')
