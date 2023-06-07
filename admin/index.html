@@ -193,32 +193,23 @@
             <div class="contentoverview">
                 <div class="block-recent-orders">
                     <div class="toptitlecard">
-                        <h1>Planilha</h1>
+                        <h1>Planilhas</h1>
                     </div>
                     <div class="planilha-recents">
-                        <div class="planilha-recents-planner">
-                            <table>
-                              <thead class="columsplanilha">
-                                <tr>
-                                  <th class="columnCodigo">Código</th>
-                                  <th class="columnNome">Nome</th>
-                                  <th class="columnDetalhe">Detalhe</th>
-                                  <th class="columnPrecoCompra">Preço Compra</th>
-                                  <th class="columnPrecoRevenda">Preço Revenda</th>
-                                  <th class="columnQuantidadeCompra">Quantidade Compra</th>
-                                  <th class="columnQuantidade Estoque">Quantidade Estoque</th>
-                                  <th class="columnAction"></th>
-                                </tr>
-                              </thead>
-                              <tbody class="tbodyplanilharecents">
-                              </tbody>
-                              
-                            </table>
-                          </div>
-                          <div class="vermaisplanilha">
-                            <a href="planilhaitems.html"><h1>VER MAIS</h1></a>
-                          </div>
+                        <div class="planilhablockindex">
+                            <a href="planilhaitems.html">
+                                <h2>Planilha de Itens</h2>
+                                <p>Armazenamento de dados de items para compras.</p>
+                            </a>
+                        </div>
+                        <div class="planilhablockindex">
+                            <a href="planilhaexpenses.html">
+                                <h2>Planilha de Despesas</h2>
+                                <p>Despesas e Receitas.</p>
+                            </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -257,5 +248,12 @@
             <th>${item.quantestoque}</th>
         </tr>`
         })
+    </script>
+    <script>
+        if(localStorage.getItem('total') == null) {
+            document.querySelector('.lucrototal').innerHTML = ''
+            document.querySelector('.incomes').innerHTML = ''
+            document.querySelector('.expenses').innerHTML = ''
+        }
     </script>
 </html>
