@@ -18,13 +18,8 @@
 
     <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
 
-    <script src="js.js"></script>
-
     <script>
         loginrequired()
-        lucrototal()
-        document.querySelector('.incomes input').value = localStorage.getItem('entradas')
-        document.querySelector('.expenses input').value = localStorage.getItem('saidas')
     </script>
 
 </head>
@@ -228,12 +223,15 @@
         </div>
     </div>
 </body>
+<script src="js.js"></script>
+    <script>
+        document.querySelector('.lucrototalnumber').innerHTML = localStorage.getItem('entradas') - localStorage.getItem('saidas')
+    </script>
     <script src="leftsidebar.js"></script>
     <script src="script.js"></script>
     <script src="planilha.js"></script>
     <script src="index.js"></script>
     <script src="notifications.js"></script>
-    <script src="js.js"></script>
     <script>
         planilha = JSON.parse(localStorage.getItem('db_items'))
         planilha.forEach(item => {

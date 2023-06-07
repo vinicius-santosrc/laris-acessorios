@@ -10,6 +10,26 @@ const total = document.querySelector(".total");
 
 let items;
 
+function submitentradas() {
+  let incomes = document.querySelector('.incomes input').value
+  localStorage.setItem('entradas', incomes)
+  lucrototal()  
+}
+
+function submitsaidas() {
+  let expenses = document.querySelector('.expenses input').value
+  localStorage.setItem('saidas', expenses)
+  lucrototal()
+}
+
+function lucrototal() {
+  document.querySelector('.lucrototalnumber').innerHTML = localStorage.getItem('entradas') - localStorage.getItem('saidas')
+}
+
+document.querySelector('.incomes input').value = localStorage.getItem('entradas')
+document.querySelector('.expenses input').value = localStorage.getItem('saidas')
+
+
 btnNew.onclick = () => {
   if (descItem.value === "" || amount.value === "" || type.value === "") {
     return alert("Preencha todos os campos!");
@@ -100,21 +120,4 @@ function openluminati() {
 
 function opency() {
   document.querySelector('.cyabrir').style.display = 'block'
-}
-
-function submitentradas() {
-  let incomes = document.querySelector('.incomes input').value
-  localStorage.setItem('entradas', incomes)
-  lucrototal()  
-}
-
-function submitsaidas() {
-  let expenses = document.querySelector('.expenses input').value
-  localStorage.setItem('saidas', expenses)
-  lucrototal()
-}
-
-function lucrototal() {
-  let lucrolabel = document.querySelector('.lucrototalnumber')
-  lucrolabel.innerHTML = `R$ ${localStorage.getItem('entradas') - localStorage.getItem('saidas')}`
 }
