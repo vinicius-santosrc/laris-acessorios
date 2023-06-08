@@ -239,8 +239,9 @@
     document.querySelector('.expenses').innerHTML = 'R$ ' + localStorage.getItem('saidas')
 </script>
 <script>
-    document.querySelector('.panual').innerHTML = 'Anual: ' + localStorage.getItem('meta_anual')
-    document.querySelector('.pmes').innerHTML = 'Mensal: ' + localStorage.getItem('meta_mes')
+    document.querySelector('.panual').innerHTML = 'Anual: R$ ' + localStorage.getItem('meta_anual')
+    document.querySelector('.pmes').innerHTML = 'Mensal: R$ ' + localStorage.getItem('meta_mes')
+
 </script>
 <script src="js.js"></script>
     <script src="leftsidebar.js"></script>
@@ -271,4 +272,5 @@
             document.querySelector('.expenses').innerHTML = ''
         }
     </script>
+
 </html>

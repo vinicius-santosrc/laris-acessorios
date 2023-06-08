@@ -1346,6 +1346,94 @@ a.optionselectedsettings {
             cursor: pointer;
         }
 
+        .cardmetames {
+            background-color: var(--rosaprimario);
+            border-radius: 1vw;
+            padding: 3vw;
+            width: 90vw;
+            margin: auto;
+
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .metasblock {
+            background-color: rgb(238, 236, 236);
+            padding: 6vw;
+            margin: 4vw;
+            border-radius: 1vw;
+        }
+        
+        .metasblock {
+            font-size: 0.8vw;
+        }
+
+        .cardmetames h1{
+            font-size: 5vw;
+            color: white;
+        }
+
+        .cardmetames p{
+            font-size: 4vw;
+            color: white;
+        }
+        
+        .metaslist {
+            display: block;
+        
+        }
+        
+        .metaslist input {
+            width: 100%;
+            background: transparent;
+            font-size: 4vw;
+            border: none;
+            outline: none;
+        }
+        
+        .inputboxmetas {
+            padding: 3vw;
+            background-color: rgb(226, 225, 225);
+            border-radius: 2vw;
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+        }
+        
+        .metasrightside {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .metasrightside i {
+            font-size: 5vw;
+            color: white;
+        }
+        
+        .metasrightside:hover {
+            color: var(--rosaprimario);
+        }
+        
+        .metasblock {
+            margin-right: 1vw;
+            
+        }
+
+        .metasblock h1 {
+            font-size: 5vw;
+        }
+
+        .metasblock p {
+            font-size: 3.5vw;
+        }
+
+        .metasblock label {
+            font-size: 3vw;
+            font-weight: 700;
+        }
+        
+
         .accountcontinue:hover {
             transition: 500ms;
             background-color: #c5c5c5;
