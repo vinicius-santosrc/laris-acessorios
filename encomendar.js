@@ -4378,6 +4378,75 @@ Swal.fire({
   })
 }
 
+function prata_colar_elos_de_coracao_enco() {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  })
+
+Swal.fire({
+    title: 'Você deseja adicionar <b>Extensor (+4cm)</b>',
+    icon: 'info',
+    html:
+      `
+      <div class='item-prata'>
+          <img src="../imgs/extensor (1).jpeg" alt="">
+          <div class="text-prata">
+              <p class='novidade-loja'>Novo</p>
+              <h1 class="nome-prata">Extensor (+4cm)</h1>
+              <div class='estrelas'>
+                  <img src="../imgs/Nenhuma estrela.png" alt="">
+              </div>
+              <div class="promocao">
+                  <p class="preço-promo"><s>R$ 13,00</s>
+                  <p class="preço-loja">R$ 8,50</p>
+                  <p class="opcoesdepaga">(comprado junto com produtos)</p>
+              </div>
+              
+          </div>
+      </div>
+` +
+      '+ R$ 8,50 na soma total',
+      showCancelButton: true,
+      confirmButtonColor: '#EF59A0',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'ADICIONAR',
+      cancelButtonText: 'NÃO '
+}).then((result) => {
+    if (result.isConfirmed) {
+        tarefas.push('Colar Elos de Coração'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+        mostraTarefas()
+        salvarNoLocalStorage()
+        tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
+        mostraTarefas()
+        salvarNoLocalStorage()
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Produto adicionado à sacola + Extensor(+4cm)',
+          showConfirmButton: false,
+          timer: 1500
+        })
+    } else if (
+        result.dismiss
+    ){
+        tarefas.push('Colar Elos de Coração' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+        mostraTarefas()
+        salvarNoLocalStorage()
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Produto adicionado à sacola',
+          showConfirmButton: false,
+          timer: 1500
+        })
+    }
+  })
+}
+
 function kit_annefrank_enco() {
   Swal.fire({
     position: 'top-end',
