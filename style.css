@@ -396,11 +396,12 @@ a {
 
 .maisprodutos {
     width: 65vw;
-    background: rgb(255, 255, 255);
+    background: transparent;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 1vh;
-    padding-bottom: 3vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 2vw;
+    border-radius: 1vw;
 }
 
 .produtoslista {
@@ -465,12 +466,14 @@ p.new {
 }
 
 .maisprodutos h1:nth-child(1){
-    font-size: 2.5vw;
-    padding-top: 5vh;
-    margin-bottom: 1vh;
+    font-size: 1.5vw;
+    padding-top: 0vh;
+    margin-bottom: 0vh;
     width: 100%;
-    font-weight: 400;
+    font-weight: 500;
     border-bottom: transparent;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .imgitemflex {
@@ -553,6 +556,7 @@ p.new {
     justify-content: center;
     margin: auto;
     width: 20vw;
+    align-items: center;
 }
 
 .etapa i {
@@ -561,6 +565,7 @@ p.new {
 }
 .etapa p {
     font-size: 1vw;
+    text-transform: uppercase;
 }
 
 .itensdesc h1 {
@@ -1942,26 +1947,20 @@ label#cart {
 }
 
 .card-terceiros {
-    width: 26.5vw;
+    width: 17vw;
     border-radius: 0vw;
     margin-left: 1vw;
     margin-right: 1vw;
     padding: 1vw;
-    background: #fbfbfd56;
+    background: white;
+
     cursor: pointer;
     border: transparent;
-    box-shadow: 0.01vw 0.01vw 0.5vw rgb(94, 94, 94);
+    box-shadow: 0vw;
     transition: 500ms;
     align-items: center;
     
     
-}
-
-.card-terceiros:hover, .card-quartos:hover {
-    transition: 500ms;
-    background: white;
-    box-shadow: 0.01vw 0.01vw 1vw rgb(94, 94, 94);
-    transform: scale(1.05);
 }
 
 .produtoslista .card-terceiros:hover, .produtoslista .card-quartos:hover {
@@ -1986,20 +1985,20 @@ label#cart {
 }
 
 .card-secundarios h1, .card-terceiros h1, .card-quartos h1 {
-    font-size: 2vw;
+    font-size: 1vw;
     color: rgb(0, 0, 0);
 }
 
 .card-secundarios p, .card-terceiros p, .card-quartos p {
-    font-size: 1.5vw;
+    font-size: 0.8vw;
     color: rgb(0, 0, 0);
 } 
 
 .card-secundarios img, .card-terceiros img, .card-quartos img {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     object-fit: cover;
-    border-radius: 1vw;
+    border-radius: 0.2vw;
 }
 
 .produtosrecomendados {
@@ -2561,6 +2560,7 @@ img#colar-- {
     margin-bottom: 1vh;
     margin-right: 0.4vw;
     border: 0.1vw solid rgb(245, 245, 245);
+    color: black;
 }
 
 .item-prata:hover {
@@ -3239,6 +3239,7 @@ img#colar-- {
 .content-inside-item img {
     width: 15vw;
 }
+
 
 .content-inside-item-left-side .childinside {
     font-size: 0.7vw;
@@ -3931,6 +3932,7 @@ h2.extensorfrase {
     }
     .etapa p {
         font-size: 2vw;
+        text-transform: none;
     }
 
     .infocompra {
@@ -4875,11 +4877,12 @@ h2.extensorfrase {
     .maisprodutos h1:nth-child(1){
         font-size: 7vw;
         padding-top: 5vh;
-        margin-bottom: 2vh;
+        margin-bottom: 3vh;
         width: 100%;
-        text-align: left;
+        text-align: center;
         border-bottom: 0vw solid transparent;
-        font-weight: 400;
+        font-weight: 600;
+
     }
 
     .imgitemflex {
@@ -5046,7 +5049,7 @@ h2.extensorfrase {
 
     .compartilhar {
         margin-top: 2vh;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         text-align: center;
     }
 
@@ -5857,7 +5860,7 @@ h2.extensorfrase {
     }
     
     .comentarios h1 {
-        font-size: 7vw;
+        font-size: 6.3vw;
         font-weight: 400;
     }
     
@@ -5872,7 +5875,7 @@ h2.extensorfrase {
     }
     
     .comentarios1 p{
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
     
     .comentarios2 h2 {
@@ -5937,10 +5940,10 @@ h2.extensorfrase {
     }
     
     .obs-coments-sem a {
-        font-size: 4vw;
+        font-size: 3.5vw;
         margin-bottom: 5vh;
         background-color: #f772b0;
-        padding: 4vw 9vw 4vw 9vw;
+        padding: 4vw 15vw 4vw 15vw;
         color: rgb(248, 248, 248);
     
     }
