@@ -82,47 +82,60 @@
             <div class="cardmetames" onclick="window.location.href='goals.html'">
                 <div>
                     <h1><i class="fa-solid fa-bullseye"></i> Suas Metas:</h1>
-                    <p class="panual">Anual: </p>
-                    <p class="pmes">Mensal: </p>
+                    <p class="panual"></p>
+                    <p class="pmes"></p>
+                    <div class="metasparaalcancar">
+                        <p class="counttometaanual"></p>
+                        <p class="counttometa"></p>
+                    </div>
                 </div>
                 <div class="metasrightside">
+                    <div class="imgrightside">
+                        <img src="" alt="">
+                    </div>
                     <i class="fa-solid fa-gear"></i>
                 </div>
             </div>
+            
             <div class="contentoverview">
                 <div class="toptitlecardmobile">
                     <h1>Dashboard</h1>
                 </div>
-                
-                <div class="blocks-contents">
-                    <div class="block">
-                        <div>
-                            <i class="fa-solid fa-money-bill"></i>
-                            <h1>Lucro total</h1>
-                            <h2 class="lucrototal"></h2>
-                        </div>
-                        <div class="graphcircle graphcircle-total">
-                            <div><p>100%</p></div>
-                        </div>
+            
+                <div>
+                    <div class="toptitlecard">
+                        <h1>Visão Geral</h1>
                     </div>
-                    <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
-                        <div>
-                            <i class="fa-solid fa-piggy-bank"></i>
-                            <h1>Entradas</h1>
-                            <h2 class="incomes">R$</h2>
+                    <div class="blocks-contents">
+                        <div class="block">
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <h1>Lucro total</h1>
+                                <h2 class="lucrototal"></h2>
+                            </div>
+                            <div class="graphcircle graphcircle-total">
+                                <div><p>100%</p></div>
+                            </div>
                         </div>
-                        <div class="graphcircle graphcircle-entradas">
-                            <div><p class="porcentagementrada">0%</p></div>
+                        <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
+                            <div>
+                                <i class="fa-solid fa-piggy-bank"></i>
+                                <h1>Entradas</h1>
+                                <h2 class="incomes">R$</h2>
+                            </div>
+                            <div class="graphcircle graphcircle-entradas">
+                                <div><p class="porcentagementrada">0%</p></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
-                        <div>
-                            <i class="fa-solid fa-piggy-bank"></i>
-                            <h1>Saídas</h1>
-                            <h2 class="expenses">R$</h2>
-                        </div>
-                        <div class="graphcircle graphcircle-saidas">
-                            <div><p class="porcentagemsaida">0%</p></div>
+                        <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
+                            <div>
+                                <i class="fa-solid fa-piggy-bank"></i>
+                                <h1>Saídas</h1>
+                                <h2 class="expenses">R$</h2>
+                            </div>
+                            <div class="graphcircle graphcircle-saidas">
+                                <div><p class="porcentagemsaida">0%</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,6 +209,9 @@
                 <div class="blocks-contents-right">
                     <div class="toptitlecard">
                         <h1>Notificações Recentes</h1>
+                    </div>
+                    <div class="notifications-blocks">
+                        
                     </div>
                     
 
@@ -271,6 +287,68 @@
             document.querySelector('.incomes').innerHTML = ''
             document.querySelector('.expenses').innerHTML = ''
         }
+    </script>
+    <script>
+        let metamensal = localStorage.getItem('meta_mes') - localStorage.getItem('total')
+        let metaanual = localStorage.getItem('meta_anual') - localStorage.getItem('total')
+
+        if (metamensal <= 0) {
+            document.querySelector('.counttometa').innerHTML = `Você alcançou sua meta mensal está com R$${localStorage.getItem('total') - localStorage.getItem('meta_mes')} de lucro.`
+            document.querySelector('.counttometa').style.color = 'green'
+        }
+        else {
+            document.querySelector('.counttometa').innerHTML = `Faltam: R$${localStorage.getItem('meta_mes') - localStorage.getItem('total')
+            } para alcançar sua meta mensal`
+        }
+
+        if (metaanual <= 0) {
+            document.querySelector('.counttometaanual').innerHTML = `Você alcançou sua meta anual está com R$${localStorage.getItem('total') - localStorage.getItem('meta_anual')} de lucro.`
+            document.querySelector('.counttometaanual').style.color = 'green'
+        }
+
+        else {
+            document.querySelector('.counttometaanual').innerHTML = `Faltam: R$${localStorage.getItem('meta_anual') - localStorage.getItem('total')} para alcançar sua meta anual`
+        }
+
+        if(metamensal <= 0 && metaanual <= 0) {
+            document.querySelector('.cardmetames').style.background = 'green'
+            document.querySelector('.cardmetames').style.color = 'white'
+
+
+        }
+
+        if (localStorage.getItem('meta_mes') == null || localStorage.getItem('meta_mes') == '') {
+            document.querySelector('.pmes').innerHTML = 'Mensal: <b>Não definido</b>'
+            document.querySelector('.cardmetames').style.background = '#FF449E'
+            document.querySelector('.cardmetames').style.color = 'white'
+
+            document.querySelector('.counttometa').innerHTML = ''
+        }
+
+        if (localStorage.getItem('meta_anual') == null || localStorage.getItem('meta_anual') == '') {
+            document.querySelector('.panual').innerHTML = 'Anual: <b>Não definido</b>'
+            document.querySelector('.cardmetames').style.background = '#FF449E'
+            document.querySelector('.cardmetames').style.color = 'white'
+
+            document.querySelector('.counttometaanual').innerHTML = ''
+        }
+
+
+
+        if(metamensal <= 0 || metaanual <= 0) {
+            document.querySelector('.imgrightside img').setAttribute('src', 'img/50.png')
+        }
+
+        if (metamensal <= 0 && metaanual <= 0){
+            document.querySelector('.imgrightside img').setAttribute('src', 'img/100.png')
+        }
+
+        if (metamensal > 0 && metaanual > 0) {
+            document.querySelector('.imgrightside img').setAttribute('src', 'img/0.png')
+        }
+        
+        
+
     </script>
 
 </html>

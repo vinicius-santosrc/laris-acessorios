@@ -42,6 +42,19 @@
     padding-right: 1.5vw;
 }
 
+.metasparaalcancar {
+    background-color: white;
+    padding: 1vw;
+    margin-top: 1vh;
+    border-radius: 1vw;
+}
+
+.counttometaanual, .counttometa {
+    color: rgb(2, 2, 2);
+    font-weight: 600;
+}
+
+
 .options h1{
     color: rgb(0, 0, 0);
     font-size: 01vw;
@@ -741,8 +754,9 @@ tr th{
 }
 
 .cardmetames {
-    background-color: rgb(238, 236, 236);
+    background-color: var(--rosaprimario);
     margin-left: 1vw;
+    color: white;
     margin-right: 1vw;
     border-radius: 1vw;
     padding: 1vw;
@@ -750,6 +764,7 @@ tr th{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    font-size: 0.8vw;
 }
 
 .metasblock {
@@ -811,6 +826,10 @@ tr th{
 .planilhablock-a:hover {
     background-color: #cecece;
     transition: 500ms;
+}
+
+.cardtitlepc {
+    display: block;
 }
 
 .planilhablock-a a {
@@ -887,6 +906,11 @@ tr th{
     padding: 0vw;
     margin-bottom: 1vh;
     border-radius: 0vw;
+}
+
+.imgrightside img{
+    width: 7vw;
+    margin-right: 3vw;
 }
 
 .blockfornecedores-add h1 {
@@ -1249,6 +1273,8 @@ a.optionselectedsettings {
             margin-right: 2vw;
         }
 
+        
+
         .accountcontinue-details {
             display: block;
             
@@ -1348,11 +1374,11 @@ a.optionselectedsettings {
 
         .cardmetames {
             background-color: var(--rosaprimario);
-            border-radius: 1vw;
+            border-radius: 2vw;
             padding: 3vw;
             width: 90vw;
             margin: auto;
-
+            color: white;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -1371,12 +1397,12 @@ a.optionselectedsettings {
 
         .cardmetames h1{
             font-size: 5vw;
-            color: white;
+            
         }
 
         .cardmetames p{
             font-size: 4vw;
-            color: white;
+            
         }
         
         .metaslist {
@@ -1409,6 +1435,7 @@ a.optionselectedsettings {
         .metasrightside i {
             font-size: 5vw;
             color: white;
+            display: none;
         }
         
         .metasrightside:hover {
@@ -1524,6 +1551,11 @@ a.optionselectedsettings {
             z-index: 100;
         }
 
+        .imgrightside img{
+            width: 25vw;
+            margin-right: 3vw;
+        }
+
         .userprofileshow {
             display: flex;
             align-items: center;
@@ -1585,6 +1617,9 @@ a.optionselectedsettings {
             cursor: pointer;
         }
 
+        .cardtitlepc {
+            display: none;
+        }
         .button-profile label {
             cursor: pointer;
         }
@@ -2157,4 +2192,19 @@ a.optionselectedsettings {
             color: black;
         }
 
+        .metasparaalcancar {
+            background-color: white;
+            padding: 1vw;
+            margin-top: 1vh;
+            border-radius: 1vw;
+            width: 90%;
+        }
+        
+        p.counttometaanual, p.counttometa {
+            font-weight: 600;
+            font-size: 3vw;
+            width: 100%;
+        }
+
+        
 }
