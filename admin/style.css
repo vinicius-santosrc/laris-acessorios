@@ -1447,6 +1447,8 @@ a.optionselectedsettings {
             
         }
 
+        
+
         .metasblock h1 {
             font-size: 5vw;
         }
@@ -2206,5 +2208,8 @@ a.optionselectedsettings {
             width: 100%;
         }
 
+        .pctitledisplayonly {
+            display: none;
+        }
         
 }
