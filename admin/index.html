@@ -346,6 +346,7 @@
         }
 
         if (localStorage.getItem('meta_mes') == null || localStorage.getItem('meta_mes') == '') {
+            document.querySelector('.metasparaalcancar').style.display = 'none'
             document.querySelector('.imgrightside img').setAttribute('src', 'img/0.png')
         }
 
