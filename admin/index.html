@@ -323,6 +323,8 @@
             document.querySelector('.cardmetames').style.color = 'white'
 
             document.querySelector('.counttometa').innerHTML = ''
+
+            document.querySelector('.imgrightside img').setAttribute('src', 'img/0.png')
         }
 
         if (localStorage.getItem('meta_anual') == null || localStorage.getItem('meta_anual') == '') {
@@ -343,10 +345,10 @@
             document.querySelector('.imgrightside img').setAttribute('src', 'img/100.png')
         }
 
-        if (metamensal > 0 && metaanual > 0) {
+        if (localStorage.getItem('meta_mes') == null || localStorage.getItem('meta_mes') == '') {
             document.querySelector('.imgrightside img').setAttribute('src', 'img/0.png')
         }
-        
+
         
 
     </script>
