@@ -1100,3 +1100,13 @@ function colarturmalinaimg() {
     let colar = '../imgs/colar-turmalina.jpeg'
     document.querySelector('.imagemprincipal').innerHTML = `<img src="` + colar + `"alt="">`
 }
+
+function anelcravejado1() {
+    let anel = '../imgs/anel-cravejado-_1_.webp'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + anel + `"alt="">`
+}
+
+function anelcravejado2() {
+    let anel = '../imgs/anel-cravejado-_2_.webp'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + anel + `"alt="">`
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -92,22 +93,12 @@
     </div>
 
     <section>
-        <div class="card">
-            <div class='leftside'>
-                <div class='direct'>
-                    <label><a href="index.html">Página Inicial</a>><a href="">PIERCING</a></label>
-                </div>
-                <div class="topcard">
-                    <h1>PIERCING</h1>
-                    <p>2 Produtos</p>
-                </div>
-                <div>
-                    <p class='desccard'>A Prata de Lei também é conhecida pelos brasileiros como Prata 925. Ambas são ideais para a fabricação de joias e têm grau de pureza de 92,5%, respectivamente, o que garante a qualidade, o brilho e a durabilidade de uma joia em prata.<br>Fonte: pratafina.com.br</p>
-                </div>
-            </div>
-            <div class="imgside">
-                <img src="imgs/pratas925.png" alt="">
-            </div>
+
+        <div class="novidades-capa">
+            <img src="./imgs/promocoescardpc.png" alt="">
+        </div>
+        <div class="novidades-capa-cell">
+            <img src="./imgs/promocoescardcell.png" alt="">
         </div>
 
         <section class="quadros-inicio">
@@ -118,42 +109,17 @@
             <div class="filtros-op">
                 <a href="pratas.html">
                     <div>
-                        <label>TUDO <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>PRATAS 925 <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
-                <a href="pratas-colares.html">
+                <a href="micangas.html">
                     <div>
-                        <label>COLARES <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>MIÇANGAS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
-                <a href="pratas-brincos.html">
+                <a href="cetim.html">
                     <div>
-                        <label>BRINCOS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-aneis.html">
-                    <div>
-                        <label>ANÉIS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-pulseiras.html">
-                    <div>
-                        <label>PULSEIRAS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-braceletes.html">
-                    <div>
-                        <label>BRACELETES <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-tornozeleira.html">
-                    <div>
-                        <label>TORNOZELEIRA <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-piercing.html">
-                    <div>
-                        <label class='selected'>PIERCING <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>CETIM <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
             </div>
@@ -164,42 +130,17 @@
             <div class="filtros-op-cell">
                 <a href="pratas.html">
                     <div>
-                        <label>TUDO <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>PRATAS 925 <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
-                <a href="pratas-colares.html">
+                <a href="micangas.html">
                     <div>
-                        <label>COLARES <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>MIÇANGAS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
-                <a href="pratas-brincos.html">
+                <a href="cetim.html">
                     <div>
-                        <label>BRINCOS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-aneis.html">
-                    <div>
-                        <label>ANÉIS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-pulseiras.html">
-                    <div>
-                        <label>PULSEIRAS <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-braceletes.html">
-                    <div>
-                        <label>BRACELETES <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-tornozeleira.html">
-                    <div>
-                        <label>TORNOZELEIRA <i class="fa-sharp fa-solid fa-caret-down"></i></label>
-                    </div>
-                </a>
-                <a href="pratas-piercing.html">
-                    <div>
-                        <label class='selected'>PIERCING <i class="fa-sharp fa-solid fa-caret-down"></i></label>
+                        <label>CETIM <i class="fa-sharp fa-solid fa-caret-down"></i></label>
                     </div>
                 </a>
             </div>
@@ -208,9 +149,11 @@
         <section class="ordenar">
             <label for="select">ORDENAR POR</label>
             <select>
-                <option class="ordenarselect" selected value="MAIS RECENTES">MAIS RECENTES</option>
+                <option class="ordenarselect">MAIS RECENTES</option>
             </select>
         </section>
+
+        
 
         <section class="ordenar-cell">
             <div class='option-order' onclick="openfiltros()">
@@ -219,45 +162,23 @@
             <div class='option-order2'>
                 <label for="select">ORDENAR POR</label>
                 <select>
-                    <option class="ordenarselect" selected value="MAIS RECENTES">MAIS RECENTES</option>
+                    <option class="ordenarselect">MAIS RECENTES</option>
                 </select>
             </div>
         </section>
 
-
         <div class='estoque-prata'>
-
-            <a href="prata/piercing-argolinha-cristal.html">
+            <a href="prata/tornozeleira-coracao.html">
                 <div class='item-prata'>
-                    <img src="./imgs/piercing-argolinha-cristal (1).jpeg" alt="">
+                    <img src="./imgs/Tornozeleira Coração (5).jpeg" alt="">
                     <div class="text-prata">
-                        <p class='novidade-loja'>Novo</p>
-                        <h1 class="nome-prata">Piercing Argolinha Cristal</h1>
+                        <p class='novidade-loja'>Disponível</p>
+                        <h1 class="nome-prata">Tornozeleira Coração</h1>
                         <div class='estrelas'>
                             <img src="imgs/Nenhuma estrela.png" alt="">
                         </div>
                         <div class="promocao">
-                            <p class="preço-loja">R$ 40,00</p>
-                            <p class="opcoesdepaga">Pague à vista ou Pix</p>
-                        </div>
-                        <div class="botaocomprarprata">
-                            <label>VER DETALHES</label>
-                        </div>
-                         
-                    </div>
-                </div>
-            </a>
-            <a href="prata/piercing-fake-laço-cravejado.html">
-                <div class='item-prata'>
-                    <img src="./imgs/piercing-fake-laço-cravejado (1).jpeg" alt="">
-                    <div class="text-prata">
-                        <p class='esgotado-loja'>ESGOTADO</p>
-                        <h1 class="nome-prata">Piercing Fake Laço Cravejado</h1>
-                        <div class='estrelas'>
-                            <img src="imgs/Nenhuma estrela.png" alt="">
-                        </div>
-                        <div class="promocao">
-                            <p class="preço-loja">R$ 35,00</p>
+                            <p class="preço-loja"><s style="color: darkgray;">R$155,00</s> R$ 90,00</p>
                             <p class="opcoesdepaga">Pague à vista ou Pix</p>
                         </div>
                         <div class="botaocomprarprata">
@@ -268,6 +189,27 @@
                 </div>
             </a>
             
+            <a href="prata/pulseira-detalhada.html">
+                <div class='item-prata'>
+                    <img src="./imgs/Pulseira-Detalhada (2).jpeg" alt="">
+                    <div class="text-prata">
+                        <p class='novidade-loja'>Disponível</p>
+                        <h1 class="nome-prata">Pulseira Detalhada</h1>
+                        <div class='estrelas'>
+                            <img src="imgs/5 estrelas.png" alt="">
+                            <label>1</label>
+                        </div>
+                        <div class="promocao">
+                            <p class="preço-loja"><s style="color: darkgray;">R$ 115,00</s> R$ 70,00</p>
+                            <p class="opcoesdepaga">Pague à vista ou Pix</p>
+                        </div>
+                        <div class="botaocomprarprata">
+                            <label>VER DETALHES</label>
+                        </div>
+                         
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 

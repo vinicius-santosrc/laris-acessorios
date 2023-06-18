@@ -1364,3 +1364,10 @@ function touca_cetim_dupla_face_azul_rosa_comp() {
     salvarNoLocalStorage()
     window.location.href = '../resumo.html'
 }
+
+function prata_anelcravejado_comp() {
+    tarefas.push(`Anel Cravejado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}

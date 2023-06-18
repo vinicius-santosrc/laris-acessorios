@@ -3104,6 +3104,112 @@ function touca_cetim_dupla_face_rosa_preta_indisponivel() {
     })()
 }
 
+function pulseira_veneziana_indisponivel() {
+  (async () => {
+
+    const { value: formValues } = await Swal.fire({
+      title: 'Complete as opções abaixo para receber aviso quando esse produto estiver disponível.',
+      html:
+        '<input id="swal-input" class="swal2-input" placeholder=Nome>' +
+        '<input type="email" id="swal-input1" class="swal2-input" placeholder=Email>' +
+        '<input type="tel" id="swal-input2" class="swal2-input" placeholder=Telefone>',
+      focusConfirm: false,
+      confirmButtonText: 'Confirmar recebimento de notificações',
+      confirmButtonColor: '#EF59A0',
+      preConfirm: () => {
+        return [
+          document.getElementById('swal-input').value,
+          document.getElementById('swal-input1').value,
+          document.getElementById('swal-input2').value
+        ]
+      }
+    })
+
+    let nomeaviso = document.getElementById('swal-input').value
+    let emailaviso = document.getElementById('swal-input1').value
+    let numberaviso = document.getElementById('swal-input2').value
+    
+    if (emailaviso == '' || numberaviso == '' || nomeaviso == '' || emailaviso == undefined || numberaviso == undefined || nomeaviso == undefined || emailaviso == null || numberaviso == null || nomeaviso == null || emailaviso == 'null' || numberaviso == 'null' || nomeaviso == 'null' || emailaviso == ' ' || numberaviso == ' ' || nomeaviso == ' ' || emailaviso == '  ' || nomeaviso == '  ' || numberaviso == '  ' || emailaviso == '   ' || nomeaviso == '   ' || numberaviso == '   ') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Preenche todas as opções.',
+        })
+    }
+
+    else {
+        (function(){
+            emailjs.init("gpZLP0YsCZWO9dPoR"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+        })();
+        emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
+            user: nomeaviso,
+            product: 'Pulseira Veneziana - Cy Pratas',
+            email: emailaviso,
+            number: numberaviso,
+        });
+        Swal.fire(
+            'Sucesso!',
+            'Você será avisada(o) de quando o produto estiver disponível.',
+            'success'
+        )
+      }
+    
+    })()
+}
+
+function piercing_fake_laco_cravejado_indisponivel() {
+  (async () => {
+
+    const { value: formValues } = await Swal.fire({
+      title: 'Complete as opções abaixo para receber aviso quando esse produto estiver disponível.',
+      html:
+        '<input id="swal-input" class="swal2-input" placeholder=Nome>' +
+        '<input type="email" id="swal-input1" class="swal2-input" placeholder=Email>' +
+        '<input type="tel" id="swal-input2" class="swal2-input" placeholder=Telefone>',
+      focusConfirm: false,
+      confirmButtonText: 'Confirmar recebimento de notificações',
+      confirmButtonColor: '#EF59A0',
+      preConfirm: () => {
+        return [
+          document.getElementById('swal-input').value,
+          document.getElementById('swal-input1').value,
+          document.getElementById('swal-input2').value
+        ]
+      }
+    })
+
+    let nomeaviso = document.getElementById('swal-input').value
+    let emailaviso = document.getElementById('swal-input1').value
+    let numberaviso = document.getElementById('swal-input2').value
+    
+    if (emailaviso == '' || numberaviso == '' || nomeaviso == '' || emailaviso == undefined || numberaviso == undefined || nomeaviso == undefined || emailaviso == null || numberaviso == null || nomeaviso == null || emailaviso == 'null' || numberaviso == 'null' || nomeaviso == 'null' || emailaviso == ' ' || numberaviso == ' ' || nomeaviso == ' ' || emailaviso == '  ' || nomeaviso == '  ' || numberaviso == '  ' || emailaviso == '   ' || nomeaviso == '   ' || numberaviso == '   ') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Preenche todas as opções.',
+        })
+    }
+
+    else {
+        (function(){
+            emailjs.init("gpZLP0YsCZWO9dPoR"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+        })();
+        emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
+            user: nomeaviso,
+            product: 'Piercing Fake Laço Cravejado - Cy Pratas',
+            email: emailaviso,
+            number: numberaviso,
+        });
+        Swal.fire(
+            'Sucesso!',
+            'Você será avisada(o) de quando o produto estiver disponível.',
+            'success'
+        )
+      }
+    
+    })()
+}
+
 // PRODUTOS
 
 function chockersalmaoencomendar() {
@@ -4598,6 +4704,19 @@ function prata_brinco_heart_enco() {
       timer: 1500
     })
   tarefas.push('Brinco Heart '  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function prata_anelcravejado_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Anel Cravejado '  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
   mostraTarefas()
   salvarNoLocalStorage()
 }
