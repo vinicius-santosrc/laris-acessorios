@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LARIS ACESSÓRIOS - Administração</title>
+
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="login.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+
+    <script>
+        loginrequired()
+    </script>
+
+</head>
+<body>
+    <div class="first-time-login">
+        
+    </div>
+
+    <div class="barscript">
+    </div>
+
+    <div class="overview-page">
+        <div class="backgrond" onclick="fecharmenuprofile()"></div>
+        <div class="header-page">
+            <div class="openmenumobile" onclick="abrirmenumobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h1>Pedidos Pendentes</h1>
+            <div class="profile">
+                <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
+
+                <div class="profile-change" onclick="openmenuprofile()">
+                    <img id='profile-image' src="img/usuario-sem-foto.png" alt="">
+                    <label id='nameuser'>Usuário</label>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="notifications">
+            <h1>Notificações</h1>
+            <div class="notifications-blocks">
+                
+            </div>
+        </div>
+        <div class='menu-profile-change'>
+            <div class="userprofileshow" onclick="window.location.href = 'settings.html'">
+                <div class="account-show">
+                    <img src="img/usuario-sem-foto.png" alt="">
+                    <div class="infoaccount">
+                        <h1>Nome</h1>
+                        <p>usuário</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="userbuttonsprofile">
+                <div class="button-profile" onclick="window.location.href = 'settings.html'">
+                    <label>AJUSTES</label>
+                </div>
+                <div class="button-profile" onclick="sairdoprofile()">
+                    <label>SAIR</label>
+                </div>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="content-upside">
+                
+            </div>  
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+    <script src="leftsidebar.js"></script>
+    <script src="notifications.js"></script>
+</html>

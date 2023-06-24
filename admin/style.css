@@ -96,6 +96,10 @@
 #selectedcardbar, #selectedcardbar h1 {
     color: var(--rosaprimario);
 }
+
+#lucrolinha {
+    color: green;
+}
 /* PAGE */
 
 .overview-page {
@@ -315,7 +319,65 @@
     background-color: #c5c5c5;
 }
 
+
 /* page */
+
+
+.sections-semana {
+    margin-left: 0vw;
+    display: flex;
+    justify-content: left;
+    overflow-x: scroll;
+    width: 110vw;
+    background: linear-gradient(-45deg, #fd91bb, #fd91bb, #e7e7e7, #e7e7e7);
+    padding: 2vw;
+    padding-bottom: 70vh;
+    border-radius: 2vw;
+}
+
+button.addnewline {
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 0.7vw;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding-top: 0.7vh;
+    border-radius: 2vw;
+    padding-bottom: 0.7vh;
+    margin-top: 1vh;
+}
+
+button.addnewline:hover {
+    background-color: #ececec
+}
+
+.block-sections {
+    background-color: #F1F2F4;
+    padding: 1vw;
+    width: 17vw;
+    margin-right: 1vw;
+    border-radius: 1vw;
+    margin-bottom: 1vh;
+}
+
+.block-sections h1 {
+    font-size: 0.75vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 2vh;
+}
+
+.linetype input{
+    width: 100%;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+    border: none;
+    box-shadow: 0.1vw 0.05vw 0.3vw rgb(160, 159, 159);
+}
+
+
 
 .menu-profile-change {
     display: block;

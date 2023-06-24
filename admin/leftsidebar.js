@@ -40,6 +40,31 @@ else if (document.location.pathname == '/admin/index.html') {
     
 }
 
+else if (document.location.pathname == '/admin/orders.html') {
+    pedidospen = 'id="selectedpage"'
+    pedidospenpc = 'id="selectedcardbar"'
+    
+}
+
+else if (document.location.pathname == '/admin/alerts.html') {
+    messages = 'id="selectedpage"'
+    messagespc = 'id="selectedcardbar"'
+    
+}
+
+
+else if (document.location.pathname == '/admin/planosemanal.html') {
+    conexao = 'id="selectedpage"'
+    conexaopc = 'id="selectedcardbar"'
+    
+}
+
+else if (document.location.pathname == '/admin/new-itens.html') {
+    product = 'id="selectedpage"'
+    productpc = 'id="selectedcardbar"'
+    
+}
+
 else if (document.location.pathname == '/admin/goals.html') {
     selectdashboard = 'id="selectedpage"'
     selectdashboardpc = 'id="selectedcardbar"'
@@ -88,7 +113,7 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="alerts.html"><i class="fa-regular fa-envelope"></i> Mensagens <label id="embreve">EM BREVE</label></a>
             </div>
             <div class="item-opcoes-down" ${conexao}>
-                <a href="conection.html"><i class="fa-solid fa-satellite-dish"></i> Conexão <label id="embreve">EM BREVE</label></a>
+                <a href="planosemanal.html"><i class="fa-solid fa-satellite-dish"></i> Plano Semanal <label id="embreve">EM BREVE</label></a>
             </div>
             <div class="item-opcoes-down" ${config}>
                 <a href="settings.html"><i class="fa-solid fa-gear"></i> Configurações <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -114,7 +139,7 @@ document.querySelector('.barscript').innerHTML = `
                     <h1><i class="fa-regular fa-calendar-days"></i> Planilha</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
-                <a href="planilhas.html"><div class="card-bar" ${pedidospenpc}>
+                <a href="orders.html"><div class="card-bar" ${pedidospenpc}>
                     <h1><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes <label id="embreve">EM BREVE</label></h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
@@ -122,8 +147,8 @@ document.querySelector('.barscript').innerHTML = `
                     <h1><i class="fa-regular fa-envelope"></i> Mensagens <label id="embreve">EM BREVE</label></h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
-                <a href="conection.html"><div class="card-bar" ${conexaopc}>
-                    <h1><i class="fa-solid fa-satellite-dish"></i> Conexão <label id="embreve">EM BREVE</label></h1>
+                <a href="planosemanal.html"><div class="card-bar" ${conexaopc}>
+                    <h1><i class="fa-solid fa-satellite-dish"></i> Plano Semanal <label id="embreve">EM BREVE</label></h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="settings.html"><div class="card-bar" ${configpc}>

@@ -69,7 +69,7 @@ function insertItem(item, index) {
     <td>${item.precocompra}</td>
     <td>${item.precorevenda}</td>
     <td>${item.quantcompra}</td>
-    <td>${item.lucroporitem}</td>
+    <td id='lucrolinha'>${item.lucroporitem}</td>
     <td class="columnAction">
       <button onclick="deleteItem(${index})"><i class="fa-solid fa-trash"></i></button>
     </td>
