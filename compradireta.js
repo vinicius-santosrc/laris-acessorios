@@ -228,6 +228,51 @@ function pulseiramar_comp() {
     window.location.href = '../resumo.html'
 }
 
+function prata_anel_solitario_pink_comp() {
+    let quant = document.querySelector('select#quant')
+
+    tarefas.push('Anel Solitário Pink' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_circular_comp() {
+    let quant = document.querySelector('select#quant')
+
+    tarefas.push('Brinco Circular' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_argola_meia_cana_comp() {
+    let quant = document.querySelector('select#quant')
+
+    tarefas.push('Brinco Argola Meia Cana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_com_veneziana_comp() {
+    let quant = document.querySelector('select#quant')
+
+    tarefas.push('Brinco com Veneziana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_earcuff_cristal_comp() {
+    let quant = document.querySelector('select#quant')
+
+    tarefas.push('Brinco Earcuff Cristal' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
 function strapphone_azul_comp() {
     let quant = document.querySelector('select#quant')
 

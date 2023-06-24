@@ -1110,3 +1110,72 @@ function anelcravejado2() {
     let anel = '../imgs/anel-cravejado-_2_.webp'
     document.querySelector('.imagemprincipal').innerHTML = `<img src="` + anel + `"alt="">`
 }
+
+function anelsolitariopink1() {
+    let anel = '../imgs/Anel-solitário-pink-_1_.webp'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + anel + `"alt="">`
+}
+
+function anelsolitariopink2() {
+    let anel = '../imgs/Anel-solitário-pink-_2_.webp'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + anel + `"alt="">`
+}
+
+function brincocircular1() {
+    let item = '../imgs/Brinco circular (1).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincocircular2() {
+    let item = '../imgs/Brinco circular (2).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoheart() {
+    let item = '../imgs/brinco-coração.webp'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoheart2() {
+    let item = '../imgs/brinco-coração (2).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoheart3() {
+    let item = '../imgs/brinco-coração (3).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoargolameiacana() {
+    let item = '../imgs/brinco argola meia cana (1).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoargolameiacana2() {
+    let item = '../imgs/brinco argola meia cana (2).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoargolameiacana3() {
+    let item = '../imgs/brinco argola meia cana (3).jpeg'
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincocomveneziana() {
+    let item = "../imgs/brinco-com-veneziana-_1_.webp"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincocomveneziana2() {
+    let item = "../imgs/brinco-com-veneziana-_2_.webp"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoearcuffcristal() {
+    let item = "../imgs/brinco-earcuff-cristal-_1_.webp"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+function brincoearcuffcristal2() {
+    let item = "../imgs/brinco-earcuff-cristal-_2_.webp"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}

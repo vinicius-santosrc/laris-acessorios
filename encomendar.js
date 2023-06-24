@@ -3396,6 +3396,58 @@ function colartrioazul_enco() {
     salvarNoLocalStorage()
 }
 
+function prata_brinco_circular_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Brinco Circular' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function prata_brinco_argola_meia_cana_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Brinco Argola Meia Cana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function prata_brinco_com_veneziana_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Brinco com Veneziana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
+  }
+
+  function prata_brinco_earcuff_cristal_enco() {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Produto adicionado à sacola',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    tarefas.push('Brinco Earcuff Cristal' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+  }
+
 //STRAPPHONE
 
 function strapphone_vibes_enco() {
@@ -3407,7 +3459,7 @@ function strapphone_vibes_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-        tarefas.push('Phone-Strap Vibes'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+        tarefas.push('Phone-Strap Vibes'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
 }
@@ -3420,7 +3472,7 @@ function strapphone_azul_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Phone-Strap Azul'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Phone-Strap Azul'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3433,7 +3485,7 @@ function strapphone_happy_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Phone-Strap Happy'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Phone-Strap Happy'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3446,7 +3498,7 @@ function strapphone_smile_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Phone-Strap Smile'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Phone-Strap Smile'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3502,7 +3554,7 @@ function chaveiro_vida_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Chaveiro Vida'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Chaveiro Vida'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3515,7 +3567,7 @@ function chaveiro_sucesso_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Chaveiro Sucesso'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Chaveiro Sucesso'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3528,7 +3580,7 @@ function chaveiro_medvet_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Chaveiro Medicina Veterinária'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Chaveiro Medicina Veterinária'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -3686,7 +3738,7 @@ function prata_triobrincoverde_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Trio Brinco Verde'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Trio Brinco Verde'   + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4908,7 +4960,7 @@ function scrunchie_preto_enco() {
     showConfirmButton: false,
     timer: 1500
   })
-tarefas.push('Scrunchie de Cetim Preto'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+tarefas.push('Scrunchie de Cetim Preto'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
 }
@@ -4921,7 +4973,7 @@ function scrunchie_rosaclaro_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Scrunchie de Cetim Rosa Claro'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Scrunchie de Cetim Rosa Claro'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4934,7 +4986,7 @@ function scrunchie_laranjaneon_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Scrunchie de Cetim Laranja Neon'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Scrunchie de Cetim Laranja Neon'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4947,7 +4999,7 @@ function scrunchie_pink_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Scrunchie de Cetim Pink'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Scrunchie de Cetim Pink'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4960,7 +5012,7 @@ function scrunchie_dourado_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Scrunchie de Cetim Dourado'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Scrunchie de Cetim Dourado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4973,7 +5025,7 @@ function toucadecetimrosabebe_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Touca de Cetim Rosa Bebê'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Touca de Cetim Rosa Bebê'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4986,7 +5038,7 @@ function toucadecetimduplafacebordoperola_enco() {
         showConfirmButton: false,
         timer: 1500
       })
-    tarefas.push('Touca de Cetim Dupla Face Bordô/Pérola'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    tarefas.push('Touca de Cetim Dupla Face Bordô/Pérola'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
 }
@@ -4999,7 +5051,7 @@ function touca_cetim_dupla_face_rosa_preta_enco() {
       showConfirmButton: false,
       timer: 1500
     })
-  tarefas.push('Touca de Cetim Dupla Face Rosa e Preta'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  tarefas.push('Touca de Cetim Dupla Face Rosa e Preta'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
   mostraTarefas()
   salvarNoLocalStorage()
 }
@@ -5012,7 +5064,7 @@ function touca_cetim_dupla_face_azul_rosa_enco() {
       showConfirmButton: false,
       timer: 1500
     })
-  tarefas.push('Touca de Cetim Dupla Face Azul e Rosa'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  tarefas.push('Touca de Cetim Dupla Face Azul e Rosa'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
   mostraTarefas()
   salvarNoLocalStorage()
 }
@@ -5025,7 +5077,7 @@ function scrunchie_cetim_azul_claro_enco() {
       showConfirmButton: false,
       timer: 1500
     })
-  tarefas.push('Scrunchie Cetim Azul Claro'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  tarefas.push('Scrunchie Cetim Azul Claro'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
   mostraTarefas()
   salvarNoLocalStorage()
 }
@@ -5038,7 +5090,7 @@ function scrunchie_cetim_azul_bebe_enco() {
     showConfirmButton: false,
     timer: 1500
   })
-tarefas.push('Scrunchie Cetim Azul Bebê'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+tarefas.push('Scrunchie Cetim Azul Bebê'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
 }
@@ -5051,7 +5103,7 @@ function touca_cetim_face_unica_preta_enco() {
     showConfirmButton: false,
     timer: 1500
   })
-tarefas.push('Touca Cetim Face Única Preta'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+tarefas.push('Touca Cetim Face Única Preta'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
 }
@@ -5064,9 +5116,22 @@ function touca_cetim_face_unica_bordo_enco() {
     showConfirmButton: false,
     timer: 1500
   })
-tarefas.push('Touca Cetim Face Única Bordô'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+tarefas.push('Touca Cetim Face Única Bordô'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
+}
+
+function prata_anel_solitario_pink_enco() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Produto adicionado à sacola',
+      showConfirmButton: false,
+      timer: 1500
+    })
+  tarefas.push('Anel Solitário Pink'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+  mostraTarefas()
+  salvarNoLocalStorage()
 }
 
 function touca_cetim_face_unica_azul_royal_enco() {
@@ -5077,7 +5142,7 @@ function touca_cetim_face_unica_azul_royal_enco() {
     showConfirmButton: false,
     timer: 1500
   })
-tarefas.push('Touca Cetim Face Única Azul Royal'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+tarefas.push('Touca Cetim Face Única Azul Royal'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
 mostraTarefas()
 salvarNoLocalStorage()
 }
