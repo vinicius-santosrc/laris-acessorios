@@ -110,7 +110,7 @@
                         <div class="block">
                             <div>
                                 <i class="fa-solid fa-money-bill"></i>
-                                <h1>Lucro total</h1>
+                                <h1>Saldo</h1>
                                 <h2 class="lucrototal"></h2>
                             </div>
                             <div class="graphcircle graphcircle-total">
@@ -289,25 +289,25 @@
         }
     </script>
     <script>
-        let metamensal = localStorage.getItem('meta_mes') - localStorage.getItem('total')
-        let metaanual = localStorage.getItem('meta_anual') - localStorage.getItem('total')
+        let metamensal = localStorage.getItem('meta_mes') - localStorage.getItem('entradas')
+        let metaanual = localStorage.getItem('meta_anual') - localStorage.getItem('entradas')
 
         if (metamensal <= 0) {
-            document.querySelector('.counttometa').innerHTML = `Você alcançou sua meta mensal está com R$${localStorage.getItem('total') - localStorage.getItem('meta_mes')} de lucro.`
+            document.querySelector('.counttometa').innerHTML = `Você alcançou sua meta mensal está com R$${localStorage.getItem('entradas') - localStorage.getItem('meta_mes')} de lucro.`
             document.querySelector('.counttometa').style.color = 'green'
         }
         else {
-            document.querySelector('.counttometa').innerHTML = `Faltam: R$${localStorage.getItem('meta_mes') - localStorage.getItem('total')
+            document.querySelector('.counttometa').innerHTML = `Faltam: R$${localStorage.getItem('meta_mes') - localStorage.getItem('entradas')
             } para alcançar sua meta mensal`
         }
 
         if (metaanual <= 0) {
-            document.querySelector('.counttometaanual').innerHTML = `Você alcançou sua meta anual está com R$${localStorage.getItem('total') - localStorage.getItem('meta_anual')} de lucro.`
+            document.querySelector('.counttometaanual').innerHTML = `Você alcançou sua meta anual está com R$${localStorage.getItem('entradas') - localStorage.getItem('meta_anual')} de lucro.`
             document.querySelector('.counttometaanual').style.color = 'green'
         }
 
         else {
-            document.querySelector('.counttometaanual').innerHTML = `Faltam: R$${localStorage.getItem('meta_anual') - localStorage.getItem('total')} para alcançar sua meta anual`
+            document.querySelector('.counttometaanual').innerHTML = `Faltam: R$${localStorage.getItem('meta_anual') - localStorage.getItem('entradas')} para alcançar sua meta anual`
         }
 
         if(metamensal <= 0 && metaanual <= 0) {

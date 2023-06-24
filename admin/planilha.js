@@ -11,7 +11,7 @@ const detalhe = document.querySelector("#detalhe");
 const precocompra = document.querySelector("#precocompra");
 const precorevenda = document.querySelector("#precorevenda");
 const quantcompra = document.querySelector("#quantcompra");
-const quantestoque = document.querySelector("#quantestoque");
+const lucroporitem = document.querySelector("#lucroporitem");
 
 
 const btnNew = document.querySelector("#btnNew");
@@ -23,7 +23,7 @@ const total = document.querySelector(".lucrototal");
 let items;
 
 btnNew.onclick = () => {
-  if (codigo.value === "" || nameofitem.value === "" || detalhe.value === "" || precocompra.value === "" || precorevenda.value === "" || quantcompra.value === "" || quantestoque.value === "") {
+  if (codigo.value === "" || nameofitem.value === "" || detalhe.value === "" || precocompra.value === "" || precorevenda.value === "" || quantcompra.value === "" || lucroporitem.value === "") {
     return alert("Preencha todos os campos!");
   }
 
@@ -34,7 +34,7 @@ btnNew.onclick = () => {
     precocompra: precocompra.value,
     precorevenda: precorevenda.value,
     quantcompra: quantcompra.value,
-    quantestoque: quantestoque.value,
+    lucroporitem: lucroporitem.value,
 
 
   });
@@ -49,7 +49,7 @@ btnNew.onclick = () => {
   precocompra.value = '';
   precorevenda.value = "";
   quantcompra.value = "";
-  quantestoque.value = '';
+  lucroporitem.value = "";
 
 };
 
@@ -69,7 +69,7 @@ function insertItem(item, index) {
     <td>${item.precocompra}</td>
     <td>${item.precorevenda}</td>
     <td>${item.quantcompra}</td>
-    <td>${item.quantestoque}</td>
+    <td>${item.lucroporitem}</td>
     <td class="columnAction">
       <button onclick="deleteItem(${index})"><i class="fa-solid fa-trash"></i></button>
     </td>
