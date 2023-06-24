@@ -7,9 +7,8 @@
     <title>LARIS ACESSÓRIOS - Administração</title>
 
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trello.css">
 
-    <script src="planosemanal.js"></script>
     <script src="login.js"></script>
 
 
@@ -77,22 +76,180 @@
             </div>
         </div>
         <div class="content-page">
+            
+            <div class="background-planosemanal" onclick="closeadditem()"></div>
+            <div class="blockuptoadd">
+                <div>
+                    <h2>ADICIONAR CARTÃO</h2>
+                </div>
+                <div class="title">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <input type="text" id="tituloitemcitado" placeholder="Título para o cartão">
+                </div>
+                <p class="trellolist">> <b class="diadasemana">SEGUNDA-FEIRA</b></p>
+                <div class='buttontrello'>
+                    <button onclick="addlinesegunda()" class="addnewline">
+                        <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
+                    </button>
+                </div>
+            </div>
+            <div class="header-top-side">
+                <div class="headersections">
+                    <div class="right-side">
+                        <h1>SEMANA LARI'S</h1>
+                        <i class="fa-solid fa-star"></i>
+                        <label><i class="fa-solid fa-chart-simple"></i> QUADRO</label>
+                    </div>
+                    <div class="left-side">
+                        <img src="img/larissa-profile.jpeg" alt="">
+                        <img src="img/vinicius-profile.jpeg" alt="">
+                    </div>
+                </div>
+                
+            </div>
             <div class="sections-semana">
-                <div class="block-sections">
-                    <h1>Segunda-feira</h1>
-                    <div class="linetype">
-                        <input id='segunda-feira' placeholder="Insira um título para este cartão...">
-                    </div>
-                    <div class="buttonadline">
-                        <button onclick="addlinesegunda()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
-                    </div>
-                </div>  
+                    <div class="block-sections">
+                        <h1>Segunda-feira</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodysegunda">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodysegunda">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditem()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div>  
+                    <div class="block-sections">
+                        <h1>Terça-feira</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodyterca">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodyterca">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemterca()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div>  
+                    <div class="block-sections">
+                        <h1>Quarta-feira</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodyquarta">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodyquarta">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemquarta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div> 
+                    <div class="block-sections">
+                        <h1>Quinta-feira</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodyquinta">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodyquinta">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemquinta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div> 
+                    <div class="block-sections">
+                        <h1>Sexta-feira</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodysexta">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodysexta">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemsexta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div> 
+                    <div class="block-sections">
+                        <h1>Sábado</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodysabado">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodysabado">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemsabado()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div> 
+                    <div class="block-sections">
+                        <h1>Domingo</h1>
+                            <div class="divTable">
+                                <table>
+                                <thead class="titlecolumns">
+                                    <tr>
+                                    <th class="columnCodigo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbodydomingo">
+                                </tbody>
+                                </table>
+                            </div>
+                            <tbody class="tbodydomingo">
+                            </tbody>
+                        <div class="buttonadline">
+                            <button onclick="openadditemdomingo()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
+                        </div>
+                    </div> 
+                
                
             </div>
+            
         </div>
     </div>
 </body>
     <script src="script.js"></script>
     <script src="leftsidebar.js"></script>
     <script src="notifications.js"></script>
+    <script src="planosemanal.js"></script>
 </html>

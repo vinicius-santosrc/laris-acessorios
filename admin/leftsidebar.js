@@ -113,7 +113,7 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="alerts.html"><i class="fa-regular fa-envelope"></i> Mensagens <label id="embreve">EM BREVE</label></a>
             </div>
             <div class="item-opcoes-down" ${conexao}>
-                <a href="planosemanal.html"><i class="fa-solid fa-satellite-dish"></i> Plano Semanal <label id="embreve">EM BREVE</label></a>
+                <a href="planosemanal.html"><i class="fa-regular fa-calendar-check"></i> Plano Semanal</a>
             </div>
             <div class="item-opcoes-down" ${config}>
                 <a href="settings.html"><i class="fa-solid fa-gear"></i> Configurações <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -148,7 +148,7 @@ document.querySelector('.barscript').innerHTML = `
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="planosemanal.html"><div class="card-bar" ${conexaopc}>
-                    <h1><i class="fa-solid fa-satellite-dish"></i> Plano Semanal <label id="embreve">EM BREVE</label></h1>
+                    <h1><i class="fa-regular fa-calendar-check"></i> Plano Semanal</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="settings.html"><div class="card-bar" ${configpc}>

@@ -328,11 +328,13 @@
     display: flex;
     justify-content: left;
     overflow-x: scroll;
-    width: 110vw;
-    background: linear-gradient(-45deg, #fd91bb, #fd91bb, #e7e7e7, #e7e7e7);
+    flex-wrap: wrap;
+    background-image: url('img/trelloback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2vw;
     padding-bottom: 70vh;
-    border-radius: 2vw;
+    border-radius:0vw 0vw 2vw 2vw;
 }
 
 button.addnewline {
@@ -349,6 +351,54 @@ button.addnewline {
     margin-top: 1vh;
 }
 
+.header-top-side {
+    background-image: linear-gradient(30deg, #E087BA, #9682CA);
+    padding: 1vh;
+    font-size: 0.7vw;
+    filter: blur(2);
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.left-side {
+    display: flex;
+}
+
+.left-side img {
+    width: 3vw;
+    height: 3vw;
+    object-fit: cover;
+    border-radius: 10vw;
+}
+
+.headersections {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 1vw 0vw 1vw;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side label {
+    background-color: rgba(32, 32, 32, 0.644);
+    color: white;
+    font-weight: 600;
+    padding: 1vh;
+    margin-left: 1vw;
+    border-radius: 0.6vw;
+    cursor: pointer;
+}
+
+.right-side i.fa-star {
+    align-items: center;
+    font-size: 1vw;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
 button.addnewline:hover {
     background-color: #ececec
 }
@@ -360,6 +410,8 @@ button.addnewline:hover {
     margin-right: 1vw;
     border-radius: 1vw;
     margin-bottom: 1vh;
+    height: 100%;
+    
 }
 
 .block-sections h1 {
@@ -441,6 +493,44 @@ button.addnewline:hover {
     color: #fd91bb;
     text-align: center;
     margin-bottom: 1vh;
+}
+
+tbody td {
+    width: 100%;
+    padding: 0.5vw;
+    padding-top: 0vw;
+    padding-bottom: 0vw;
+    border-radius: 0.3vw;
+    margin-bottom: 1vh;
+    outline: none;
+    border: none;
+    box-shadow: 0.1vw 0.05vw 0.3vw rgb(160, 159, 159);
+    font-size: 0.75vw;
+    color: rgb(88, 88, 88);
+    align-items: center;
+}
+
+tbody tr {
+    margin-bottom: 5vh;
+}
+
+.columnAction {
+    width: 100%;
+    padding: 0.3vw;
+    border-radius: 0.3vw;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: red;
+}
+
+.columnAction button {
+    color: red;
+    font-size: 1.5vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
 }
 
 
@@ -684,14 +774,6 @@ button.addnewline:hover {
     border: 0.1vw solid var(--rosaprimario);
 }
 
-.divTable {
-    margin: 3vh;
-    padding: 3vh;
-    background-color: rgb(238, 236, 236);
-    border-radius: 1vw;
-
-}
-
 .titlecolumns {
     font-size: 1vw;
     color: rgb(0, 0, 0);
@@ -703,6 +785,7 @@ tr th{
     text-align: center;
     justify-content: center; 
 }
+
 
 .headeritem {
     display: flex;
@@ -1184,8 +1267,178 @@ a.optionselectedsettings {
     color: #D83121;
   }
 
+@media screen and (max-width: 980px) { 
+    button.addnewline {
+        width: 100%;
+        background-color: transparent;
+        color: black;
+        font-size: 3vw;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        padding-top: 1vh;
+        border-radius: 2vw;
+        padding-bottom: 1vh;
+        margin-top: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    button.addnewline:hover {
+        background-color: #ececec
+    }
+    
+    .block-sections {
+        background-color: #F1F2F4;
+        padding: 1vw;
+        width: 50vw;
+        margin-right: 2vw;
+        border-radius: 2vw;
+        height: 100%;
+        margin-bottom: 1vh;
+    }
+    
+    .block-sections h1 {
+        font-size: 2.8vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 1vh;
+        margin-left: 1vh;
+        margin-top: 1vh;
+    }
+    
+    .linetype{
+        width: 100%;
+        padding: 0.5vw;
+        border-radius: 0.3vw;
+        margin-bottom: 1vh;
+        outline: none;
+        border: none;
+        box-shadow: 0.1vw 0.05vw 0.3vw rgb(160, 159, 159);
+    }
+    
+    .blockuptoadd {
+        background-color: white;
+        display: none;
+        position: fixed;
+        padding: 4vw 6vw 4vw 6vw;
+        box-shadow: 0.1vw 0.1vw 0.5vw black;
+        border-radius: 0.5vw;
+        margin: auto;
+        margin-left: 25vw;
+        z-index: 200;
+        margin-top: 20vh;
+    }
+    
+    .blockuptoadd button {
+        text-align: center;
+        background-color: #FF449E;
+        color: white;
+        border: 0.5vw solid white;
+        border-radius: 2vw;
+        font-size: 3vw;
+        padding: 1vw 7vw 1vw 7vw;
+        text-transform: uppercase;
+    }
+    
+    .blockuptoadd button:hover {
+        text-align: center;
+        background-color: white;
+        color: #FF449E;
+        border: 0.5vw solid #FF449E;
+    }
+    
+    .title {
+        display: flex;
+        background-color: #e4e4e4;
+        align-items: center;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        
+        border-radius: 1vw;
+    }
+    
+    .title input {
+        background-color: transparent;
+        border: none;
+        padding: 0.5vh;
+        font-size: 3vw;
+        outline: none;
+    }
+    
+    .title i {
+        font-size: 3vw;
+        color: grey;
+        padding-right: 1vw;
+    }
+    
+    .trellolist {
+        font-size: 2.5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        color: grey;
+    }
+    
+    .blockuptoadd h2 {
+        font-size: 3vw;
+        color: #fd91bb;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
+    
+    tbody td {
+        width: 100%;
+        padding: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        border-radius: 2vw;
+        margin-bottom: 1vh;
+        outline: none;
+        border: none;
+        box-shadow: 0.5vw 0.1vw 1vw rgb(160, 159, 159);
+        font-size: 3vw;
+        color: rgb(46, 46, 46);
+        align-items: none;
+        
+    }
+    
+    tbody tr{
+        margin-bottom: 5vh !important;
+        
+    }
+    
+    .columnAction {
+        width: 100%;
+        padding: 1vw;
+        border-radius: 1vw;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        color: red;
+    }
+    
+    .columnAction button {
+        color: red;
+        font-size: 3vw;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        align-items: center;
+    }
+    .sections-semana {
+        margin-left: 0vw;
+        width: 380vw;
+        display: flex;
+        justify-content: left;
+        overflow-x: scroll;
+        background-image: url('img/trelloback.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2vw;
+        padding-bottom: 70vh;
+        border-radius: 0vw;
+    }
 
-@media screen and (max-width: 980px) {
     .divTable i {
         font-size: 4vw;
       }
@@ -1862,10 +2115,6 @@ a.optionselectedsettings {
         }
         
         .divTable {
-            margin: 1vh;
-            padding: 1vh;
-            background-color: rgb(238, 236, 236);
-            border-radius: 1vw;
         
         }
         
@@ -2351,6 +2600,60 @@ a.optionselectedsettings {
 
         .pctitledisplayonly {
             display: none;
+        }
+
+
+
+
+        .header-top-side {
+            background-image: linear-gradient(30deg, #E087BA, #9682CA);
+            padding: 1vh;
+            font-size: 2vw;
+            filter: blur(2);
+            border-radius: 0vw 0vw 0vw 0vw;
+            width: 380vw;
+            padding-right: 280vw;
+        }
+        
+        .left-side {
+            display: flex;
+        }
+        
+        .left-side img {
+            width: 9vw;
+            height: 9vw;
+            object-fit: cover;
+            border-radius: 10vw;
+        }
+        
+        .headersections {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0vw 1vw 0vw 1vw;
+        }
+        
+        .right-side {
+            display: flex;
+            align-items: center;
+        }
+        
+        .right-side label {
+            background-color: rgba(32, 32, 32, 0.644);
+            color: white;
+            font-weight: 600;
+            padding: 1vh;
+            margin-left: 2vw;
+            border-radius: 1vw;
+            cursor: pointer;
+            font-size: 3vw;
+        }
+        
+        .right-side i.fa-star {
+            align-items: center;
+            font-size: 3vw;
+            margin-left: 2vw;
+            cursor: pointer;
         }
         
 }
