@@ -1,5 +1,13 @@
 document.querySelector('.notifications-blocks').innerHTML = `
                 <div class="not-block">
+                    <h2>Atualização 0.4 (21:45 de 23/06/2023)</h2>
+                    <p>Listagram oficial:</p>
+                    <p>* Alteração no site da administração</p>
+                    <p>* Mudança no estoque das pratas</p>
+                    <p>* Início da estrutura básica do site dos pedidos pendentes.</p>
+                    <p>Autor: Vinícius S.</p>
+                </div>
+                <div class="not-block">
                     <h2>Atualização 0.3 (17:58 de 03/06/2023)</h2>
                     <p>Listagram oficial:</p>
                     <p>* Modelo para celular concluído</p>
