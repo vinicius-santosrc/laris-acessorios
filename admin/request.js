@@ -45,10 +45,14 @@ function importnewdatabase() {
 
     fr.onload = function(){
 
-        let importnow = new Array();
+        preview.innerHTML = fr.result
+      
+        let localstorageatual = JSON.stringify(localStorage)
 
-        let frresultreplace = fr.result.replace(/,/g, '<br>');
-        console.log(fr.result.match('db_items'))
-        preview.innerHTML = frresultreplace
+        let file = JSON.stringify(fr.result)
+
+
+        Storage == (JSON.parse(file))
+        localstorageatual = JSON.parse(file)
     }
 }
