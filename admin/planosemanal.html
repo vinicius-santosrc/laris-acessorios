@@ -110,6 +110,8 @@
             <div class="sections-semana">
                     <div class="block-sections">
                         <h1>Segunda-feira</h1>
+        
+                        <div></div>
                             <div class="divTable">
                                 <table>
                                 <thead class="titlecolumns">
@@ -123,7 +125,15 @@
                             </div>
                             <tbody class="tbodysegunda">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow segundaadd">
+                                <input type="text" id="tituloitemcitado" class="segundainput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinesegunda()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelsegunda()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline segundabuttonline">
+                        
                             <button onclick="openadditem()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div>  
@@ -142,7 +152,14 @@
                             </div>
                             <tbody class="tbodyterca">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow tercaadd">
+                                <input type="text" id="tituloitemcitado" class="tercainput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlineterca()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelterca()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline tercabuttonadline">
                             <button onclick="openadditemterca()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div>  
@@ -161,7 +178,14 @@
                             </div>
                             <tbody class="tbodyquarta">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow quartaadd">
+                                <input type="text" id="tituloitemcitado" class="quartainput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinequarta()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelquarta()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline quartabuttonadline">
                             <button onclick="openadditemquarta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 
@@ -180,7 +204,14 @@
                             </div>
                             <tbody class="tbodyquinta">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow quintaadd">
+                                <input type="text" id="tituloitemcitado" class="quintainput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinequinta()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelquinta()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline quintabuttonadline">
                             <button onclick="openadditemquinta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 
@@ -199,7 +230,14 @@
                             </div>
                             <tbody class="tbodysexta">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow sextaadd">
+                                <input type="text" id="tituloitemcitado" class="sextainput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinesexta()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelsexta()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline sextabuttonadline">
                             <button onclick="openadditemsexta()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 
@@ -218,7 +256,14 @@
                             </div>
                             <tbody class="tbodysabado">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow sabadoadd">
+                                <input type="text" id="tituloitemcitado" class="sabadoinput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinesabado()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="cancelsabado()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline sabadobuttonadline">
                             <button onclick="openadditemsabado()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 
@@ -237,7 +282,14 @@
                             </div>
                             <tbody class="tbodydomingo">
                             </tbody>
-                        <div class="buttonadline">
+                            <div class="addnewitemshow domingoadd">
+                                <input type="text" id="tituloitemcitado" class="domingoinput" placeholder="Insira um título para este cartão...">
+                                <div class="buttonsflexbox">
+                                    <button onclick="addlinedomingo()" class="addlinetoplocalstorage">Adicionar Cartão</button>
+                                    <button class="closelineadd" onclick="canceldomingo()"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                        <div class="buttonadline domingobuttonadline">
                             <button onclick="openadditemdomingo()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 

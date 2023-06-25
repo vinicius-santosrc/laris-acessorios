@@ -1,82 +1,89 @@
 function closeadditem() {
     document.querySelector('.blockuptoadd').style.display = 'none'
-    document.querySelector('.background-planosemanal').style.display = 'none'
+    
 }
 
 function openadditem() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
+    document.querySelector('.segundaadd').style.display = 'block'
+    document.querySelector('.segundabuttonline').style.display = 'none'
 
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">SEGUNDA-FEIRA</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinesegunda()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
 }
 
 function openadditemterca() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
-
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">TERÇA-FEIRA</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlineterca()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+    document.querySelector('.tercaadd').style.display = 'block'
+    document.querySelector('.tercabuttonadline').style.display = 'none'
 }
 
 function openadditemquarta() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
-
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">QUARTA-FEIRA</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinequarta()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+    document.querySelector('.quartaadd').style.display = 'block'
+    document.querySelector('.quartabuttonadline').style.display = 'none'
 }
 
 function openadditemquinta() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
-
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">QUINTA-FEIRA</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinequinta()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+    document.querySelector('.quintaadd').style.display = 'block'
+    document.querySelector('.quintabuttonadline').style.display = 'none'
 }
 
 function openadditemsexta() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
-
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">SEXTA-FEIRA</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinesexta()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+    document.querySelector('.sextaadd').style.display = 'block'
+    document.querySelector('.sextabuttonadline').style.display = 'none'
 }
 
 function openadditemsabado() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
-
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">SÁBADO</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinesabado()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+    document.querySelector('.sabadoadd').style.display = 'block'
+    document.querySelector('.sabadobuttonadline').style.display = 'none'
 }
 
 function openadditemdomingo() {
-    document.querySelector('.blockuptoadd').style.display = 'block'
-    document.querySelector('.background-planosemanal').style.display = 'block'
+    document.querySelector('.domingoadd').style.display = 'block'
+    document.querySelector('.domingobuttonadline').style.display = 'none'
+}
 
-    document.querySelector('.trellolist').innerHTML = `> <b class="diadasemana">DOMINGO</b>`
-    document.querySelector('.buttontrello').innerHTML = `<button onclick="addlinedomingo()" class="addnewline">
-                                                            <i class="fa-sharp fa-solid fa-plus"></i> Adicionar
-                                                        </button>`
+function cancelsegunda() {
+    document.querySelector('.segundaadd').style.display = 'none'
+    document.querySelector('.segundabuttonline').style.display = 'block'
+}
+
+function cancelterca() {
+    document.querySelector('.tercaadd').style.display = 'none'
+    document.querySelector('.tercabuttonadline').style.display = 'block'
+}
+
+function cancelquarta() {
+    document.querySelector('.quartaadd').style.display = 'none'
+    document.querySelector('.quartabuttonadline').style.display = 'block'
+}
+
+function cancelquinta() {
+    document.querySelector('.quintaadd').style.display = 'none'
+    document.querySelector('.quintabuttonadline').style.display = 'block'
+}
+
+function cancelsexta() {
+    document.querySelector('.sextaadd').style.display = 'none'
+    document.querySelector('.sextabuttonadline').style.display = 'block'
+}
+
+function cancelsabado() {
+    document.querySelector('.sabadoadd').style.display = 'none'
+    document.querySelector('.sabadobuttonadline').style.display = 'block'
+}
+
+function canceldomingo() {
+    document.querySelector('.domingoadd').style.display = 'none'
+    document.querySelector('.domingobuttonadline').style.display = 'block'
 }
 
 
 
 
-const cartao = document.querySelector('.title input')
+const cartao = document.querySelector('.segundainput')
+const cartaoterca = document.querySelector('.tercainput')
+const cartaoquarta = document.querySelector('.quartainput')
+const cartaoquinta = document.querySelector('.quintainput')
+const cartaosexta = document.querySelector('.sextainput')
+const cartaosabado = document.querySelector('.sabadoinput')
+const cartaodomingo = document.querySelector('.domingoinput')
 
 let items;
 let itemsterca;
@@ -142,19 +149,19 @@ let itemsdomingo;
 // TERÇA-FERA
 
     function addlineterca() {
-        if (cartao.value === "") {
+        if (cartaoterca.value === "") {
             return alert("Preencha todos os campos!");
         }
 
         itemsterca.push({
-            cartao: cartao.value,
+            cartaoterca: cartaoterca.value,
         });
 
         setItensBDterca();
 
         loadItensterca();
 
-        cartao.value = "";
+        cartaoterca.value = "";
     };
 
     function deleteItemterca(index) {
@@ -167,7 +174,7 @@ let itemsdomingo;
         let tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${item.cartao}</td>
+            <td>${item.cartaoterca}</td>
             <td class="columnAction">
             <button onclick="deleteItemterca(${index})"><i class="fa-solid fa-minus"></i></button>
             </td>
@@ -195,19 +202,19 @@ let itemsdomingo;
 // QUARTA-FERA
 
     function addlinequarta() {
-        if (cartao.value === "") {
+        if (cartaoquarta.value === "") {
             return alert("Preencha todos os campos!");
         }
 
         itemsquarta.push({
-            cartao: cartao.value,
+            cartaoquarta: cartaoquarta.value,
         });
 
         setItensBDquarta();
 
         loadItensquarta();
 
-        cartao.value = "";
+        cartaoquarta.value = "";
     };
 
     function deleteItemquarta(index) {
@@ -220,7 +227,7 @@ let itemsdomingo;
         let tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${item.cartao}</td>
+            <td>${item.cartaoquarta}</td>
             <td class="columnAction">
             <button onclick="deleteItemquarta(${index})"><i class="fa-solid fa-minus"></i></button>
             </td>
@@ -248,19 +255,19 @@ let itemsdomingo;
 // QUINTA-FERA
 
     function addlinequinta() {
-        if (cartao.value === "") {
+        if (cartaoquinta.value === "") {
             return alert("Preencha todos os campos!");
         }
 
         itemsquinta.push({
-            cartao: cartao.value,
+            cartaoquinta: cartaoquinta.value,
         });
 
         setItensBDquinta();
 
         loadItensquinta();
 
-        cartao.value = "";
+        cartaoquinta.value = "";
     };
 
     function deleteItemquinta(index) {
@@ -273,7 +280,7 @@ let itemsdomingo;
         let tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${item.cartao}</td>
+            <td>${item.cartaoquinta}</td>
             <td class="columnAction">
             <button onclick="deleteItemquinta(${index})"><i class="fa-solid fa-minus"></i></button>
             </td>
@@ -301,19 +308,19 @@ let itemsdomingo;
 // SEXTA-FERA
 
     function addlinesexta() {
-        if (cartao.value === "") {
+        if (cartaosexta.value === "") {
             return alert("Preencha todos os campos!");
         }
 
         itemssexta.push({
-            cartao: cartao.value,
+            cartaosexta: cartaosexta.value,
         });
 
         setItensBDsexta();
 
         loadItenssexta();
 
-        cartao.value = "";
+        cartaosexta.value = "";
     };
 
     function deleteItemsexta(index) {
@@ -326,7 +333,7 @@ let itemsdomingo;
         let tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${item.cartao}</td>
+            <td>${item.cartaosexta}</td>
             <td class="columnAction">
             <button onclick="deleteItemsexta(${index})"><i class="fa-solid fa-minus"></i></button>
             </td>
@@ -354,19 +361,19 @@ let itemsdomingo;
 // SÁBADO
 
 function addlinesabado() {
-    if (cartao.value === "") {
+    if (cartaosabado.value === "") {
         return alert("Preencha todos os campos!");
     }
 
     itemssabado.push({
-        cartao: cartao.value,
+        cartaosabado: cartaosabado.value,
     });
 
     setItensBDsabado();
 
     loadItenssabado();
 
-    cartao.value = "";
+    cartaosabado.value = "";
 };
 
 function deleteItemsabado(index) {
@@ -379,7 +386,7 @@ function insertItemsabado(item, index) {
     let tr = document.createElement("tr");
 
     tr.innerHTML = `
-        <td>${item.cartao}</td>
+        <td>${item.cartaosabado}</td>
         <td class="columnAction">
         <button onclick="deleteItemsabado(${index})"><i class="fa-solid fa-minus"></i></button>
         </td>
@@ -407,19 +414,19 @@ function loadItenssabado() {
 // DOMINGO
 
     function addlinedomingo() {
-        if (cartao.value === "") {
+        if (cartaodomingo.value === "") {
             return alert("Preencha todos os campos!");
         }
 
         itemsdomingo.push({
-            cartao: cartao.value,
+            cartaodomingo: cartaodomingo.value,
         });
 
         setItensBDdomingo();
 
         loadItensdomingo();
 
-        cartao.value = "";
+        cartaodomingo.value = "";
     };
 
     function deleteItemdomingo(index) {
@@ -432,7 +439,7 @@ function loadItenssabado() {
         let tr = document.createElement("tr");
 
         tr.innerHTML = `
-            <td>${item.cartao}</td>
+            <td>${item.cartaodomingo}</td>
             <td class="columnAction">
             <button onclick="deleteItemdomingo(${index})"><i class="fa-solid fa-minus"></i></button>
             </td>
@@ -456,4 +463,6 @@ function loadItenssabado() {
         localStorage.setItem("cartao_items_domingo", JSON.stringify(itemsdomingo));
 
         loadItensdomingo();
+
+
 
