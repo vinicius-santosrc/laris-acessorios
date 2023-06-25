@@ -9,13 +9,14 @@
     <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
+    <script src="FileSaver.js"></script>
     <script src="login.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
-
+    <script src="request.js"></script>
     <script>
         loginrequired()
     </script>
@@ -83,7 +84,7 @@
                     </div>
                     <div class="contashowdados">
                         <p>Olá,</p>
-                        <h1>Nome user!</h1>
+                        <h1>username!</h1>
                     </div>
                 </div>     
                 <div class="titleoption">
@@ -92,29 +93,27 @@
             </div> 
             <div class="contentinsidesettings">
                 <div class="leftsidesettingsbar">
-                    <a href="settings.html" class="optionselectedsettings">Dados pessoais</a>
-                    <a href="exportdados.html">Exportar dados</a>
+                    <a href="settings.html">Dados pessoais</a>
+                    <a href="exportdados.html" class="optionselectedsettings" href="exportdados.html">Exportar dados</a>
                     <a onclick="sairdoprofile()">Sair</a>
                 </div>   
                 <div class="contentselectedoption">
                     <div class="blocks-contents">
                         <div class='form-profile'>
+                            <h1>Exportação de dados</h1>
+                            <p>Você poderá solicitar uma cópia das suas informações quando quiser.</p>
+                            <p>Quando seu arquivo estiver pronto, você poderá baixar sua informações e enviar para seu outro dispositivo eletrônico</p>
                             <div>
-                                <img src="../imgs/Logo.webp" alt="">
-                                <br><img class="fotoperfilprofile" src="img/usuario-sem-foto.png" alt="">
+                                <button onclick="request_datadownload()" class="downloadbutton">Solicitar um download</button>
                             </div>
-                            <div class="form-profile-items">
-                                <div class="titleprofile">
-                                    <h1 class="nameuser">Nome</h1>
-                                    <p class="user">user</p>
-                                </div>
-                                <div class="infogeralperfil">
-                                    <h1>Informações Gerais</h1>
-                                    <p class="nomecompleto">Nome completo: </p>
-                                    <p class="cpf">CPF: não cadastrado</p>
-                                    <p class="funcao">Função: </p>
-                                </div>
+                            <p>Seu download somente dados e informações que você compartilhou ou que estão relacionadas a sua conta.</p>
+                            <p>Ao concluir o download, entre em seu dispositivo eletrônico, onde você deseja fazer a importação de dados, e selecione o arquivo logo abaixo.</p>
+                            <div>
+                                <input type="file" accept="txt/*" onchange="importnewdatabase()" name="importfiles" id="upload">
+                                <br>
+        
                             </div>
+                            <div class="preview"></div>
                         </div>
                     </div>
                     </div>
@@ -124,7 +123,9 @@
         </div>
     </div>
 </body>
+
     <script src="script.js"></script>
     <script src="leftsidebar.js"></script>
     <script src="notifications.js"></script>
+    
 </html>

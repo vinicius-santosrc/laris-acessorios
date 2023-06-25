@@ -199,6 +199,36 @@ let itemsdomingo;
 
         loadItensterca();
 
+        const getItensBDquarta = () => JSON.parse(localStorage.getItem("cartao_items_quarta")) ?? [];
+        const setItensBDquarta = () =>
+        localStorage.setItem("cartao_items_quarta", JSON.stringify(itemsquarta));
+
+        loadItensquarta();
+
+        const getItensBDquinta = () => JSON.parse(localStorage.getItem("cartao_items_quinta")) ?? [];
+        const setItensBDquinta = () =>
+        localStorage.setItem("cartao_items_quinta", JSON.stringify(itemsquinta));
+
+        loadItensquinta();
+
+        const getItensBDsexta = () => JSON.parse(localStorage.getItem("cartao_items_sexta")) ?? [];
+        const setItensBDsexta = () =>
+        localStorage.setItem("cartao_items_sexta", JSON.stringify(itemssexta));
+
+        loadItenssexta();
+
+        const getItensBDsabado = () => JSON.parse(localStorage.getItem("cartao_items_sabado")) ?? [];
+        const setItensBDsabado = () =>
+        localStorage.setItem("cartao_items_sabado", JSON.stringify(itemssabado));
+
+        loadItenssabado();
+
+        const getItensBDdomingo = () => JSON.parse(localStorage.getItem("cartao_items_domingo")) ?? [];
+        const setItensBDdomingo = () =>
+        localStorage.setItem("cartao_items_domingo", JSON.stringify(itemsdomingo));
+
+        loadItensdomingo();
+
 // QUARTA-FERA
 
     function addlinequarta() {
@@ -246,11 +276,7 @@ let itemsdomingo;
         });
     }
 
-        const getItensBDquarta = () => JSON.parse(localStorage.getItem("cartao_items_quarta")) ?? [];
-        const setItensBDquarta = () =>
-        localStorage.setItem("cartao_items_quarta", JSON.stringify(itemsquarta));
-
-        loadItensquarta();
+        
 
 // QUINTA-FERA
 
@@ -299,11 +325,7 @@ let itemsdomingo;
         });
     }
 
-        const getItensBDquinta = () => JSON.parse(localStorage.getItem("cartao_items_quinta")) ?? [];
-        const setItensBDquinta = () =>
-        localStorage.setItem("cartao_items_quinta", JSON.stringify(itemsquinta));
-
-        loadItensquinta();
+        
 
 // SEXTA-FERA
 
@@ -352,12 +374,6 @@ let itemsdomingo;
         });
     }
 
-        const getItensBDsexta = () => JSON.parse(localStorage.getItem("cartao_items_sexta")) ?? [];
-        const setItensBDsexta = () =>
-        localStorage.setItem("cartao_items_sexta", JSON.stringify(itemssexta));
-
-        loadItenssexta();
-
 // SÁBADO
 
 function addlinesabado() {
@@ -404,10 +420,6 @@ function loadItenssabado() {
         insertItemsabado(item, index);
     });
 }
-
-    const getItensBDsabado = () => JSON.parse(localStorage.getItem("cartao_items_sabado")) ?? [];
-    const setItensBDsabado = () =>
-    localStorage.setItem("cartao_items_sabado", JSON.stringify(itemssabado));
 
     loadItenssabado();
 
@@ -458,11 +470,7 @@ function loadItenssabado() {
         });
     }
 
-        const getItensBDdomingo = () => JSON.parse(localStorage.getItem("cartao_items_domingo")) ?? [];
-        const setItensBDdomingo = () =>
-        localStorage.setItem("cartao_items_domingo", JSON.stringify(itemsdomingo));
-
-        loadItensdomingo();
+        
 
 
 
