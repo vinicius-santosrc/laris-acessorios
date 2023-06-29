@@ -45,7 +45,6 @@ function importnewdatabase() {
 
     fr.onload = function(){
 
-        preview.innerHTML = fr.result
       
         let localstorageatual = JSON.stringify(localStorage)
 
@@ -55,4 +54,11 @@ function importnewdatabase() {
         Storage == (JSON.parse(file))
         localstorageatual = JSON.parse(file)
     }
+
+    Swal.fire({
+      title: 'OCORREU UM ERRO!',
+      imageUrl: '../imgs/error404.png',
+      text: 'Desculpe, o processo de requisitação',
+      footer: '<a href="">Por que estou vendo isso?</a>'
+    })
 }
