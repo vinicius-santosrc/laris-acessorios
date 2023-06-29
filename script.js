@@ -21,7 +21,7 @@ function fecharmenu() {
 function limpar() {
     Swal.fire({
         title: 'Você deseja continuar?',
-        text: "Essa ação é irreversível!",
+        text: "Essa ação é irreversível.",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#EF59A0',

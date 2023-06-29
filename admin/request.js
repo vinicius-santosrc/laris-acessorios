@@ -39,26 +39,100 @@ function importnewdatabase() {
 
     //Inicializar file reader
 
-    let fr = new FileReader();
+    Swal.fire({
+      title: 'Você tem certeza?',
+      text: "Após fazer o requerimento de importação de dados, seus dados atuais não poderão ser recuperados. Para evitar de perder seus dados, faça um backup!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Continuar',
+      cancelButtonText: 'Não',
+    }).then((result) => {
+      if (result.isConfirmed) {
 
-    fr.readAsText(upload.files[0]);
+        
+        let fr = new FileReader();
 
-    fr.onload = function(){
+        fr.readAsText(upload.files[0]);
 
-      
-        let localstorageatual = JSON.stringify(localStorage)
+        fr.onload = function(){
 
         let file = JSON.stringify(fr.result)
+        var dadosimport = file
+        var dadoslidos = JSON.parse(dadosimport);
+
+        // Objeto JSON que simula o arquivo de armazenamento
+        var jsonStorage = {
+          data: {},
+          
+          // Função para salvar os dados no arquivo JSON
+          saveData: function() {
+            var jsonData = JSON.stringify(this.data);
+            // Aqui você pode salvar o jsonData em um arquivo no servidor, por exemplo
+            console.log("Dados salvos: ", jsonData);
+          },
+          
+          // Função para carregar os dados do arquivo JSON
+          loadData: function() {
+            // Aqui você pode carregar o conteúdo do arquivo JSON do servidor, por exemplo
+            var jsonData = dadoslidos; // Exemplo de dados carregados
+            this.data = JSON.parse(jsonData);
+            console.log("Dados carregados: ", this.data);
+          },
+          
+          // Função para definir um item no arquivo JSON
+          setItem: function(key, value) {
+            this.data[key] = value;
+            this.saveData();
+          },
+          
+          // Função para obter um item do arquivo JSON
+          getItem: function(key) {
+            return this.data[key];
+          },
+          
+          // Função para remover um item do arquivo JSON
+          removeItem: function(key) {
+            delete this.data[key];
+            this.saveData();
+          },
+          
+          // Função para limpar todo o conteúdo do arquivo JSON
+          clear: function() {
+            this.data = {};
+            this.saveData();
+          }
+        };
+
+        // Exemplo de uso:
+        jsonStorage.loadData(); // Carrega os dados do arquivo JSON
+
+        // Define um item no arquivo JSON
 
 
-        Storage == (JSON.parse(file))
-        localstorageatual = JSON.parse(file)
-    }
+        localStorage.setItem('total', jsonStorage.getItem('total'))
+        localStorage.setItem('login', jsonStorage.getItem('login'))
+        localStorage.setItem('meta_mes', jsonStorage.getItem('meta_mes'))
+        localStorage.setItem('cartao_items_quarta', jsonStorage.getItem('cartao_items_quarta'))
+        localStorage.setItem('expenses_items', jsonStorage.getItem('expenses_items'))
+        localStorage.setItem('user', jsonStorage.getItem('user'))
+        localStorage.setItem('cartao_items', jsonStorage.getItem('cartao_items'))
+        localStorage.setItem('cartao_items_sabado', jsonStorage.getItem('cartao_items_sabado'))
+        localStorage.setItem('cartao_items_quinta', jsonStorage.getItem('cartao_items_quinta'))
+        localStorage.setItem('entradas', jsonStorage.getItem('entradas'))
+        localStorage.setItem('db_items', jsonStorage.getItem('db_items'))
+        localStorage.setItem('cartao_items_sexta', jsonStorage.getItem('cartao_items_sexta'))
+        localStorage.setItem('meta_anual', jsonStorage.getItem('meta_anual'))
+        localStorage.setItem('cartao_items_domingo', jsonStorage.getItem('cartao_items_domingo'))
+        localStorage.setItem('saidas', jsonStorage.getItem('saidas'))
+        localStorage.setItem('cartao_items_terca', jsonStorage.getItem('cartao_items_terca'))
+        }
 
-    Swal.fire({
-      title: 'OCORREU UM ERRO!',
-      imageUrl: '../imgs/error404.png',
-      text: 'Desculpe, o processo de requisitação',
-      footer: '<a href="">Por que estou vendo isso?</a>'
+        
+      }
+      else {
+        location.reload()
+      }
     })
 }
