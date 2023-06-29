@@ -28,6 +28,11 @@ function user_account(){
         userminiprofile.innerHTML = `@` + username
         fotominiprofile.setAttribute('src', "img/vinicius-profile.jpeg")
 
+        let imgperfilsettings = document.querySelector('.contashowimage img')
+        imgperfilsettings.setAttribute('src', "img/vinicius-profile.jpeg")
+        let nomeusersettings = document.querySelector('.contashowdados h1')
+        nomeusersettings.innerHTML = `Vinícius Santos` 
+
     }
     else if(username == 'larissa.alves') {
         userhtml.innerHTML = username
@@ -36,6 +41,10 @@ function user_account(){
         nomeminiprofile.innerHTML = `Larissa Alves`
         userminiprofile.innerHTML = `@` + username
         fotominiprofile.setAttribute('src', "img/larissa-profile.jpeg")
+        let imgperfilsettings = document.querySelector('.contashowimage img')
+        imgperfilsettings.setAttribute('src', "img/larissa-profile.jpeg")
+        let nomeusersettings = document.querySelector('.contashowdados h1')
+        nomeusersettings.innerHTML = `Larissa Alves` 
     }
     else {
 

@@ -25,6 +25,8 @@ function request_datadownload() {
     })
 }
 
+
+
 function randomnumberinterval(a, b) {
     return Math.floor(Math.random() * (b - a + 1)) + a
 }
@@ -128,6 +130,9 @@ function importnewdatabase() {
         localStorage.setItem('saidas', jsonStorage.getItem('saidas'))
         localStorage.setItem('cartao_items_terca', jsonStorage.getItem('cartao_items_terca'))
         }
+
+        location.reload()
+        
 
         
       }
