@@ -112,7 +112,6 @@ function importnewdatabase() {
 
         // Define um item no arquivo JSON
 
-
         localStorage.setItem('total', jsonStorage.getItem('total'))
         localStorage.setItem('login', jsonStorage.getItem('login'))
         localStorage.setItem('meta_mes', jsonStorage.getItem('meta_mes'))
@@ -131,6 +130,61 @@ function importnewdatabase() {
         localStorage.setItem('cartao_items_terca', jsonStorage.getItem('cartao_items_terca'))
         localStorage.setItem('products_orders', jsonStorage.getItem('products_orders'))
         localStorage.setItem('encomendas_fazer', jsonStorage.getItem('encomendas_fazer'))
+
+        if(localStorage.getItem('products_orders') == 'undefined') {
+          localStorage.setItem('products_orders', '[]')
+        }
+        if(localStorage.getItem('encomendas_fazer') == 'undefined') {
+          localStorage.setItem('encomendas_fazer', '[]')
+        }
+        if(localStorage.getItem('total') == 'undefined') {
+          localStorage.setItem('total', '')
+        }
+        if(localStorage.getItem('login') == 'undefined') {
+          localStorage.setItem('login', '')
+        }
+        if(localStorage.getItem('meta_mes') == 'undefined') {
+          localStorage.setItem('meta_mes', '')
+        }
+        if(localStorage.getItem('cartao_items_quarta') == 'undefined') {
+          localStorage.setItem('cartao_items_quarta', '[]')
+        }
+        if(localStorage.getItem('expenses_items') == 'undefined') {
+          localStorage.setItem('expenses_items', '[]')
+        }
+        if(localStorage.getItem('user') == 'undefined') {
+          localStorage.setItem('user', '')
+        }
+        if(localStorage.getItem('cartao_items') == 'undefined') {
+          localStorage.setItem('cartao_items', '[]')
+        }
+        if(localStorage.getItem('cartao_items_sabado') == 'undefined') {
+          localStorage.setItem('cartao_items_sabado', '[]')
+        }
+        if(localStorage.getItem('cartao_items_quinta') == 'undefined') {
+          localStorage.setItem('cartao_items_quinta','[]')
+        }
+        if(localStorage.getItem('entradas') == 'undefined') {
+          localStorage.setItem('entradas', '')
+        }
+        if(localStorage.getItem('db_items') == 'undefined') {
+          localStorage.setItem('db_items', '[]')
+        }
+        if(localStorage.getItem('cartao_items_sexta') == 'undefined') {
+          localStorage.setItem('cartao_items_sexta', '[]')
+        }
+        if(localStorage.getItem('meta_anual') == 'undefined') {
+          localStorage.setItem('meta_anual', '')
+        }
+        if(localStorage.getItem('cartao_items_domingo') == 'undefined') {
+          localStorage.setItem('cartao_items_domingo', '[]')
+        }
+        if(localStorage.getItem('saidas') == 'undefined') {
+          localStorage.setItem('saidas', '')
+        }
+        if(localStorage.getItem('cartao_items_terca') == 'undefined') {
+          localStorage.setItem('cartao_items_terca', '[]')
+        }
         }
 
         location.reload()

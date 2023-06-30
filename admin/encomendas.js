@@ -8,7 +8,7 @@ var statusconfig = status_.value
 
 let items;
 
-function submitorders() {
+function submitcompra() {
   if (nomeproduto.value === "" || totaladd.value === "" || descricaoadd.value === '') {
     return alert("Preencha todos os campos!");
   }
