@@ -118,7 +118,7 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="planilhas.html"><i class="fa-regular fa-calendar-days"></i> Planilha</a>
             </div>
             <div class="item-opcoes-down" ${pedidospen}>
-                <a href="orders.html" class='cellpendentes'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${pedidosrecentesquant})</a>
+                <a href="orders.html" class='cellpendentes'><i class="fa-regular fa-clipboard"></i> (${pedidosrecentesquant}) Pedidos Pendentes</a>
             </div>
 
             <div class="item-opcoes-down" ${conexao}>
@@ -149,7 +149,7 @@ document.querySelector('.barscript').innerHTML = `
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="orders.html"><div class="card-bar" ${pedidospenpc}>
-                    <h1 class='pcpendentes'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${pedidosrecentesquant})</h1>
+                    <h1 class='pcpendentes'><i class="fa-regular fa-clipboard"></i>(${pedidosrecentesquant}) Pedidos Pendentes</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
 

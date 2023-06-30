@@ -1221,8 +1221,17 @@ label#embreve {
     overflow-x: auto;
 }
 
-.checkbox h2 {
+h2.pendente {
     background-color: rgb(255, 123, 0);
+    width: 7vw;
+    text-align: center;
+    color: white;
+    border-radius: 10vw;
+    font-size: 0.9vw;
+}
+
+h2.encomendado {
+    background-color: rgb(44, 119, 0);
     width: 7vw;
     text-align: center;
     color: white;
@@ -1353,7 +1362,8 @@ a.optionselectedsettings {
         color: black;
     }
     
-    .checkbox h2 {
+    
+    h2.pendente {
         background-color: rgb(255, 123, 0);
         width: 25vw;
         text-align: center;
@@ -1362,6 +1372,15 @@ a.optionselectedsettings {
         font-size: 3vw;
     }
     
+    h2.encomendado {
+        background-color: rgb(44, 119, 0);
+        width: 25vw;
+        text-align: center;
+        color: white;
+        border-radius: 10vw;
+        font-size: 3vw;
+    }
+
     .headerinside {
         display: flex;
         align-items: center;

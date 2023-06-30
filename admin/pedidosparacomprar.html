@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LARIS ACESSÓRIOS - Administração</title>
+
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="login.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://kit.fontawesome.com/d5feb0f1e8.js" crossorigin="anonymous"></script>
+
+    <script>
+        loginrequired()
+    </script>
+
+</head>
+<body>
+    <div class="first-time-login">
+        
+    </div>
+
+    <div class="barscript">
+    </div>
+
+    <div class="overview-page">
+        <div class="backgrond" onclick="fecharmenuprofile()"></div>
+        <div class="header-page">
+            <div class="openmenumobile" onclick="abrirmenumobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h1>Encomendas</h1>
+            <div class="profile">
+                <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
+
+                <div class="profile-change" onclick="openmenuprofile()">
+                    <img id='profile-image' src="img/usuario-sem-foto.png" alt="">
+                    <label id='nameuser'>Usuário</label>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+            </div>
+        </div>
+        <div class="notifications">
+            <h1>Notificações</h1>
+            <div class="notifications-blocks">
+                
+            </div>
+        </div>
+        <div class='menu-profile-change'>
+            <div class="userprofileshow" onclick="window.location.href = 'settings.html'">
+                <div class="account-show">
+                    <img src="img/usuario-sem-foto.png" alt="">
+                    <div class="infoaccount">
+                        <h1>Nome</h1>
+                        <p>usuário</p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="userbuttonsprofile">
+                <div class="button-profile" onclick="window.location.href = 'settings.html'">
+                    <label>AJUSTES</label>
+                </div>
+                <div class="button-profile" onclick="sairdoprofile()">
+                    <label>SAIR</label>
+                </div>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="content-upside">
+                <div>
+                    <div>
+                        <div>
+                            <div class="newItem">
+                                <div class="headeritem">
+                                  <div class="side1item">
+                                    <h1>ENCOMENDAS</h1>
+                                    <p>Preencha todos os dados para adicionar um item para lista de encomendas</p>
+                                  </div>
+                                  <div class="side2item" onclick="hideadcitem()">
+                                      <i class="fa-solid fa-minus"></i>
+                                  </div>
+                                  <div class="side3item" onclick="showadcitem()">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                </div>
+                                <div class="hideitem">
+                                  <div class="exboxitem">
+                                    <div class="divNome boxitempla">
+                                        <label for="nomeproduto">Produto</label>
+                                        <input type="text" name="nomeproduto" id="nomeproductadd">
+                                    </div>
+                                    <div class="divDetails boxitempla">
+                                        <label for="descricao">Descrição</label>
+                                        <input type="text" name="descricao" id="descricaoadd">
+                                    </div>
+                                    <div class="divPrecoRevenda boxitempla">
+                                        <label for="total">Preço do Produto</label>
+                                        <input type="number" name="total" id="totaladd">
+                                    </div>
+                                    <div class="divPrecoRevenda boxitempla">
+                                        <label for="total">Status</label>
+                                        <select name="" id="statusforencomenda">
+                                            <option value="Pendente" selected>Pendente</option>
+                                            <option value="Encomendado">Encomendado</option>
+                                        </select>
+                                    </div>
+                                    
+                                    
+                                    
+                                  </div>
+              
+              
+                                  
+                                  <button id="btnNew" onclick="submitorders()">Adicionar</button>
+                                </div>
+                              </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="divPedidosPendentes">
+
+                    </div>
+
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+    <script src="encomendas.js"></script>
+    <script src="leftsidebar.js"></script>
+    <script src="script.js"></script>
+    <script src="notifications.js"></script>
+    <script src="index.js"></script>
+    
+</html>

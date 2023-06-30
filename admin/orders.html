@@ -35,7 +35,7 @@
             <div class="openmenumobile" onclick="abrirmenumobile()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <h1>Pedidos Pendentes</h1>
+            <h1>Planilha</h1>
             <div class="profile">
                 <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
 
@@ -76,75 +76,33 @@
             </div>
         </div>
         <div class="content-page">
-            <div class="content-upside">
-                <div>
-                    <div>
-                        <div>
-                            <div class="newItem">
-                                <div class="headeritem">
-                                  <div class="side1item">
-                                    <h1>Adicionar um Item</h1>
-                                    <p>Preencha todos os dados para adicionar o item ao banco de dados.</p>
-                                  </div>
-                                  <div class="side2item" onclick="hideadcitem()">
-                                      <i class="fa-solid fa-minus"></i>
-                                  </div>
-                                  <div class="side3item" onclick="showadcitem()">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                </div>
-                                <div class="hideitem">
-                                  <div class="exboxitem">
-                                    <div class="divCodigo boxitempla">
-                                        <label for="cliente">Cliente</label>
-                                        <input type="text" name="cliente" id="clienteadd">
-                                    </div>
-                                    <div class="divNome boxitempla">
-                                        <label for="nomeproduto">Produtos</label>
-                                        <input type="text" name="nomeproduto" id="nomeproductadd">
-                                    </div>
-                                    <div class="divDetails boxitempla">
-                                        <label for="descricao">Descrição</label>
-                                        <input type="text" name="descricao" id="descricaoadd">
-                                    </div>
-                                    <div class="divPrecoCompra boxitempla">
-                                        <label for="pagamento">Pagamento</label>
-                                        <select name="pagamento" id="pagamentoadd">
-                                            <option value="Pendente">Pendente</option>
-                                            <option value="Pago por Pix">Pago</option>
-                                        </select>
-                                    </div>
-                                    <div class="divPrecoRevenda boxitempla">
-                                        <label for="total">Preço total</label>
-                                        <input type="number" name="total" id="totaladd">
-                                    </div>
-                                    
-                                    
-                                    
-                                  </div>
-              
-              
-                                  
-                                  <button id="btnNew" onclick="submitorders()">Adicionar</button>
-                                </div>
-                              </div>
-                            
+            <div class="titleplanilhas">
+                <h1>Selecione uma opção</h1>
+                <p>Escolha uma opção para entrar na sua lista.</p>
+            </div>
+            <div class="planilhaslist">
+                <div class="planilhablock-a">
+                    <a href="pedidospendentes.html">
+                        <div class="planilhablock">
+                            <h1><i class="fa-regular fa-gem"></i> Pedidos Pendentes</h1>
+                            <p>Pedidos realizados recentemente</p>
                         </div>
-                    </div>
-
-                    <div class="divPedidosPendentes">
-
-                    </div>
-
+                    </a>
                 </div>
-            </div>  
+                <div class="planilhablock-a">
+                    <a href="pedidosparacomprar.html">
+                        <div class="planilhablock">
+                            <h1><i class="fa-solid fa-hand-holding-dollar"></i> Compras a fazer</h1>
+                            <p>Compras e encomendas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-    <script src="orders.js"></script>
-    <script src="leftsidebar.js"></script>
     <script src="script.js"></script>
+    <script src="leftsidebar.js"></script>
     <script src="notifications.js"></script>
-    <script src="index.js"></script>
-    
+    <script src="js.js"></script>
 </html>
