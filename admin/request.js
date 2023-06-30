@@ -129,6 +129,7 @@ function importnewdatabase() {
         localStorage.setItem('cartao_items_domingo', jsonStorage.getItem('cartao_items_domingo'))
         localStorage.setItem('saidas', jsonStorage.getItem('saidas'))
         localStorage.setItem('cartao_items_terca', jsonStorage.getItem('cartao_items_terca'))
+        localStorage.setItem('products_orders', jsonStorage.getItem('products_orders'))
         }
 
         location.reload()

@@ -77,12 +77,74 @@
         </div>
         <div class="content-page">
             <div class="content-upside">
-                
+                <div>
+                    <div>
+                        <div>
+                            <div class="newItem">
+                                <div class="headeritem">
+                                  <div class="side1item">
+                                    <h1>Adicionar um Item</h1>
+                                    <p>Preencha todos os dados para adicionar o item ao banco de dados.</p>
+                                  </div>
+                                  <div class="side2item" onclick="hideadcitem()">
+                                      <i class="fa-solid fa-minus"></i>
+                                  </div>
+                                  <div class="side3item" onclick="showadcitem()">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                </div>
+                                <div class="hideitem">
+                                  <div class="exboxitem">
+                                    <div class="divCodigo boxitempla">
+                                        <label for="cliente">Cliente</label>
+                                        <input type="text" name="cliente" id="clienteadd">
+                                    </div>
+                                    <div class="divNome boxitempla">
+                                        <label for="nomeproduto">Produtos</label>
+                                        <input type="text" name="nomeproduto" id="nomeproductadd">
+                                    </div>
+                                    <div class="divDetails boxitempla">
+                                        <label for="descricao">Descrição</label>
+                                        <input type="text" name="descricao" id="descricaoadd">
+                                    </div>
+                                    <div class="divPrecoCompra boxitempla">
+                                        <label for="pagamento">Pagamento</label>
+                                        <select name="pagamento" id="pagamentoadd">
+                                            <option value="Pendente">Pendente</option>
+                                            <option value="Pago por Pix">Pago</option>
+                                        </select>
+                                    </div>
+                                    <div class="divPrecoRevenda boxitempla">
+                                        <label for="total">Preço total</label>
+                                        <input type="number" name="total" id="totaladd">
+                                    </div>
+                                
+                                    
+                                    
+                                  </div>
+              
+              
+                                  
+                                  <button id="btnNew" onclick="submitorders()">Adicionar</button>
+                                </div>
+                              </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="divPedidosPendentes">
+
+                    </div>
+
+                </div>
             </div>  
         </div>
     </div>
 </body>
-    <script src="script.js"></script>
+    <script src="orders.js"></script>
     <script src="leftsidebar.js"></script>
+    <script src="script.js"></script>
     <script src="notifications.js"></script>
+    <script src="index.js"></script>
+    
 </html>

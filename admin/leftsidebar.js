@@ -88,6 +88,9 @@ else if (document.location.pathname == '/admin/settings.html') {
     configpc = 'id="selectedcardbar"'
 }
 
+var quantorders = JSON.parse(localStorage.getItem('products_orders'))
+var pedidosrecentesquant = quantorders.length
+
 document.querySelector('.barscript').innerHTML = `
     <div class="fixed-bar-left-mobile">
         <div class="top-mobile-bar">
@@ -107,11 +110,9 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="planilhas.html"><i class="fa-regular fa-calendar-days"></i> Planilha</a>
             </div>
             <div class="item-opcoes-down" ${pedidospen}>
-                <a href="orders.html"><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes <label id="embreve">EM BREVE</label></a>
+                <a href="orders.html"><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${quantorders.length})</a>
             </div>
-            <div class="item-opcoes-down" ${messages}>
-                <a href="alerts.html"><i class="fa-regular fa-envelope"></i> Mensagens <label id="embreve">EM BREVE</label></a>
-            </div>
+
             <div class="item-opcoes-down" ${conexao}>
                 <a href="planosemanal.html"><i class="fa-regular fa-calendar-check"></i> Plano Semanal</a>
             </div>
@@ -140,13 +141,10 @@ document.querySelector('.barscript').innerHTML = `
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="orders.html"><div class="card-bar" ${pedidospenpc}>
-                    <h1><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes <label id="embreve">EM BREVE</label></h1>
+                    <h1 class='pedidosrecentes-'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${quantorders.length})</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
-                <a href="alerts.html"><div class="card-bar" ${messagespc}>
-                    <h1><i class="fa-regular fa-envelope"></i> Mensagens <label id="embreve">EM BREVE</label></h1>
-                    <i class="fa-solid fa-angle-right"></i>
-                </div></a>
+
                 <a href="planosemanal.html"><div class="card-bar" ${conexaopc}>
                     <h1><i class="fa-regular fa-calendar-check"></i> Plano Semanal</h1>
                     <i class="fa-solid fa-angle-right"></i>
@@ -163,7 +161,7 @@ document.querySelector('.barscript').innerHTML = `
         </div>
     </div>
     `
-
+        
 function abrirmenumobile() {
     var background = document.querySelector('.backgrond')
     document.querySelector('.fixed-bar-left-mobile').style.display = 'block'
