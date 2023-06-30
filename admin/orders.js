@@ -1,4 +1,4 @@
-const tbody = document.querySelector(".divPedidosPendentes");
+const divPedidosPendentes = document.querySelector(".divPedidosPendentes");
 
 const cliente = document.querySelector(".newItem #clienteadd");
 const nomeproduto = document.querySelector(".newItem #nomeproductadd");
@@ -114,12 +114,12 @@ function insertItem(item, index) {
                     
   `;
 
-  tbody.appendChild(tr);
+  divPedidosPendentes.appendChild(tr);
 }
 
 function loadItens() {
   items = getItensBD();
-  tbody.innerHTML = "";
+  divPedidosPendentes.innerHTML = "";
   items.forEach((item, index) => {
     insertItem(item, index);
   });

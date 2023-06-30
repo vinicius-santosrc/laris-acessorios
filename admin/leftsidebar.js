@@ -88,8 +88,16 @@ else if (document.location.pathname == '/admin/settings.html') {
     configpc = 'id="selectedcardbar"'
 }
 
-var quantorders = JSON.parse(localStorage.getItem('products_orders'))
-var pedidosrecentesquant = quantorders.length
+if (localStorage.getItem('products_orders') == null ){
+    var pedidosrecentesquant = ''
+}
+
+else {
+    var quantorders = JSON.parse(localStorage.getItem('products_orders'))
+    var pedidosrecentesquant = quantorders.length
+}
+
+    
 
 document.querySelector('.barscript').innerHTML = `
     <div class="fixed-bar-left-mobile">
@@ -110,7 +118,7 @@ document.querySelector('.barscript').innerHTML = `
                 <a href="planilhas.html"><i class="fa-regular fa-calendar-days"></i> Planilha</a>
             </div>
             <div class="item-opcoes-down" ${pedidospen}>
-                <a href="orders.html"><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${quantorders.length})</a>
+                <a href="orders.html" class='cellpendentes'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${pedidosrecentesquant})</a>
             </div>
 
             <div class="item-opcoes-down" ${conexao}>
@@ -141,7 +149,7 @@ document.querySelector('.barscript').innerHTML = `
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
                 <a href="orders.html"><div class="card-bar" ${pedidospenpc}>
-                    <h1 class='pedidosrecentes-'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${quantorders.length})</h1>
+                    <h1 class='pcpendentes'><i class="fa-regular fa-clipboard"></i> Pedidos Pendentes (${pedidosrecentesquant})</h1>
                     <i class="fa-solid fa-angle-right"></i>
                 </div></a>
 
@@ -161,7 +169,7 @@ document.querySelector('.barscript').innerHTML = `
         </div>
     </div>
     `
-        
+
 function abrirmenumobile() {
     var background = document.querySelector('.backgrond')
     document.querySelector('.fixed-bar-left-mobile').style.display = 'block'
