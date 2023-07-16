@@ -869,21 +869,26 @@ tr th{
 }
 
 .titleplanilhas {
-    background-color: #e4e4e4;
+    background-color: transparent;
     margin: auto;
     padding: 2vw;
-    width: 65vw;
+    width: 100%;
     border-radius: 1vw;
     margin-bottom: 2vh;
     font-size: 0.8vw;
 }
 
+.planilhaslist {
+    display: flex;
+}
+
 .planilhablock-a {
-    background-color: #e4e4e4;
+    background-color: rgb(223, 223, 223);
+    border-left: 1vw solid var(--rosaprimario);
     margin: auto;
     padding: 2vw;
-    width: 50vw;
-    border-radius: 1vw;
+    width: 40%;
+    border-radius: 0.3vw;
     margin-bottom: 1vh;
     cursor: pointer;
 }
@@ -1154,6 +1159,7 @@ label#embreve {
 .planilhablockindex a{
     text-decoration: none;
     color: black;
+    font-size: 0.8vw;
 }
 
 .planilhablockindex h2 {
@@ -1616,6 +1622,12 @@ a.optionselectedsettings {
             font-size: 4vw;
         }
 
+        .planilhablockindex a{
+            text-decoration: none;
+            color: black;
+            font-size: 3vw;
+        }
+
         .form button {
             width: 100%;
             margin-top: 10vh;
@@ -1701,13 +1713,17 @@ a.optionselectedsettings {
         }
 
         .titleplanilhas {
-            background-color: #e4e4e4;
+            background-color: transparent;
             margin: auto;
             padding: 2vw;
             width: 90vw;
             border-radius: 1vw;
             margin-bottom: 2vh;
-            font-size: 2.5vw;
+            font-size: 3vw;
+        }
+
+        .planilhaslist {
+            display: block;
         }
         
         .planilhablock-a {
@@ -2199,8 +2215,8 @@ a.optionselectedsettings {
         .block i {
             background-color: var(--rosaprimario);
             border-radius: 10vw;
-            font-size: 3vw;
-            padding: 1vw;
+            font-size: 5vw;
+            padding: 3vw;
             margin-bottom: 1vh;
             color:  var(--brancoprimario);
         }

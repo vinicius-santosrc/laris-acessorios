@@ -130,6 +130,7 @@ function importnewdatabase() {
         localStorage.setItem('cartao_items_terca', jsonStorage.getItem('cartao_items_terca'))
         localStorage.setItem('products_orders', jsonStorage.getItem('products_orders'))
         localStorage.setItem('encomendas_fazer', jsonStorage.getItem('encomendas_fazer'))
+        localStorage.setItem('planodefundo', jsonStorage.getItem('planodefundo'))
 
         if(localStorage.getItem('products_orders') == 'undefined') {
           localStorage.setItem('products_orders', '[]')
@@ -184,6 +185,9 @@ function importnewdatabase() {
         }
         if(localStorage.getItem('cartao_items_terca') == 'undefined') {
           localStorage.setItem('cartao_items_terca', '[]')
+        }
+        if(localStorage.getItem('planodefundo') == 'undefined') {
+          localStorage.setItem('planodefundo', '')
         }
         }
 

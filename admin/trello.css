@@ -324,17 +324,159 @@
 
 
 .sections-semana {
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.menuoptionsrightside {
+    position: absolute;
+    z-index: 300;
+    background-color: white;
+    left: 85%;
+    width: 14.9vw;
+    height: 90%;
+    display: none;
+    
+
+}
+
+.menuteladefundooptions {
+    position: absolute;
+    z-index: 300;
+    background-color: white;
+    left: 85%;
+    width: 14.9vw;
+    height: 90%;
+    display: none;
+    
+}
+
+.menuteladefundo {
+    position: absolute;
+    z-index: 300;
+    background-color: white;
+    left: 85%;
+    width: 14.9vw;
+    height: 90%;
+    display: none;
+}
+
+.menuteladefundooptionscores {
+    position: absolute;
+    z-index: 300;
+    background-color: white;
+    left: 85%;
+    width: 14.9vw;
+    height: 90%;
+    display: none;
+}
+
+
+.menuoptionsrightside-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.menutitle h1{
+    font-size: 1vw;
+    font-weight: 500;
+    position: absolute;
+    top: 0.5vh;
+    left: 40%;
+}
+
+.blockmenus {
+    width: 6vw;
+    margin-right: 0.5vw;
+    padding: 0.0vw;
+}
+
+.blockmenus img{
+    width: 100%;
+    height: 9vh;
+    border-radius: 0.3vw;
+}
+
+.blockmenus p {
+    font-size: 0.6vw;
+    text-align: center;
+}
+
+.blockmenus img:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+    border: 1vw;
+}
+
+.menutitletelafundo {
+    font-size: 0.4vw;
+    font-weight: 500;
+    position: absolute;
+    top: 0.5vh;
+    left: 23%;
+}
+
+.menutitletelaoptions {
+    font-size: 0.4vw;
+    font-weight: 500;
+    position: absolute;
+    top: 0.5vh;
+    left: 29%;
+}
+
+.closemenuright {
+    position: absolute;
+    left: 90%;
+    top: 0.7vh;
+    font-size: 0.8vw;
+}
+
+.closemenuright:hover {
+    color: var(--rosaprimario);
+    cursor: pointer;
+}
+
+.cardmenus {
+    border-top: 0.1vw solid rgb(199, 197, 197);
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 4vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardmenuselect {
+    margin: 0.5vw;
+    padding: 0.5vw;
+    font-size: 0.65vw;
+    border-radius: 0.1vw;
+    color: #575757;
+}
+
+.cardmenuselect:hover {
+    background-color: #b1b1b193;
+    cursor: pointer;
+}
+
+.cardmenuselect i {
+    color: var(--rosaprimario);
+}
+
+.sections-blocks-semana {
     margin-left: 0vw;
     display: flex;
     justify-content: left;
     overflow-x: none;
     flex-wrap: wrap;
-    background-image: url('img/trelloback.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 2vw;
     padding-bottom: 70vh;
-    border-radius: 0vw 0vw 1vw 1vw;
+
 }
 
 button.addnewline {
@@ -351,21 +493,43 @@ button.addnewline {
     margin-top: 1vh;
 }
 
+.menuoptionstrell {
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+.menuoptionstrell:hover {
+    background-color: #5050509d;
+    border-radius: 0.2vw;
+}
+
+.menuoptionstrell i {
+    font-size: 0.8vw;
+}
+
 .header-top-side {
-    background-image: linear-gradient(30deg, #E087BA, #9682CA);
+    background: rgba(199, 197, 197, 0.445);
     padding: 1vh;
-    font-size: 0.7vw;
     filter: blur(2);
-    border-radius: 1vw 1vw 0vw 0vw;
+}
+
+.header-top-side h1 {
+    font-size: 0.85vw;
+}
+
+.left-side-left {
+    align-items: center;
+    display: flex;
 }
 
 .left-side {
     display: flex;
+    align-items: center;
 }
 
 .left-side img {
-    width: 3vw;
-    height: 3vw;
+    width: 2vw;
+    height: 2vw;
     object-fit: cover;
     border-radius: 10vw;
 }
@@ -382,19 +546,52 @@ button.addnewline {
     align-items: center;
 }
 
-.right-side label {
-    background-color: rgba(32, 32, 32, 0.644);
+.left-side label {
+    background-color: #172b4d;
     color: white;
-    font-weight: 600;
+    font-weight: 400;
+    padding: 0.6vh 0.7vw 0.6vh 0.7vw;
+    margin-left: 1vw;
+    border-radius: 0.2vw;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+
+.imgsleftside1 {
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side label {
+    background-color: #172b4d;
+    color: white;
+    font-weight: 400;
+    padding: 0.6vh 0.7vw 0.6vh 0.7vw;
+    margin-left: 1vw;
+    border-radius: 0.2vw;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+
+.right-side label#particular {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
     padding: 1vh;
     margin-left: 1vw;
-    border-radius: 0.6vw;
+    border-radius: 0.2vw;
     cursor: pointer;
+    font-size: 0.8vw;
+}
+
+
+.right-side label#particular:hover {
+    background-color: rgba(187, 187, 187, 0.199);
 }
 
 .right-side i.fa-star {
     align-items: center;
-    font-size: 1vw;
+    font-size: 0.7vw;
     margin-left: 1vw;
     cursor: pointer;
 }
@@ -411,6 +608,7 @@ button.addnewline:hover {
     border-radius: 1vw;
     margin-bottom: 1vh;
     height: 100%;
+    box-shadow: 0.1vw 0.05vw 0.3vw rgb(87, 87, 87);
     
 }
 
@@ -1178,7 +1376,7 @@ tr th{
 }
 
 .imgrightside img{
-    width: 7vw;
+    width: 6vw;
     margin-right: 3vw;
 }
 
@@ -1523,19 +1721,44 @@ a.optionselectedsettings {
         cursor: pointer;
         align-items: center;
     }
+
     .sections-semana {
-        margin-left: 0vw;
-        width: 380vw;
-        display: flex;
-        justify-content: left;
-        overflow-x: scroll;
-        background-image: url('img/trelloback.png');
+        background: none;
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
+        overflow-x: scroll;
+        height: 100%;
+    }
+    .sections-blocks-semana {
+        margin-left: 0vw;
+        display: flex;
+        justify-content: left;
+        background-repeat: repeat;
+        background-size: cover;
         padding: 2vw;
-        padding-bottom: 70vh;
+        width: 200vw;
+        padding-bottom: 100%;
+        overflow-x: scroll;
         border-radius: 0vw;
     }
+
+    .left-side label {
+        background-color: #172b4d;
+        color: white;
+        font-weight: 400;
+        padding: 0.6vh 0.7vw 0.6vh 0.7vw;
+        margin-left: 1vw;
+        border-radius: 0.2vw;
+        cursor: pointer;
+        font-size: 3vw;
+    }
+    
+    .imgsleftside1 {
+        align-items: center;
+        justify-content: center;
+    }
+    
 
     .divTable i {
         font-size: 4vw;
@@ -1575,6 +1798,21 @@ a.optionselectedsettings {
         background-color: rgb(238, 236, 236);
         border-radius: 1vw;
         font-size: 4vw;
+    }
+
+    .menuoptionstrell {
+        padding: 3vw;
+        cursor: pointer;
+    }
+    
+    .menuoptionstrell:hover {
+        background-color: #5050509d;
+        border-radius: 0.2vw;
+    }
+    
+    .menuoptionstrell i {
+        font-size: 3vw;
+        
     }
 
     .fixed-bar-left-mobile {
@@ -2704,13 +2942,13 @@ a.optionselectedsettings {
 
 
         .header-top-side {
-            background-image: linear-gradient(30deg, #E087BA, #9682CA);
+            background: rgba(207, 207, 207, 0.575);
             padding: 1vh;
             font-size: 2vw;
             filter: blur(2);
             border-radius: 0vw 0vw 0vw 0vw;
-            width: 380vw;
-            padding-right: 280vw;
+            width: 100vw;
+            padding-right: 0vw;
         }
         
         .left-side {
@@ -2726,7 +2964,7 @@ a.optionselectedsettings {
         
         .headersections {
             align-items: center;
-            display: flex;
+            display: block;
             justify-content: space-between;
             padding: 0vw 1vw 0vw 1vw;
         }
@@ -2735,23 +2973,188 @@ a.optionselectedsettings {
             display: flex;
             align-items: center;
         }
+
+        .right-side h1 {
+            font-size: 2.7vw;
+        }
         
         .right-side label {
             background-color: rgba(32, 32, 32, 0.644);
             color: white;
             font-weight: 600;
             padding: 1vh;
-            margin-left: 2vw;
+            margin-left: 1vw;
             border-radius: 1vw;
             cursor: pointer;
-            font-size: 3vw;
+            font-size: 2.7vw;
         }
         
         .right-side i.fa-star {
             align-items: center;
+            font-size: 2.7vw;
+            margin-left: 1vw;
+            cursor: pointer;
+        }
+
+        .right-side label#particular {
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            padding: 1vw;
+            margin-left: 0vw;
+            border-radius: 0.2vw;
+            cursor: pointer;
+            font-size: 2.7vw;
+        }
+        
+        
+        .right-side label#particular:hover {
+            background-color: rgba(187, 187, 187, 0.199);
+        }
+        
+
+        .menuoptionsrightside {
+            position: absolute;
+            z-index: 300;
+            background-color: white;
+            left: 40%;
+            width: 59.9vw;
+            height: 50%;
+            display: none;
+            box-shadow: 0vw 1vw 8vw rgb(0, 0, 0);
+            
+        
+        }
+        
+        .menuteladefundooptions {
+            position: absolute;
+            z-index: 300;
+            background-color: white;
+            left: 40%;
+            width: 59.9vw;
+            height: 50%;
+            display: none;
+            
+        }
+        
+        .menuteladefundo {
+            position: absolute;
+            z-index: 300;
+            background-color: white;
+            left: 40%;
+            width: 59.9vw;
+            height: 50%;
+            display: none;
+        }
+        
+        .menuteladefundooptionscores {
+            position: absolute;
+            z-index: 300;
+            background-color: white;
+            left: 40%;
+            width: 59.9vw;
+            height: 50%;
+            display: none;
+        }
+        
+        
+        .menuoptionsrightside-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2vh;
+        }
+    
+        
+        .blockmenus {
+            width: 25vw;
+            margin-right: 0.5vw;
+            padding: 0.0vw;
+            
+        }
+        
+        .blockmenus img{
+            width: 100%;
+            height: 9vh;
+            border-radius: 1.5vw;
+        }
+        
+        .blockmenus p {
             font-size: 3vw;
-            margin-left: 2vw;
+            text-align: center;
+        }
+        
+        .blockmenus img:hover {
+            filter: brightness(1.1);
+            cursor: pointer;
+            border: 1vw;
+        }
+
+        .menutitle h1{
+            font-size: 3vw;
+            font-weight: 500;
+            position: absolute;
+            top: 1vh;
+            left: 40%;
+        }
+        
+        .menutitletelafundo {
+            font-size: 2vw;
+            font-weight: 500;
+            position: absolute;
+            top: 1vh;
+            left: 17%;
+        }
+        
+        .menutitletelaoptions {
+            font-size: 2vw;
+            font-weight: 500;
+            position: absolute;
+            top: 1vh;
+            left: 24%;
+        }
+        
+        .closemenuright {
+            position: absolute;
+            left: 90%;
+            top: 0.7vh;
+            font-size: 4vw;
+        }
+        
+        .closemenuright:hover {
+            color: var(--rosaprimario);
             cursor: pointer;
         }
         
+        .cardmenus {
+            border-top: 0.1vw solid rgb(199, 197, 197);
+            margin-left: 0.5vw;
+            margin-right: 0.5vw;
+            margin-top: 4vh;
+            padding-top: 2vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow-y: scroll;
+            height: 45vh;
+            
+        }
+        
+        .cardmenuselect {
+            margin: 0.5vw;
+            padding: 0.5vw;
+            font-size: 3vw;
+            border-radius: 0.1vw;
+            color: #575757;
+        }
+        
+        .cardmenuselect:hover {
+            background-color: #b1b1b193;
+            cursor: pointer;
+        }
+        
+        .cardmenuselect i {
+            color: var(--rosaprimario);
+        }
+
 }
+

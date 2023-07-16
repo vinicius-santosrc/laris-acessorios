@@ -93,21 +93,190 @@
                     </button>
                 </div>
             </div>
-            <div class="header-top-side">
-                <div class="headersections">
-                    <div class="right-side">
-                        <h1>SEMANA LARI'S</h1>
-                        <i class="fa-solid fa-star"></i>
-                        <label><i class="fa-solid fa-chart-simple"></i> QUADRO</label>
+            
+            <div class="sections-semana">
+                <div class="header-top-side">
+                    <div class="headersections">
+                        <div class="right-side">
+                            <h1>SEMANA LARI'S</h1>
+                            <i class="fa-solid fa-star"></i>
+                            <label id="particular"></i><i class="fa-solid fa-lock"></i> Particular</label>
+                            <label><i class="fa-solid fa-chart-simple"></i> Quadro</label>
+                        </div>
+                        <div class="left-side">
+                            <div class="imgsleftside1">
+                                <img src="img/larissa-profile.jpeg" alt="">
+                                <img src="img/vinicius-profile.jpeg" alt="">
+                               
+                            </div>
+                            <div class="left-side-left">
+                                <label>
+                                    <i class="fa-solid fa-user-plus"></i> Compartilhar
+                                </label>
+                                <div class="menuoptionstrell">
+                                    <i class="fa-solid fa-ellipsis" onclick="openmenutrellooptions()"></i>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
-                    <div class="left-side">
-                        <img src="img/larissa-profile.jpeg" alt="">
-                        <img src="img/vinicius-profile.jpeg" alt="">
+                    
+                    
+                </div>
+
+                <div class="menuoptionsrightside">
+                    <div class="menuoptionsrightside-top">
+                        <div class="menutitle">
+                            <h1>Menu</h1>
+                        </div>
+                        
+                        <div class="closemenuright" onclick="closemenuoptions()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cardmenus">
+                        <div class="cardmenuselect" onclick="openplanodefundo()">
+                            <h3><i class="fa-solid fa-image"></i> Alterar Tela de Fundo</h3>
+                            <p>Mude seu plano de fundo</p>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="sections-semana">
+
+                <div class="menuteladefundo">
+                    <div class="menuoptionsrightside-top">
+                        <div class="menutitletelafundo">
+                            <h1>Alterar Tela de Fundo</h1>
+                        </div>
+                        
+                        <div class="closemenuright" onclick="closeplanodefundo()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cardmenus">
+                        <div class="blockmenus" onclick="menuphotosfundo()">
+                            <img src="https://images.unsplash.com/photo-1620121684840-edffcfc4b878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                            <p>Fotos</p>
+                        </div>
+                        <div class="blockmenus" onclick="menuphotosfundocores()">
+                            <img src="img/cor1.png" alt="">
+                            <p>Cores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuteladefundooptions">
+                    <div class="menuoptionsrightside-top">
+                        <div class="menutitletelaoptions">
+                            <h1>Fotos do <b>Google</b></h1>
+                        </div>
+                        
+                        <div class="closemenuright" onclick="closemenuphotosfundo()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cardmenus">
+                        <div class="blockmenus" onclick="setphoto1()">
+                            <img src="img/trelloback.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto2()">
+                            <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto3()">
+                            <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto4()">
+                            <img src="https://images.unsplash.com/photo-1620121684840-edffcfc4b878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto5()">
+                            <img src="https://images.unsplash.com/photo-1532779952550-b8fc9200ed8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto6()">
+                            <img src="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto7()">
+                            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto8()">
+                            <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto9()">
+                            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto10()">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto11()">
+                            <img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto12()">
+                            <img src="https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto13()">
+                            <img src="https://images.unsplash.com/photo-1549778399-f94fd24d4697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphoto14()">
+                            <img src="https://images.unsplash.com/photo-1569041032620-2d0ee0b7b673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+
+                        <div class="blockmenus" onclick="setphoto15()">
+                            <img src="https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="">
+                        </div>
+
+                        <div class="blockmenus" onclick="setphoto16()">
+                            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <div class="menuteladefundooptionscores">
+                    <div class="menuoptionsrightside-top">
+                        <div class="menutitletelaoptions">
+                            <h1>Cores Sólidas</h1>
+                        </div>
+                        
+                        <div class="closemenuright" onclick="closemenuphotosfundocor()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cardmenus">
+                        <div class="blockmenus" onclick="setphotocor1()">
+                            <img src="img/cor1.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor2()">
+                            <img src="img/cor2.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor3()">
+                            <img src="img/cor3.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor4()">
+                            <img src="img/cor4.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor5()">
+                            <img src="img/cor5.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor6()">
+                            <img src="img/cor6.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor7()">
+                            <img src="img/cor7.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor8()">
+                            <img src="img/cor8.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor9()">
+                            <img src="img/cor9.png" alt="">
+                        </div>
+                        <div class="blockmenus" onclick="setphotocor10()">
+                            <img src="img/cor10.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sections-blocks-semana">
                     <div class="block-sections">
                         <h1>Segunda-feira</h1>
         
@@ -293,7 +462,7 @@
                             <button onclick="openadditemdomingo()" class="addnewline"><i class="fa-sharp fa-solid fa-plus"></i> Adicionar um cartão</button>
                         </div>
                     </div> 
-                
+                </div>
                
             </div>
             
@@ -304,4 +473,5 @@
     <script src="leftsidebar.js"></script>
     <script src="notifications.js"></script>
     <script src="planosemanal.js"></script>
+    <script src="trello.js"></script>
 </html>

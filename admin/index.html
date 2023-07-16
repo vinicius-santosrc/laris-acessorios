@@ -114,7 +114,7 @@
                                 <h2 class="lucrototal"></h2>
                             </div>
                             <div class="graphcircle graphcircle-total">
-                                <div><p>100%</p></div>
+
                             </div>
                         </div>
                         <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
@@ -124,7 +124,7 @@
                                 <h2 class="incomes">R$</h2>
                             </div>
                             <div class="graphcircle graphcircle-entradas">
-                                <div><p class="porcentagementrada">0%</p></div>
+
                             </div>
                         </div>
                         <div class="block" onclick="window.location.href = 'planilhaexpenses.html'">
@@ -134,7 +134,7 @@
                                 <h2 class="expenses">R$</h2>
                             </div>
                             <div class="graphcircle graphcircle-saidas">
-                                <div><p class="porcentagemsaida">0%</p></div>
+
                             </div>
                         </div>
                     </div>
@@ -182,36 +182,8 @@
                             </div>
                         </a>
                     </div>
-                    <a>
-                        <div class="blockfornecedores-add">
-                            <a>
-                                <h1>
-                                    <i class="fa-solid fa-plus"></i> Adicionar mais
-                                </h1>
-                            </a>
-                        </div>
-                    </a>
-        
-                </div>
-            </div>
-            <div class="contentoverview">
-                <div class="block-recent-orders">
-                    <div class="toptitlecard">
-                        
-                    </div>
-                    <div class="orders-recents">
-
-                    </div>
-                </div>
-                <div class="blocks-contents-right">
-                    <div class="toptitlecard">
-                        <h1>Notificações Recentes</h1>
-                    </div>
-                    <div class="notifications-blocks">
-                        
-                    </div>
                     
-
+        
                 </div>
             </div>
             <div class="contentoverview">
@@ -263,6 +235,7 @@
     <script src="index.js"></script>
     <script src="notifications.js"></script>
     
+
     <script>
         planilha = JSON.parse(localStorage.getItem('db_items'))
         planilha.forEach(item => {
@@ -350,5 +323,7 @@
         
 
     </script>
+
+    <script src="orders.js"></script>
 
 </html>
