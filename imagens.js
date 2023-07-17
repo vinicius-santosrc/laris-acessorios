@@ -1179,3 +1179,80 @@ function brincoearcuffcristal2() {
     let item = "../imgs/brinco-earcuff-cristal-_2_.webp"
     document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
 }
+
+function pulseiranossasenhora1() {
+    let item = "../imgs/PULSEIRA NOSSA SENHORA (1).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function pulseiranossasenhora2() {
+    let item = "../imgs/PULSEIRA NOSSA SENHORA (2).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function pulseiranossasenhora3() {
+    let item = "../imgs/PULSEIRA NOSSA SENHORA (3).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincocomvenezianacristal1() {
+    let item = "../imgs/BRINCO COM VENEZIANA CRISTAL (1).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+
+function brincocomvenezianacristal2() {
+    let item = "../imgs/BRINCO COM VENEZIANA CRISTAL (2).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+
+function brincocomvenezianacristal3() {
+    let item = "../imgs/BRINCO COM VENEZIANA CRISTAL (3).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoarticulado1() {
+    let item = "../imgs/BRINCO ARTICULADO (1).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoarticulado2() {
+    let item = "../imgs/BRINCO ARTICULADO (2).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincoarticulado3() {
+    let item = "../imgs/BRINCO ARTICULADO (3).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincopontodeluzpink1() {
+    let item = "../imgs/BRINCO PONTO DE LUZ PINK (1).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincopontodeluzpink2() {
+    let item = "../imgs/BRINCO PONTO DE LUZ PINK (2).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function brincopontodeluzpink3() {
+    let item = "../imgs/BRINCO PONTO DE LUZ PINK (3).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function anelentrelacado1() {
+    let item = "../imgs/anel entrelaçado (1).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function anelentrelacado2() {
+    let item = "../imgs/anel entrelaçado (2).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}
+
+function anelentrelacado3() {
+    let item = "../imgs/anel entrelaçado (3).jpeg"
+    document.querySelector('.imagemprincipal').innerHTML = `<img src="` + item + `"alt="">`
+}

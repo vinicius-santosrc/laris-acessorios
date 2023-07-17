@@ -1,11 +1,17 @@
 document.querySelector('.notifications-blocks').innerHTML = `
                 <div class="not-block">
-                <h2>Atualização 0.7 (10:27 de 29/06/2023)</h2>
-                <p>* Novo sistema de importação e exportação de dados.</p>
-                <p>* Mudança no estoque das pratas</p>
-                <p>* Correção de bugs</p>
-                <p>Autor: Vinícius S.</p>
-                <p style="color: green">Uploaded: Sucess</p>
+                    <h2>Atualização 0.8 (13:14 de 17/07/2023)</h2>
+                    <p>* Sistema de mudança de plano de fundo na aba de Plano Semanal.</p>
+                    <p>Autor: Vinícius S.</p>
+                    <p style="color: green">Uploaded: Sucess</p>
+                </div>
+                <div class="not-block">
+                    <h2>Atualização 0.7 (10:27 de 29/06/2023)</h2>
+                    <p>* Novo sistema de importação e exportação de dados.</p>
+                    <p>* Mudança no estoque das pratas</p>
+                    <p>* Correção de bugs</p>
+                    <p>Autor: Vinícius S.</p>
+                    <p style="color: green">Uploaded: Sucess</p>
                 </div>
                 <div class="not-block">
                     <h2>Atualização 0.6 (18:57 de 24/06/2023)</h2>

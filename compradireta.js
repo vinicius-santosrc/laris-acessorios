@@ -1262,6 +1262,62 @@ function prata_colar_elos_de_coracao_comp() {
       })
 }
 
+function prata_pulseira_nossa_senhora_comp() {
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+
+    Swal.fire({
+        title: 'Você deseja adicionar <b>Extensor (+4cm)</b>',
+        icon: 'info',
+        html:
+          `
+          <div class='item-prata'>
+            <img src="../imgs/extensor (1).jpeg" alt="">
+            <div class="text-prata">
+                <p class='novidade-loja'>Novo</p>
+                <h1 class="nome-prata">Extensor (+4cm)</h1>
+                <div class='estrelas'>
+                    <img src="../imgs/Nenhuma estrela.png" alt="">
+                </div>
+                <div class="promocao">
+                    <p class="preço-promo"><s>R$ 13,00</s>
+                    <p class="preço-loja">R$ 8,50</p>
+                    <p class="opcoesdepaga">(comprado junto com produtos)</p>
+                </div>
+                
+            </div>
+        </div>
+    ` +
+          '+ R$ 8,50 na soma total',
+          showCancelButton: true,
+          confirmButtonColor: '#EF59A0',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'ADICIONAR',
+          cancelButtonText: 'NÃO '
+    }).then((result) => {
+        if (result.isConfirmed) {
+            tarefas.push('Pulseira Nossa Senhora'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+            mostraTarefas()
+            salvarNoLocalStorage()
+            tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
+            mostraTarefas()
+            salvarNoLocalStorage()
+            window.location.href = '../resumo.html'
+        } else if (
+            result.dismiss
+        ){
+            tarefas.push('Pulseira Nossa Senhora' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+            mostraTarefas()
+            salvarNoLocalStorage()
+            window.location.href = '../resumo.html'
+        }
+      })
+}
 
 function prata_brinco_coracaotrançado_comp() {
     tarefas.push('Brinco Coração Trançado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
@@ -1412,6 +1468,34 @@ function touca_cetim_dupla_face_azul_rosa_comp() {
 
 function prata_anelcravejado_comp() {
     tarefas.push(`Anel Cravejado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_com_veneziana_cristal_comp() {
+    tarefas.push(`Brinco com Veneziana Cristal`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_articulado_comp() {
+    tarefas.push(`Brinco Articulado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_brinco_ponto_de_luz_pink_comp() {
+    tarefas.push(`Brinco Ponto de Luz Pink`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
+    mostraTarefas()
+    salvarNoLocalStorage()
+    window.location.href = '../resumo.html'
+}
+
+function prata_anel_entrelacado_comp() {
+    tarefas.push(`Anel Entrelaçado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
     window.location.href = '../resumo.html'
