@@ -39,6 +39,7 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <h1>Dashboard</h1>
+            <p class="seguidoresinstagram"></p>
             <div class="profile">
                 <i class="fa-regular fa-bell" onclick="notificacaoopen()"></i>
 
@@ -228,15 +229,32 @@
     document.querySelector('.pmes').innerHTML = 'Mensal: R$ ' + localStorage.getItem('meta_mes')
 
 </script>
+<script type="module" src="../pup-index.js"></script>
+</script>
 <script src="js.js"></script>
+<script>
+    loadinfo()
+    function loadinfo() {
+        fetch('../instagram.json').then(function(response) {
+            return response.json()
+        }).then(function (jsonfile) {
+            const newjson = JSON.stringify(jsonfile)
+            const newjson2 = JSON.parse(newjson)
+
+            for (items of newjson2) {
+                
+            }
+        })
+    }
+</script>
     <script src="leftsidebar.js"></script>
     <script src="script.js"></script>
     <script src="planilha.js"></script>
     <script src="index.js"></script>
     <script src="notifications.js"></script>
-    
 
     <script>
+
         planilha = JSON.parse(localStorage.getItem('db_items'))
         planilha.forEach(item => {
             document.querySelector('.tbodyplanilharecents').innerHTML = `
@@ -325,5 +343,4 @@
     </script>
 
     <script src="orders.js"></script>
-
 </html>

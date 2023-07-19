@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "puppeteer": "^20.4.0"
-  }
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^20.8.3"
+  },
+  "name": "laris-acessorios",
+  "description": "<div class='body'>\r   <img width=\"200px\" src=\"https://laris-acessorios.netlify.app/imgs/Logo.webp\">\r   <h2></h2>\r   <p>Repositório ofícial do website <a href=\"https://laris-acessorios.netlify.app/\" target='_blank'>LARI'S ACESSÓRIOS</a></p>\r   <p>Criado por Larissa Alves de Andrade Moreira(Fundadora/Gerente/Dona) e Vinícius da Silva Santos(Sócio/Desenvolvedor/Designer)</p>\r   <a href=\"https://laris-acessorios.netlify.app/\" target='_blank'><img src=\"https://laris-acessorios.netlify.app/imgs/banner-noviades.png\"></a>\r    <a href=\"https://laris-acessorios.netlify.app/\" target='_blank'><img src=\"https://laris-acessorios.netlify.app/imgs/banner-footer-site.png\"></a>\r </div>",
+  "version": "1.0.0",
+  "main": "pup-index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
