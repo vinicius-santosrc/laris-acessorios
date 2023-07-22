@@ -193,7 +193,7 @@ body {
     margin: auto;
     width: 30vw;
     justify-content: center;
-    border: 1px solid var(--gray);
+    border: 1px solid var(--light-gray );
     border-radius: 1vw;
     margin-top: 10vh;
     padding: 2vw;
@@ -210,6 +210,7 @@ body {
 
 .form label {
     font-size: 1vw;
+    color: var(--textcolor);
 }
 
 .form .inputs-form .ipt-form{
@@ -231,26 +232,30 @@ body {
     padding-bottom: 1vw;
     padding-top: 1vw;
     font-size: 1vw;
+    background: var(--gray);
+    color: var(--text-color-in-rosa);
 }
 
 .iptinside {
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.1vw solid var(--gray);
+    border-bottom: 0.1vw solid var(--light-gray);
     align-items: center;
+    background-color: var(--gray);
 }
 
 .iptinside i {
     padding-right: 1vw;
     padding-left: 1vw;
-    color: var(--gray);
+    color: var(--text-color-in-rosa);
     font-size: 1vw;
+    background-color: var(--gray);
 }
 
 .form button {
     width: 100%;
     margin-top: 5vh;
-    color:  var(--bg-color);
+    color: var(--textcolor);
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-radius: 1vw;
@@ -288,6 +293,7 @@ body {
 .accountcontinue-mini {
     display: flex;
     align-items: center;
+    color: var(--text-color)
 }
 
 .accountcontinue-details h1 {
@@ -1803,6 +1809,7 @@ a.optionselectedsettings {
             outline: none;
             padding-bottom: 2vw;
             padding-top: 2vw;
+            color: var(--text-color);
             font-size: 4vw;
         }
 
@@ -1870,6 +1877,7 @@ a.optionselectedsettings {
         .accountcontinue-mini {
             display: flex;
             align-items: center;
+            color: var(--text-color);
         }
 
         .accountcontinue-details h1 {
