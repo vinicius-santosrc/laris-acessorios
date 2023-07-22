@@ -9,6 +9,7 @@ const codigo = document.querySelector("#codigo");
 const nameofitem = document.querySelector("#nameofitem");
 const detalhe = document.querySelector("#detalhe");
 const precocompra = document.querySelector("#precocompra");
+const custos = document.querySelector('#custos');
 const precorevenda = document.querySelector("#precorevenda");
 const quantcompra = document.querySelector("#quantcompra");
 const lucroporitem = document.querySelector("#lucroporitem");
@@ -23,7 +24,7 @@ const total = document.querySelector(".lucrototal");
 let items;
 
 btnNew.onclick = () => {
-  if (codigo.value === "" || nameofitem.value === "" || detalhe.value === "" || precocompra.value === "" || precorevenda.value === "" || quantcompra.value === "" || lucroporitem.value === "") {
+  if (codigo.value === "" || nameofitem.value === "" || detalhe.value === "" || precocompra.value === "" || custos.value === "" || precorevenda.value === "" || quantcompra.value === "" || lucroporitem.value === "") {
     return alert("Preencha todos os campos!");
   }
 
@@ -32,6 +33,7 @@ btnNew.onclick = () => {
     nameofitem: nameofitem.value,
     detalhe: detalhe.value,
     precocompra: precocompra.value,
+    custos: custos.value,
     precorevenda: precorevenda.value,
     quantcompra: quantcompra.value,
     lucroporitem: lucroporitem.value,
@@ -47,6 +49,7 @@ btnNew.onclick = () => {
   nameofitem.value = "";
   detalhe.value = "";
   precocompra.value = '';
+  custos.value = '';
   precorevenda.value = "";
   quantcompra.value = "";
   lucroporitem.value = "";
@@ -61,15 +64,21 @@ function deleteItem(index) {
 
 function insertItem(item, index) {
   let tr = document.createElement("tr");
-
+  if (item.custos == undefined) {
+    item.custos = '0'
+  }
+  else {
+    item.custos = `${item.custos}`
+  }
   tr.innerHTML = `
     <td>${item.codigo}</td>
     <td>${item.nameofitem}</td>
     <td>${item.detalhe}</td>
-    <td>${item.precocompra}</td>
-    <td>${item.precorevenda}</td>
+    <td>R$${item.precocompra}</td>
+    <td>R$${item.custos}</td>
+    <td>R$${item.precorevenda}</td>
     <td>${item.quantcompra}</td>
-    <td id='lucrolinha'>${item.lucroporitem}</td>
+    <td id='lucrolinha'>R$${item.lucroporitem}</td>
     <td class="columnAction">
       <button onclick="deleteItem(${index})"><i class="fa-solid fa-trash"></i></button>
     </td>

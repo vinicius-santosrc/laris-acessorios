@@ -88,6 +88,26 @@ else if (document.location.pathname == '/admin/settings.html') {
     configpc = 'id="selectedcardbar"'
 }
 
+else if (document.location.pathname == "/admin/exportdados.html") {
+    config = 'id="selectedpage"'
+    configpc = 'id="selectedcardbar"'
+}
+
+else if (document.location.pathname == "/admin/screenmode.html") {
+    config = 'id="selectedpage"'
+    configpc = 'id="selectedcardbar"'
+}
+
+else if (document.location.pathname == '/admin/pedidospendentes.html') {
+    pedidospen = 'id="selectedpage"'
+    pedidospenpc = 'id="selectedcardbar"'
+}
+
+else if (document.location.pathname == '/admin/pedidosparacomprar.html') {
+    pedidospen = 'id="selectedpage"'
+    pedidospenpc = 'id="selectedcardbar"'
+}
+
 else {
     
 }

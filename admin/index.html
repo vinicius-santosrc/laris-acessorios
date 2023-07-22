@@ -281,11 +281,11 @@
         let metaanual = localStorage.getItem('meta_anual') - localStorage.getItem('entradas')
 
         if (metamensal <= 0) {
-            document.querySelector('.counttometa').innerHTML = `Você alcançou sua meta mensal está com R$${localStorage.getItem('entradas') - localStorage.getItem('meta_mes')} de lucro.`
+            document.querySelector('.counttometa').innerHTML = `Você alcançou sua meta mensal está com R$${(localStorage.getItem('entradas') - localStorage.getItem('meta_mes')).toString().slice(0,7)} de lucro.`
             document.querySelector('.counttometa').style.color = 'green'
         }
         else {
-            document.querySelector('.counttometa').innerHTML = `Faltam: R$${localStorage.getItem('meta_mes') - localStorage.getItem('entradas')
+            document.querySelector('.counttometa').innerHTML = `Faltam: R$${(localStorage.getItem('meta_mes') - localStorage.getItem('entradas')).toString().slice(0,7)
             } para alcançar sua meta mensal`
         }
 

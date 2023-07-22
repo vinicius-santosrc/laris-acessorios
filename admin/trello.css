@@ -1,6 +1,25 @@
 :root {
+    --bg-color: #fafafa;
     --rosaprimario: #FF449E;
-    --brancoprimario:  white
+    --textcolor:  black;
+    --text-color-in-rosa: white;
+    --card-colors: #e4e4e4;
+    --card-colors-hover: #D4D4D4;
+    --gray: #e0e0e0;
+    --light-gray: #EEECEC;
+    --verde: green
+}
+
+.darkmode {
+    --bg-color: #131313;
+    --rosaprimario: #FF449E;
+    --textcolor:  white;
+    --text-color-in-rosa: white;
+    --card-colors: #292929;
+    --card-colors-hover: #1f1f1f;
+    --gray: #3f3f3f;
+    --light-gray: #494949;
+    --verde: lightgreen;
 }
 
 * {
@@ -11,10 +30,12 @@
 }
 
 /* BAR LEFT SIDE */
-
+body {
+    background-color: var(--bg-color);
+}
 .fixed-bar-left {
     width: 16vw;
-    background: #fcfcfc;
+    background: var(--bg-color);
     position: fixed;
     display: block;
     height: 100vh;
@@ -43,7 +64,7 @@
 }
 
 .metasparaalcancar {
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 1vw;
     margin-top: 1vh;
     border-radius: 1vw;
@@ -56,13 +77,13 @@
 
 
 .options h1{
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
     font-size: 01vw;
     margin-bottom: 2vh;
 }
 
 .options .options-cards .card-bar {
-    background: #e4e4e4;
+    background: var(--card-colors);
     margin-top: 1vh;
     margin-bottom: 1vh;
     display: flex;
@@ -71,16 +92,16 @@
     justify-content: space-between;
     border-radius: 0vw;
     border-radius: 1vw;
-    color: rgb(10, 10, 10);
+    color: var(--textcolor);
 }
 
 .options .options-cards .card-bar:hover {
-    background: #D4D4D4;
+    background: var(--card-colors-hover);
     transition: 300ms;
 }
 
 .options .options-cards .card-bar h1 {
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
 }
 
 .item-opcoes-down i {
@@ -89,7 +110,7 @@
 
 .options .options-cards a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
     font-size: 1.3vw;
 }
 
@@ -104,6 +125,8 @@
 
 .overview-page {
     margin-left: 16vw;
+    background: var(--bg-color);
+    color: var(--textcolor);
 }
 
 .header-page {
@@ -334,7 +357,7 @@
 .menuoptionsrightside {
     position: absolute;
     z-index: 300;
-    background-color: white;
+    background-color: var(--bg-color);
     left: 85%;
     width: 14.9vw;
     height: 90%;
@@ -346,7 +369,7 @@
 .menuteladefundooptions {
     position: absolute;
     z-index: 300;
-    background-color: white;
+    background-color: var(--bg-color);
     left: 85%;
     width: 14.9vw;
     height: 90%;
@@ -357,7 +380,7 @@
 .menuteladefundo {
     position: absolute;
     z-index: 300;
-    background-color: white;
+    background-color: var(--bg-color);
     left: 85%;
     width: 14.9vw;
     height: 90%;
@@ -367,7 +390,7 @@
 .menuteladefundooptionscores {
     position: absolute;
     z-index: 300;
-    background-color: white;
+    background-color: var(--bg-color);
     left: 85%;
     width: 14.9vw;
     height: 90%;
@@ -456,7 +479,7 @@
     padding: 0.5vw;
     font-size: 0.65vw;
     border-radius: 0.1vw;
-    color: #575757;
+    color: var(--textcolor);
 }
 
 .cardmenuselect:hover {
@@ -482,7 +505,7 @@
 button.addnewline {
     width: 100%;
     background-color: transparent;
-    color: black;
+    color: var(--textcolor);
     font-size: 0.7vw;
     border: none;
     cursor: pointer;
@@ -515,11 +538,13 @@ button.addnewline {
 
 .header-top-side h1 {
     font-size: 0.85vw;
+    color: var(--text-color-in-rosa);
 }
 
 .left-side-left {
     align-items: center;
     display: flex;
+    color: var(--text-color-in-rosa);
 }
 
 .left-side {
@@ -548,7 +573,7 @@ button.addnewline {
 
 .left-side label {
     background-color: #172b4d;
-    color: white;
+    color: var(--text-color-in-rosa);
     font-weight: 400;
     padding: 0.6vh 0.7vw 0.6vh 0.7vw;
     margin-left: 1vw;
@@ -564,7 +589,7 @@ button.addnewline {
 
 .right-side label {
     background-color: #172b4d;
-    color: white;
+    color: var(--text-color-in-rosa);
     font-weight: 400;
     padding: 0.6vh 0.7vw 0.6vh 0.7vw;
     margin-left: 1vw;
@@ -575,7 +600,7 @@ button.addnewline {
 
 .right-side label#particular {
     background-color: transparent;
-    color: rgb(0, 0, 0);
+    color: var(--text-color-in-rosa);
     font-weight: 400;
     padding: 1vh;
     margin-left: 1vw;
@@ -586,7 +611,8 @@ button.addnewline {
 
 
 .right-side label#particular:hover {
-    background-color: rgba(187, 187, 187, 0.199);
+    background-color: var(--light-gray);
+    color: var(--textcolor);
 }
 
 .right-side i.fa-star {
@@ -594,21 +620,23 @@ button.addnewline {
     font-size: 0.7vw;
     margin-left: 1vw;
     cursor: pointer;
+    color: var(--text-color-in-rosa);
 }
 
 button.addnewline:hover {
-    background-color: #ececec
+    background-color: var(--gray);
+    color: var(--text-color);
 }
 
 .block-sections {
-    background-color: #F1F2F4;
+    background-color: var(--light-gray);
     padding: 0.5vw;
     width: 14vw;
     margin-right: 1vw;
     border-radius: 1vw;
     margin-bottom: 1vh;
     height: 100%;
-    box-shadow: 0.1vw 0.05vw 0.3vw rgb(87, 87, 87);
+    box-shadow: 0.1vw 0.05vw 0.3vw var(--light-gray);
     
 }
 
@@ -619,6 +647,7 @@ button.addnewline:hover {
     padding-bottom: 2vh;
     padding-left: 0.3vw;
     padding-top: 1vh;
+    color: var(--textcolor);
     cursor: pointer;
 }
 
@@ -633,7 +662,7 @@ button.addnewline:hover {
 }
 
 .blockuptoadd {
-    background-color: white;
+    background-color: var(--bg-color);
     display: none;
     position: fixed;
     padding: 2vw 4vw 2vw 4vw;
@@ -648,14 +677,14 @@ button.addnewline:hover {
 .blockuptoadd button {
     text-align: center;
     background-color: #FF449E;
-    color: white;
+    color: var(--textcolor);
     border: 0.1vw solid white;
     border-radius: 0.5vw;
 }
 
 .blockuptoadd button:hover {
     text-align: center;
-    background-color: white;
+    background-color: var(--bg-color);
     color: #FF449E;
     border: 0.1vw solid #FF449E;
 }
@@ -705,11 +734,11 @@ tbody td, .addnewitemshow input {
     margin-bottom: 1vh;
     outline: none;
     border: none;
-    box-shadow: 0.1vw 0.05vw 0.3vw rgb(160, 159, 159);
+    box-shadow: 0.0vw 0.05vw 0.1vw var(--bg-color);
     font-size: 0.75vw;
-    color: rgb(88, 88, 88);
+    color: var(--textcolor);
     align-items: center;
-    background-color: white;
+    background-color: var(--gray);
     
 }
 
@@ -725,7 +754,7 @@ tbody tr {
 
 .addlinetoplocalstorage {
     background: #0055CC;
-    color: white;
+    color: var(--text-color-in-rosa);
     border: none;
     padding: 0.4vw 0.6vw 0.4vw 0.6vw;
     border-radius: 0.3vw;
@@ -784,13 +813,12 @@ tbody tr {
 
 
 
-
 .menu-profile-change {
     display: block;
     position: absolute;
     z-index: 200;
-    background:  var(--brancoprimario);
-    border: 0.1vw solid rgba(0, 0, 0, 0.226);
+    background:  var(--bg-color);
+    border: 0.1vw solid var(--gray);
     border-radius: 0.7vw;
     left: 76vw;
     width: 23vw;
@@ -798,6 +826,7 @@ tbody tr {
     margin-top: 0.5vh;
     display: none;
 }
+
 
 .backgrond, .background-planosemanal {
     width: 100vw;
@@ -828,7 +857,7 @@ tbody tr {
 }
 
 .userprofileshow:hover {
-    background: rgb(224, 223, 223);
+    background: var(--gray);
     cursor: pointer;
 }
 
@@ -868,7 +897,7 @@ tbody tr {
 
 .userbuttonsprofile .button-profile {
     padding: 1vw;
-    background-color: #E7E7E7;
+    background-color: var(--gray);
     border-radius: 5vw;
     font-size: 0.8vw;
     font-weight: 500;
@@ -942,8 +971,8 @@ tbody tr {
 
 .notifications {
     position: absolute;
-    background-color:  var(--brancoprimario);
-    border: 0.1vw solid;
+    background-color:  var(--bg-color);
+    border: 0.1vw solid var(--gray);
     padding: 0.8vw;
     width: 20vw;
     height: 15vw;
@@ -960,7 +989,7 @@ tbody tr {
 }
 
 .notifications .not-block {
-    background-color: #D9D9D9;
+    background-color: var(--gray);
     border-radius: 1vw;
     padding: 1vw;
     margin-top: 2vh;
@@ -1025,7 +1054,7 @@ tbody tr {
 
 .titlecolumns {
     font-size: 1vw;
-    color: rgb(0, 0, 0);
+    color: var(--textcolor);
     background-color: #ffadd4;
 }
 
@@ -1223,7 +1252,7 @@ tr th{
 .cardmetames {
     background-color: var(--rosaprimario);
     margin-left: 1vw;
-    color: white;
+    color: var(--textcolor);
     margin-right: 1vw;
     border-radius: 1vw;
     padding: 1vw;
@@ -1300,7 +1329,7 @@ tr th{
 }
 
 .planilhablock-a a {
-    color: black;
+    color: var(--textcolor);
     text-decoration: none;
 }
 
@@ -1337,7 +1366,7 @@ tr th{
 .blocks-contents-right a {
     text-decoration: none;
     font-size: 1vw;
-    color: black;
+    color: var(--textcolor);
 }
 
 .blockfornecedores h1 {
@@ -1451,7 +1480,7 @@ label#embreve {
 
 .planilhablockindex a{
     text-decoration: none;
-    color: black;
+    color: var(--textcolor);
 }
 
 .planilhablockindex h2 {
@@ -1501,7 +1530,7 @@ label#embreve {
 a.optionselectedsettings {
     font-weight: 500;
     border-left: 0.2vw solid var(--rosaprimario);
-    color: black;
+    color: var(--textcolor);
 }
 
 .divTable i {
@@ -1522,7 +1551,7 @@ a.optionselectedsettings {
     button.addnewline {
         width: 100%;
         background-color: transparent;
-        color: black;
+        color: var(--text-color);
         font-size: 3vw;
         border: none;
         cursor: pointer;
@@ -1536,11 +1565,11 @@ a.optionselectedsettings {
     }
     
     button.addnewline:hover {
-        background-color: #ececec
+        background-color: gray
     }
     
     .block-sections {
-        background-color: #F1F2F4;
+        background-color: var(--light-gray);
         padding: 1vw;
         width: 65vw;
         margin-right: 2vw;
@@ -1569,7 +1598,7 @@ a.optionselectedsettings {
     }
     
     .blockuptoadd {
-        background-color: white;
+        background-color: var(--bg-color);
         display: none;
         position: fixed;
         padding: 4vw 6vw 4vw 6vw;
@@ -1584,7 +1613,7 @@ a.optionselectedsettings {
     .blockuptoadd button {
         text-align: center;
         background-color: #FF449E;
-        color: white;
+        color: var(--textcolor);
         border: 0.5vw solid white;
         border-radius: 2vw;
         font-size: 3vw;
@@ -1594,7 +1623,7 @@ a.optionselectedsettings {
     
     .blockuptoadd button:hover {
         text-align: center;
-        background-color: white;
+        background-color: var(--bg-color);
         color: #FF449E;
         border: 0.5vw solid #FF449E;
     }
@@ -1648,7 +1677,7 @@ a.optionselectedsettings {
         border: none;
         box-shadow: 0.5vw 0.1vw 1vw rgb(160, 159, 159);
         font-size: 3vw;
-        color: rgb(46, 46, 46);
+        color: var(--text-color);
         align-items: none;
         
     }
@@ -1661,7 +1690,7 @@ a.optionselectedsettings {
     
     .addlinetoplocalstorage {
         background: #0055CC;
-        color: white;
+        color: var(--text-color-in-rosa);
         border: none;
         padding: 1.8vw 5vw 1.8vw 5vw;
         border-radius: 0.3vw;
@@ -1745,7 +1774,7 @@ a.optionselectedsettings {
 
     .left-side label {
         background-color: #172b4d;
-        color: white;
+        color: var(--text-color-in-rosa);
         font-weight: 400;
         padding: 0.6vh 0.7vw 0.6vh 0.7vw;
         margin-left: 1vw;
@@ -1806,8 +1835,8 @@ a.optionselectedsettings {
     }
     
     .menuoptionstrell:hover {
-        background-color: #5050509d;
-        border-radius: 0.2vw;
+        background-color: transparent;
+        border-radius: 1vw;
     }
     
     .menuoptionstrell i {
@@ -1854,7 +1883,7 @@ a.optionselectedsettings {
 
     .top-mobile-bar i {
         font-size: 7vw;
-        color: rgb(0, 0, 0);
+        color: var(--textcolor);
     }
 
     .opções-down-bar {
@@ -2079,7 +2108,7 @@ a.optionselectedsettings {
         }
         
         .planilhablock-a a {
-            color: black;
+            color: var(--textcolor);
             text-decoration: none;
         }
 
@@ -2102,7 +2131,7 @@ a.optionselectedsettings {
             padding: 3vw;
             width: 90vw;
             margin: auto;
-            color: white;
+            color: var(--textcolor);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -2158,7 +2187,7 @@ a.optionselectedsettings {
         
         .metasrightside i {
             font-size: 5vw;
-            color: white;
+            color: var(--textcolor);
             display: none;
         }
         
@@ -2258,7 +2287,7 @@ a.optionselectedsettings {
             display: block;
             position: absolute;
             z-index: 200;
-            background:  var(--brancoprimario);
+            background:  var(--bg-color);
             border: 0.1vw solid rgba(0, 0, 0, 0.226);
             border-radius: 0.7vw;
             left: 45vw;
@@ -2302,7 +2331,7 @@ a.optionselectedsettings {
         }
 
         .userprofileshow:hover {
-            background: rgb(224, 223, 223);
+            background: var(--gray);
             cursor: pointer;
         }
 
@@ -2342,7 +2371,7 @@ a.optionselectedsettings {
 
         .userbuttonsprofile .button-profile {
             padding: 1vw;
-            background-color: #E7E7E7;
+            background-color: var(--gray);
             border-radius: 5vw;
             font-size: 3vw;
             font-weight: 500;
@@ -2358,7 +2387,7 @@ a.optionselectedsettings {
 
         .notifications {
             position: absolute;
-            background-color:  var(--brancoprimario);
+            background-color:  var(--bg-color);
             border: 0.1vw solid;
             padding: 2vw;
             width: 50vw;
@@ -2376,7 +2405,7 @@ a.optionselectedsettings {
         }
         
         .notifications .not-block {
-            background-color: #D9D9D9;
+            background-color: var(--gray);
             border-radius: 1vw;
             padding: 2vw;
             margin-top: 2vh;
@@ -2456,7 +2485,7 @@ a.optionselectedsettings {
         
         .titlecolumns {
             font-size: 2.0vw;
-            color: rgb(0, 0, 0);
+            color: var(--textcolor);
             background-color: #ffadd4;
         }
         
@@ -2668,7 +2697,7 @@ a.optionselectedsettings {
         .blocks-contents-right a {
             text-decoration: none;
             font-size: 1vw;
-            color: black;
+            color: var(--textcolor);
         }
         
         .blockfornecedores h1 {
@@ -2917,11 +2946,11 @@ a.optionselectedsettings {
         a.optionselectedsettings {
             font-weight: 500;
             border-left: 1vw solid var(--rosaprimario);
-            color: black;
+            color: var(--textcolor);
         }
 
         .metasparaalcancar {
-            background-color: white;
+            background-color: var(--bg-color);
             padding: 1vw;
             margin-top: 1vh;
             border-radius: 1vw;
@@ -2979,8 +3008,8 @@ a.optionselectedsettings {
         }
         
         .right-side label {
-            background-color: rgba(32, 32, 32, 0.644);
-            color: white;
+            background-color: var(--light-gray);
+            color: var(--textcolor);
             font-weight: 600;
             padding: 1vh;
             margin-left: 1vw;
@@ -2994,11 +3023,12 @@ a.optionselectedsettings {
             font-size: 2.7vw;
             margin-left: 1vw;
             cursor: pointer;
+            
         }
 
         .right-side label#particular {
             background-color: transparent;
-            color: rgb(0, 0, 0);
+            color: var(--text-color-in-rosa);
             font-weight: 400;
             padding: 1vw;
             margin-left: 0vw;
@@ -3009,14 +3039,14 @@ a.optionselectedsettings {
         
         
         .right-side label#particular:hover {
-            background-color: rgba(187, 187, 187, 0.199);
+            background-color: var(--gray);
         }
         
 
         .menuoptionsrightside {
             position: absolute;
             z-index: 300;
-            background-color: white;
+            background-color: var(--bg-color);
             left: 40%;
             width: 59.9vw;
             height: 50%;
@@ -3029,7 +3059,7 @@ a.optionselectedsettings {
         .menuteladefundooptions {
             position: absolute;
             z-index: 300;
-            background-color: white;
+            background-color: var(--bg-color);
             left: 40%;
             width: 59.9vw;
             height: 50%;
@@ -3040,7 +3070,7 @@ a.optionselectedsettings {
         .menuteladefundo {
             position: absolute;
             z-index: 300;
-            background-color: white;
+            background-color: var(--bg-color);
             left: 40%;
             width: 59.9vw;
             height: 50%;
@@ -3050,7 +3080,7 @@ a.optionselectedsettings {
         .menuteladefundooptionscores {
             position: absolute;
             z-index: 300;
-            background-color: white;
+            background-color: var(--bg-color);
             left: 40%;
             width: 59.9vw;
             height: 50%;
@@ -3144,7 +3174,7 @@ a.optionselectedsettings {
             padding: 0.5vw;
             font-size: 3vw;
             border-radius: 0.1vw;
-            color: #575757;
+            color: var(--text-color);
         }
         
         .cardmenuselect:hover {

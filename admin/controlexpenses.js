@@ -61,21 +61,27 @@ function deleteItem(index) {
 
 function insertItem(item, index) {
   let tr = document.createElement("tr");
-
   tr.innerHTML = `
-    <td>${item.desc}</td>
-    <td>R$ ${item.amount}</td>
+    <td>${item.type === "Entrada"
+        ? `<b style="color: var(--verde); font-weight: 600">+ ${item.desc}</b>`
+        : `<b style="color: red; font-weight: 600">- ${item.desc}</b>`
+  }</td>
+    <td>${item.type === "Entrada"
+        ? `<b style="color: var(--verde)">R$ ${item.amount}</b>`
+        : `<b style="color: red">R$  ${item.amount}</b>`
+  }</td>
     <td class="columnType">${
       item.type === "Entrada"
-        ? '<i class="bx bxs-chevron-up-circle"></i>'
-        : '<i class="bx bxs-chevron-down-circle"></i>'
+        ? '<i class="bx bxs-chevron-up-circle"> Entrada</i>'
+        : '<i class="bx bxs-chevron-down-circle"> Saída</i>'
     }</td>
     <td class="columnAction">
       <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
     </td>
   `;
-
+  
   tbody.appendChild(tr);
+  
 }
 
 function loadItens() {

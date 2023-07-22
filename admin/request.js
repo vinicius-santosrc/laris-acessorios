@@ -131,6 +131,8 @@ function importnewdatabase() {
         localStorage.setItem('products_orders', jsonStorage.getItem('products_orders'))
         localStorage.setItem('encomendas_fazer', jsonStorage.getItem('encomendas_fazer'))
         localStorage.setItem('planodefundo', jsonStorage.getItem('planodefundo'))
+        localStorage.setItem('aparencia', jsonStorage.getItem('aparencia'))
+        localStorage.setItem('auto-aparencia', jsonStorage.getItem('auto-aparencia'))
 
         if(localStorage.getItem('products_orders') == 'undefined') {
           localStorage.setItem('products_orders', '[]')
@@ -188,6 +190,12 @@ function importnewdatabase() {
         }
         if(localStorage.getItem('planodefundo') == 'undefined') {
           localStorage.setItem('planodefundo', '')
+        }
+        if(localStorage.getItem('aparencia') == 'undefined') {
+          localStorage.setItem('aparencia', 'clara')
+        }
+        if(localStorage.getItem('auto-aparencia') == 'undefined') {
+          localStorage.setItem('auto-aparencia', 'false')
         }
         }
 

@@ -1,5 +1,7 @@
 let nomeuser = ''
 
+//DETECTOR LOGIN
+
 function loginrequired() {
     if(localStorage.getItem('login') == 'true') {
 
@@ -8,6 +10,48 @@ function loginrequired() {
                 window.location.href = 'login.html'
             }
 }
+
+//CHECAR SE HÁ APARÊNCIA DEFINIDA E MUDAR PARA OS MODOS RESPECTIVOS
+
+if(localStorage.getItem('aparencia') == 'escura') {
+    document.querySelector('html').classList.toggle('darkmode')
+}
+else if(localStorage.getItem('aparencia') == 'clara') {
+    document.querySelector('html').classList.remove('darkmode')
+}
+if(localStorage.getItem('aparencia') == null) {
+    localStorage.setItem('aparencia', 'clara')
+}
+
+//AUTO APARENCIA
+
+if(localStorage.getItem('auto-aparencia') == 'true') {
+    let data = new Date()
+    let hora = data.getHours()
+
+    if(hora >= 0 && hora < 7) {
+        localStorage.setItem('aparencia', 'escura')
+        console.log('Modo escuro ativo por causa da aparência automática')
+    }
+    else if(hora >= 7 && hora < 18) {
+        localStorage.setItem('aparencia', 'clara')
+        console.log('Modo claro ativo por causa da aparência automática')
+    }
+    else if(hora >= 18 && hora <= 23) {
+        localStorage.setItem('aparencia', 'escura')
+        console.log('Modo escuro ativo por causa da aparência automática')
+    }
+}
+
+else if(localStorage.getItem('auto-aparencia') == 'false') {
+
+}
+
+if(localStorage.getItem("auto-aparencia") == null) {
+    localStorage.setItem('auto-aparencia', 'false')
+}
+
+
 
 function verifylogin() {
     let inputuser = document.querySelector('#user')
