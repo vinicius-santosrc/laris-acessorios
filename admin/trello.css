@@ -1848,11 +1848,11 @@ a.optionselectedsettings {
         display: none;
         width: 70vw;
         height: 100vh;
-        background: #ffffff;
+        background: var(--bg-color);
         position: fixed;
         z-index: 1000;
         padding-top: 2vh;
-        box-shadow: 0.2vw 0.5vw 5vw rgb(172, 170, 170);
+        box-shadow: 0.2vw 0.5vw 5vw var(--light-gray);
         animation: abrirmenumobile 0.1s ease-in-out;
         -webkit-animation: abrirmenumobile 0.4s ease-out;
         border-radius: 0 3vw 3vw  0 ;
