@@ -399,7 +399,7 @@ function scrunchie_cetim_vermelho_indisponivel() {
         })();
         emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
             user: nomeaviso,
-            product: 'Scrunchie de Cetim Vermelho',
+            product: 'Scrunchie de Cetim Vermelho - Shopee',
             email: emailaviso,
             number: numberaviso,
         });
