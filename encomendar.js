@@ -6233,7 +6233,7 @@ function prata_anel_entrelacado_enco() {
       timer: 1500
     })
     tarefas.push({
-      name: 'Brinco Ponto de Luz Pink',
+      name: 'Anel Entrelaçado',
       tamanho: tamanho.value,
       qtd: parseInt(quantidade.value),
       preco: 60.00,
