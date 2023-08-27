@@ -237,7 +237,7 @@ function finalizartudo() {
         }
         let outputfinal = ''
         
-          for (items of JSON.parse(localStorage.getItem('list_tarefas'))) {
+        produtos2.forEach(function(item){
             outputfinal += `
             📦
                 Produto: ${item.name}
@@ -246,7 +246,7 @@ function finalizartudo() {
                 Preço: ${item.preco}
               -------------------------
            `
-          }
+          })
         
 
         emailjs.send("laris-acessorios","template_v9pyefq", {
