@@ -153,7 +153,7 @@ function prata_brincofe_comp() {
     tarefas.push('Brinco Fé' + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brincoestrela_comp() {
@@ -162,7 +162,7 @@ function prata_brincoestrela_comp() {
     tarefas.push('Brinco Estrela' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brincoquadradoluz_comp() {
@@ -171,7 +171,7 @@ function prata_brincoquadradoluz_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Brinco Quadrado de Luz'   + ' ' + 'TAMANHO: ' + (tamanho.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brincocoracao_comp() {
@@ -180,7 +180,7 @@ function prata_brincocoracao_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Brinco Coração')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_aneldefalangeinfinito_comp() {
@@ -189,7 +189,7 @@ function prata_aneldefalangeinfinito_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Anel de Falange Infinito')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_kitbrincotornozeleira_comp() {
@@ -198,7 +198,7 @@ function prata_kitbrincotornozeleira_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Kit Brinco + Tornozeleira')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_tornozeleirafe_comp() {
@@ -207,7 +207,7 @@ function prata_tornozeleirafe_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Tornozeleira Fé')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function chockershine_comp() {
@@ -216,7 +216,7 @@ function chockershine_comp() {
     tarefas.push('Chocker - Shine'  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function pulseiramar_comp() {
@@ -225,7 +225,7 @@ function pulseiramar_comp() {
     tarefas.push('Mix Pulseira Mar' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_solitario_pink_comp() {
@@ -234,7 +234,7 @@ function prata_anel_solitario_pink_comp() {
     tarefas.push('Anel Solitário Pink' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_circular_comp() {
@@ -243,7 +243,7 @@ function prata_brinco_circular_comp() {
     tarefas.push('Brinco Circular' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_argola_meia_cana_comp() {
@@ -252,7 +252,7 @@ function prata_brinco_argola_meia_cana_comp() {
     tarefas.push('Brinco Argola Meia Cana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_com_veneziana_comp() {
@@ -261,7 +261,7 @@ function prata_brinco_com_veneziana_comp() {
     tarefas.push('Brinco com Veneziana' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_earcuff_cristal_comp() {
@@ -270,7 +270,7 @@ function prata_brinco_earcuff_cristal_comp() {
     tarefas.push('Brinco Earcuff Cristal' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quant.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function strapphone_azul_comp() {
@@ -279,7 +279,7 @@ function strapphone_azul_comp() {
     tarefas.push('Phone-Strap Azul'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function strapphone_happy_comp() {
@@ -288,7 +288,7 @@ function strapphone_happy_comp() {
     tarefas.push('Phone-Strap Happy'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function chockercrystal_comp() {
@@ -297,7 +297,7 @@ function chockercrystal_comp() {
     tarefas.push('Chocker Crystal'  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function chaveiro_medvet_comp() {
@@ -306,7 +306,7 @@ function chaveiro_medvet_comp() {
     tarefas.push('Chaveiro Medicina Veterinária'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function perso_straprosa_comp() {
@@ -324,7 +324,7 @@ function perso_straprosa_comp() {
         tarefas.push('Phone Strap Rosa Personalizado: ' + personaliza.value   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -343,7 +343,7 @@ function perso_crystal_comp() {
         tarefas.push('Chocker Crystal Personalizado: ' + personaliza.value  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -362,7 +362,7 @@ function perso_colarname_comp() {
         tarefas.push('Colar Name Personalizado: ' + personaliza.value  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -382,7 +382,7 @@ function perso_colarbasicname_comp() {
         tarefas.push('Colar Basic Name Personalizado: ' + personaliza.value + ' / ' + cor.value  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -401,7 +401,7 @@ function perso_iniciais_comp() {
         tarefas.push('Chocker Iniciais Personalizado: ' + personaliza.value  + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -420,7 +420,7 @@ function perso_olhogrego_comp() {
         tarefas.push('Phone-Strap Olho Grego Personalizado: ' + personaliza.value   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -439,7 +439,7 @@ function perso_neutrophone_comp() {
         tarefas.push('Phone-Strap Neutro Personalizado: ' + personaliza.value   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
         mostraTarefas()
         salvarNoLocalStorage()
-        window.location.href = '../resumo.html'
+        window.location.href = window.location.origin + '/checkout.html'
     }
 }
 
@@ -449,7 +449,7 @@ function colartrioazul_comp() {
     tarefas.push('Colar Trio Azul' + ' ' + '> Tam: ' + (tamanho.value) + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function strapphone_smile_comp() {
@@ -458,7 +458,7 @@ function strapphone_smile_comp() {
     tarefas.push('Phone-Strap Smile'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brincoargolinha_comp() {
@@ -467,7 +467,7 @@ function prata_brincoargolinha_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Brinco Argolinha')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_triobrincoverde_comp() {
@@ -476,7 +476,7 @@ function prata_triobrincoverde_comp() {
     tarefas.push('Trio Brinco Verde'   + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_pulseiradetalhada_comp() {
@@ -485,7 +485,7 @@ function prata_pulseiradetalhada_comp() {
     tarefas.push('Pulseira Detalhada' + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_pontodeluzrosa_comp() {
@@ -494,7 +494,7 @@ function prata_pontodeluzrosa_comp() {
     tarefas.push('Colar Ponto de Luz Rosa' + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anelolhogregocravejado_comp() {
@@ -503,7 +503,7 @@ function prata_anelolhogregocravejado_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Anel Olho Grego Cravejado')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_tornozeleiracoracao_comp() {
@@ -512,7 +512,7 @@ function prata_tornozeleiracoracao_comp() {
     tarefas.push('(' + parseInt(quant.value) + ')' + ' ' + 'Tornozeleira Coração')
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_rosaclaro_comp() {
@@ -521,7 +521,7 @@ function scrunchie_rosaclaro_comp() {
     tarefas.push('Scrunchie de Cetim Rosa Claro'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_laranjaneon_comp() {
@@ -530,7 +530,7 @@ function scrunchie_laranjaneon_comp() {
     tarefas.push('Scrunchie de Cetim Laranja Neon'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_pink_comp() {
@@ -539,7 +539,7 @@ function scrunchie_pink_comp() {
     tarefas.push('Scrunchie de Cetim Pink'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_dourado_comp() {
@@ -548,7 +548,7 @@ function scrunchie_dourado_comp() {
     tarefas.push('Scrunchie de Cetim Dourado'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function toucadecetimrosabebe_comp() {
@@ -557,7 +557,7 @@ function toucadecetimrosabebe_comp() {
     tarefas.push('Touca de Cetim Rosa Bebê'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function toucadecetimduplafacebordoperola_comp() {
@@ -566,7 +566,7 @@ function toucadecetimduplafacebordoperola_comp() {
     tarefas.push('Touca de Cetim Dupla Face Bordô/Pérola'  + ' ' + '> Tam: Único' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function pulseiramasculinablackout_comp() {
@@ -602,84 +602,84 @@ function prata_corrente_masculina_comp() {
     tarefas.push('Corrente Masculina'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_pulseira_corrente_masculina_comp() {
     tarefas.push('Pulseira Corrente Masculina'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_pulseira_corrente_masculina_3x1_comp() {
     tarefas.push('Pulseira Corrente Masculina 3x1'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_cetim_azul_claro_comp() {
     tarefas.push('Scrunchie Cetim Azul Claro'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_cetim_azul_bebe_comp() {
     tarefas.push('Scrunchie Cetim Azul Bebê'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function scrunchie_preto_comp() {
     tarefas.push('Scrunchie Cetim Preto'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function touca_cetim_face_unica_preta_comp() {
     tarefas.push('Touca Cetim Face Única Preta'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function touca_cetim_face_unica_bordo_comp() {
     tarefas.push('Touca Cetim Face Única Bordô'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function touca_cetim_face_unica_azul_royal_comp() {
     tarefas.push('Touca Cetim Face Única Azul Royal'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_colorido_comp() {
     tarefas.push('Anel Colorido'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_quadrado_comp() {
     tarefas.push('Anel Quadrado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_trançado_comp() {
     tarefas.push('Anel Trançado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 
 }
 
@@ -687,7 +687,7 @@ function tornozeleirabolinha_comp() {
     tarefas.push('Tornozeleira Bolinha (Brinde: Extensor)'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 
@@ -737,14 +737,14 @@ function prata_pulseira_de_bolinha_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Pulseira de Bolinha' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
     } 
@@ -794,14 +794,14 @@ function prata_colar_mao_de_fatima_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Mão de Fátima' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
     } 
@@ -851,14 +851,14 @@ function prata_conjunto_glow_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Conjunto Glow' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -908,14 +908,14 @@ function prata_pulseiracoracao_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Pulseira Coração' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -965,14 +965,14 @@ function pulseira_veneziana_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Pulseira Veneziana' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1022,14 +1022,14 @@ function colar_veneziana_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Veneziana' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1079,14 +1079,14 @@ function colar_coracao_colorido_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Coração Colorido' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1136,14 +1136,14 @@ function colar_ponto_de_luz_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Ponto de Luz' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1193,14 +1193,14 @@ function prata_colar_ponto_de_luz_pink_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Ponto de Luz Pink' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1250,14 +1250,14 @@ function prata_colar_elos_de_coracao_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Elos de Coração' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1307,14 +1307,14 @@ function prata_pulseira_nossa_senhora_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Pulseira Nossa Senhora' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1364,14 +1364,14 @@ function prata_colar_gravatinha_comp() {
             tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + '1')
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         } else if (
             result.dismiss
         ){
             tarefas.push('Colar Gravatinha' + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
             mostraTarefas()
             salvarNoLocalStorage()
-            window.location.href = '../resumo.html'
+            window.location.href = window.location.origin + '/checkout.html'
         }
       })
 }
@@ -1380,180 +1380,180 @@ function prata_brinco_coracaotrançado_comp() {
     tarefas.push('Brinco Coração Trançado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function bracelete_lily_comp() {
     tarefas.push('Bracelete Lily'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_coracao_cravejado_comp() {
     tarefas.push('Anel Coração Cravejado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_dois_em_um_comp() {
     tarefas.push('Anel Dois em Um'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_minimaodefatima_comp() {
     tarefas.push('Brinco Mini Mão de Fátima'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function brinco_cristal_comp() {
     tarefas.push('Brinco Cristal'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function trio_rosa_claro_comp() {
     tarefas.push('Trio Rosa Claro'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_trio_estrelinha_luz_comp() {
     tarefas.push('Brinco Trio Estrelinha de Luz'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_argolazirconiacristais_comp() {
     tarefas.push('Brinco Argola Zircônia Cristais'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_extensor_comp() {
     tarefas.push('Extensor'  + ' ' + '> Tam: +4cm' + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_heart_comp() {
     tarefas.push('Brinco Heart'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_piercing_argolinha_crital_comp() {
     tarefas.push('Piercing Argolinha Cristal'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_piercing_fake_laco_cravejado_comp() {
     tarefas.push('Piercing Fake Laço Cravejado'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_annefrank_comp() {
     tarefas.push('Kit Anne Frank'  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_joanadarc_comp() {
     tarefas.push(`Kit Joana D'arc` + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_malala_comp() {
     tarefas.push(`Kit Malala Yousafzai`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_clarice_comp() {
     tarefas.push(`Kit Clarice Lispector`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_frida_comp() {
     tarefas.push(`Kit Frida Kahlo`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function kit_marie_comp() {
     tarefas.push(`Kit Marie Curie`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function touca_cetim_dupla_face_rosa_preta_comp() {
     tarefas.push(`Touca de Cetim Dupla Face Rosa e Preta`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function touca_cetim_dupla_face_azul_rosa_comp() {
     tarefas.push(`Touca de Cetim Dupla Face Azul e Rosa`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anelcravejado_comp() {
     tarefas.push(`Anel Cravejado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_com_veneziana_cristal_comp() {
     tarefas.push(`Brinco com Veneziana Cristal`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_articulado_comp() {
     tarefas.push(`Brinco Articulado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_brinco_ponto_de_luz_pink_comp() {
     tarefas.push(`Brinco Ponto de Luz Pink`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }
 
 function prata_anel_entrelacado_comp() {
     tarefas.push(`Anel Entrelaçado`  + ' ' + '> Tam: ' + tamanho.value + ' ' + ' | ' + 'Qtd: ' + parseInt(quantidade.value))
     mostraTarefas()
     salvarNoLocalStorage()
-    window.location.href = '../resumo.html'
+    window.location.href = window.location.origin + '/checkout.html'
 }

@@ -708,9 +708,12 @@ p.new {
     margin-top: 1vh;
     margin-bottom: 1vh;
     padding: 1vw;
-    font-size: 0.8vw;
+    font-size: 0.66vw;
+    align-items: center;
     border-bottom: 0vw;
     text-align: center;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 li.mdl-list__item a {
@@ -721,8 +724,40 @@ li.mdl-list__item a {
     margin-top: 1vh;
     margin: auto;
     cursor: pointer;
-    width: 5vw;
     border-radius: 0.2vw;
+}
+
+.product-photo img{
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+}
+
+.productname-delete {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productname-delete p {
+    font-size: 0.61vw;
+    padding-right: 1vw;
+}
+
+.rightsidecart {
+    text-align: left;
+    width: 100%;
+    margin-left: 0.5vw;
+
+}
+
+.rightsidecart select {
+    margin: 1rem 0;
+    font-size: 0.8vw;
+    padding-right: 1vw;
+}
+
+.product-size {
+    color: gray;
 }
 
 .botoesfinais {
@@ -828,17 +863,21 @@ select#cor {
     color: white;
     cursor: pointer;
     font-size: 0.9vw;
+    display: none;
 }
 
 label#cart {
     padding: 0.6vw;
     height: auto;
-    background: white;
+    background: #EF59A0;
     border: 0.1vw solid #EF59A0;
     border-radius: 0vw;
-    color: #EF59A0;
+    color: white;
+    display: block;
     cursor: pointer;
     font-size: 0.9vw;
+    width: 20vw;
+    margin: auto;
 }
 
 .itensdesc label.indisponivel {
@@ -849,6 +888,7 @@ label#cart {
     cursor: pointer;
     font-size: 0.9vw;
     background: black;
+    display: block;
     
 }
 
@@ -1023,6 +1063,8 @@ label#cart {
     margin-right: 0vw;
     margin: auto;
 }
+
+
 
 .seu-endereco button {
     background: #EF59A0;
@@ -3353,6 +3395,10 @@ h2.extensorfrase {
         justify-content: space-between;
         border-bottom: 0.2vw solid #EF59A0;
     }
+
+    .rightsidecart p {
+        font-size: 2vw;
+    }
     
     .menu-pc-flex {
         width: 100%;
@@ -4063,10 +4109,10 @@ h2.extensorfrase {
     label#cart {
         padding: 0.6vw;
         height: auto;
-        background: white;
+        background: #EF59A0;
         border: 0.1vw solid #EF59A0;
         border-radius: 0vw;
-        color: #EF59A0;
+        color: white;
         cursor: pointer;
         font-size: 1.2vw;
     }
@@ -5204,15 +5250,17 @@ h2.extensorfrase {
     
     label#cart {
         height: auto;
-        background: white;
+        background: #EF59A0;
         border: 0.1vw solid #EF59A0;
         border-radius: 0.2vw;
-        color: black;
+        color: white;
         cursor: pointer;
         font-size: 3vw;
         padding: 3vw;
         padding-left: 6vw;
         padding-right: 6vw;
+        width: 95%;
+        margin: auto;
     }
 
     .title-index a{
@@ -6185,7 +6233,9 @@ h2.extensorfrase {
         font-size: 7vw;
         font-weight: 500;
     }
-    
+    .titletext {
+        color: black !important;
+    }
     .topcard {
         display: flex;
     }
@@ -6521,9 +6571,43 @@ h2.extensorfrase {
     }
 
     .carrinhoshow p {
-        font-size: 7vw;
-        width: 50%;
-        text-align: center;
+        font-size: none;
+        width: none;
+        text-align: left;
+    }
+
+    .product-photo img{
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+    }
+    
+    .productname-delete {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .productname-delete p {
+        font-size: 3.3vw;
+        text-align: left;
+        padding-right: 1vw;
+        width: 95%;
+    }
+    
+    .rightsidecart {
+        text-align: left;
+        width: 62%;
+    }
+    
+    .rightsidecart select {
+        margin: 1rem 0;
+        font-size: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .product-size {
+        color: gray;
+        font-size: 3vw;
     }
 
     .produtos--com--personalizacao {
@@ -6593,6 +6677,8 @@ h2.extensorfrase {
         width: 96%;
         height: 0.1vh;
     }
+
+    
     
     .botaofecharsacola i{
         font-size: 7vw;
@@ -6623,6 +6709,8 @@ h2.extensorfrase {
         font-size: 3.5vw;
         text-align: left;
         z-index: 499;
+        display: flex;
+        justify-content: space-between;
     }
 
     #tns1 > .tns-item {
@@ -6640,11 +6728,13 @@ h2.extensorfrase {
         margin-top: 1vh;
         margin: auto;
         cursor: pointer;
-        width: 90%;
+        width: auto;
+
         border-radius: 1vw;
-        text-align: right;
+        text-align: center;
     }
-    
+
+
     .botoesfinais {
         margin: auto;
         bottom: 0;
@@ -6929,6 +7019,10 @@ h2.extensorfrase {
         margin-top: 15vh;
         margin-right: 0;
         margin-left: 0;
+    }
+
+    .empty-cart h1{
+        color: black;
     }
 
     .botaosave {

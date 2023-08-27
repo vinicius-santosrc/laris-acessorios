@@ -75,10 +75,21 @@
         </div>
     </div>
 
-    <div class='titulo-sacola'><h1>Finalizar pedido</h1></div>
-
     <div class='itensresumo'>
         
+        <div class='seu-carrinho'>
+            <h1>Resumo do pedido </h1>
+            <table class='itens-cart'>
+            </table>
+
+        </div>
+        <div class='seu-carrinho-mobile'>
+            <h1><i class="fa-solid fa-bag-shopping"></i> Seus produtos </h1>
+            <table class='itens-cart'>
+            </table>
+
+        </div>
+
         <div class='dados-pessoais'>
             <h1><i class="fa-solid fa-person-dress"></i> Dados pessoais</h1>
             <div class="inputbox">
@@ -88,12 +99,11 @@
                 <p>CPF</p><input type="number" min="0" id="cpf" placeholder=""  required>
                 <p>Telefone</p><input type="tel" id='Numerocont' placeholder="" required>
             </div>
-            <p>Atenção!</p>
-            <p>Seu telefone será usado qualquer contato sobre o pedido.</p>
+            <p>Seu telefone será utilizada para qualquer contato sobre o pedido.</p>
             
         </div>
 
-        <div>
+    
             <div class='seu-endereco'>
                 <h1><i class="fa-solid fa-bag-shopping"></i> Entrega</h1>
                 <div class="inputbox">
@@ -118,19 +128,12 @@
                     <p><strong>Obs: </strong>Pagamentos via dinheiro são realizados no momento da entrega</p>
                     <p>Pagamentos via Pix são realizados antes da entrega</p>
                 </div>
-                
+                <div class='botoesseucart'>
+                    <button onclick="finalizartudo()">Finalizar</button>
+                </div>
             </div>
-        </div>
+        
 
-        <div class='seu-carrinho'>
-            <h1>Resumo do pedido </h1>
-            <div class='itens-cart'>
-                <p></p>
-            </div>
-            <div class='botoesseucart'>
-                <button onclick="finalizartudo()">Finalizar</button>
-            </div>
-        </div>
     </div>
 
     
@@ -188,15 +191,94 @@
     </script>
 
     <script>
-        let itens = document.querySelector('.itens-cart p')
-        let produtos2 = localStorage.list_tarefas
+        let itens = document.querySelector('.itens-cart')
+        let itensmobile = document.querySelector('.seu-carrinho-mobile .itens-cart')
+        let produtos2  = JSON.parse(localStorage.getItem('list_tarefas')) || []
 
-        if (produtos2 == '[]') {
-            itens.innerHTML = `<p>Sua sacola de compras está vazia.<p>`
+        if (produtos2 == '') {
+            document.querySelector('.dados-pessoais').style.display = 'none';
+            document.querySelector('.seu-endereco').style.display = 'none';
+            document.querySelector('.pay--').style.display = 'none';
+            document.querySelector('.botoesseucart').style.display = 'none';
+            document.querySelector('.itens-cart').style.display = 'none';
+            document.querySelector('.itensresumo').innerHTML = `
+            <div class="empty-cart">
+                <h1>
+                <i class="fa-solid fa-bag-shopping"></i>
+                </h1>
+                <h2>Sua sacola de compras está vazia.</h2>
+                <p>Para adicionar uma joia a sacola, navegue pelo nosso website e clique no botão "ADICIONAR A SACOLA" </p>
+                <button onclick="window.location.href= window.location.origin">CONTINUAR COMPRANDO</button>
+            </div>
+            `
         }
 
         else {
-            itens.innerHTML = produtos2.replace(/,/gi, '<div class="linha"></div>')
+            let resumomobile = ''
+            let resumooutput = `
+            <tr class='top-list-cart'>
+                    <td><label>PRODUTO</label></td>
+                    <td><label>PREÇO</label></td>
+                    <td><label>QUANTIDADE</label></td>
+                    <td><label>TOTAL</label></td>
+                </tr>
+                `
+            let randomnumbercart = Math.random()
+            randomnumbercart = randomnumbercart 
+            window.location.href= `#cart=${parseInt(randomnumbercart * 63173)}?`
+            produtos2.forEach(function(item){
+                resumooutput += `
+                   <tr class="product-item">
+                        <td class="product-card">
+                            <img src="${item.photoURL}">
+                            <a href="${item.onclick}">${item.name}</a>
+                        </td>
+                        <td>
+                            <p>R$ ${item.preco}</p>
+                        </td>
+                        <td>
+                            <select disabled>
+                                <option selected value="${item.preco}">${item.qtd}</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p>R$ ${item.preco}</p>
+                        </td>
+                    </tr>
+                `
+            })
+            produtos2.forEach(function(item) {
+                resumomobile += `
+                <div class="product-item-card">
+                    <div class="product-item-image">
+                        <img src="${item.photoURL}">     
+                    </div>
+                    <div class="product-item-info">
+                        <div class="product-item-info-title">
+                            <div>
+                                <a style="color: black" onclick="window.location.href='${item.onclick}'">${item.name}</a>
+                                <p style="color:gray; font-size: 2.9vw">Produto fornecido e entregue pela LARI'S</p>
+                            </div>
+                            <a class="material-icons" onclick="removeTarefaCart(0)">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </a>
+                        </div>
+                        <div class="product-item-info-qtd">
+                            <div>
+                                <select disabled>
+                                    <option value="${item.qtd}" selected>${item.qtd}</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h2>R$ ${item.preco}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `
+            })
+            itens.innerHTML = resumooutput
+            itensmobile.innerHTML = resumomobile
         }
 
         
