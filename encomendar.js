@@ -4785,9 +4785,9 @@ function prata_pulseira_de_bolinha_enco() {
           salvarNoLocalStorage()
           tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -4875,9 +4875,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -4964,9 +4964,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5054,9 +5054,9 @@ function prata_pulseira_de_bolinha_enco() {
           salvarNoLocalStorage()
           tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5144,9 +5144,9 @@ function prata_pulseira_de_bolinha_enco() {
           salvarNoLocalStorage()
           tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5234,9 +5234,9 @@ function prata_pulseira_de_bolinha_enco() {
           salvarNoLocalStorage()
           tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5324,9 +5324,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5414,9 +5414,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5504,9 +5504,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5594,9 +5594,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5684,9 +5684,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5774,9 +5774,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })
@@ -5864,9 +5864,9 @@ Swal.fire({
         salvarNoLocalStorage()
         tarefas.push({
             name: 'Extensor (+4cm)',
-            tamanho: tamanho.value,
-            qtd: parseInt(quantidade.value),
-            preco: 13.00,
+            tamanho: '4cm',
+            qtd: 1,
+            preco: 8.50,
             photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
             onclick: window.location.origin + '/prata/extensor.html'
           })

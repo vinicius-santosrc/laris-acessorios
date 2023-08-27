@@ -107,7 +107,10 @@
             <div class='seu-endereco'>
                 <h1><i class="fa-solid fa-bag-shopping"></i> Entrega</h1>
                 <div class="inputbox">
-                    <p>CEP</p><input type="text" id="cep" placeholder=""  required>
+                    
+                    <p>CEP</p>
+                    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php?t" target="_blank">Não sei meu CEP</a>
+                    <input type="text" id="cep" placeholder=""  required>
                     <p>Estado</p><input type="text" id="estado" placeholder=""  required>
                     <p>Cidade</p><input type="text" id="cidade" placeholder=""  required>
                     <p>Bairro</p><input type="text" id="bairro" placeholder=""  required>
@@ -121,6 +124,7 @@
             <div class='pay--'>
                 <h1><i class="fa-solid fa-money-bill"></i> Pagamento</h1>
                 <div class='pay-inside'>
+                    <div class="paymenttotal"></div>
                     <select name="method" id="method">
                         <option value="Dinheiro" selected>Dinheiro</option>
                         <option value="Pix">Pix</option>
@@ -129,7 +133,7 @@
                     <p>Pagamentos via Pix são realizados antes da entrega</p>
                 </div>
                 <div class='botoesseucart'>
-                    <button onclick="finalizartudo()">Finalizar</button>
+                    <button onclick="finalizartudo()"><i class="fa-solid fa-lock"></i> FINALIZAR COMPRA</button>
                 </div>
             </div>
         
@@ -277,8 +281,41 @@
                 </div>
                 `
             })
-            itens.innerHTML = resumooutput
-            itensmobile.innerHTML = resumomobile
+            let precototal = 0
+            produtos2.forEach(function(item) {precototal += item.preco})
+            itens.innerHTML = resumooutput + `
+            
+            `
+            itensmobile.innerHTML = resumomobile + `
+            `
+
+            document.querySelector('.paymenttotal').innerHTML = `
+            <div class="monetarycard">
+                <div class="monetary">
+                <div>
+                    <p class="leftsidemonetary">Subtotal:</p>
+                </div>
+                <p class="valuemonetary">${precototal}</p>
+            </div>
+            <div class="monetary">
+                <div>
+                    <p class="leftsidemonetary">Descontos:</p>
+                </div>
+                <p class="valuemonetary">R$ 00,00</p>
+            </div>
+            <div class="monetary">
+                <div>
+                    <p class="leftsidemonetary">Entrega:</p>
+                </div>
+                <p class="valuemonetary ">A COMBINAR</p>
+            </div>
+            <div class="monetarytotal monetary">
+                <div>
+                    <p class="leftsidemonetary">Total:</p>
+                </div>
+                <p>${precototal}</p>
+            </div>
+        </div>`
         }
 
         

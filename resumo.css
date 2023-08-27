@@ -795,6 +795,7 @@ label#cart {
     padding: 0.6vw;
     border: none;
     border-radius: 0.3vw;
+    margin-top: 2vh;
 }
 
 .seu-carrinho button:nth-child(2){
@@ -1260,6 +1261,24 @@ label#cart {
 
 .informacoes--personalization h1 {
     font-size: 2vw;
+}
+
+.pay-- i, .seu-endereco i, .dados-pessoais i {
+    background: black;
+    color: white;
+    padding: 0.3vw;
+    border-radius: 1vw;
+}
+
+.botoesseucart button i {
+    background-color: transparent;
+    color: white;
+}
+
+.inputbox a {
+    color: #EF59A0;
+    text-decoration: underline #EF59A0;
+    margin-bottom: 1vh;
 }
 
 .informacoes--personalization p {
@@ -2268,6 +2287,36 @@ img#colar-- {
     cursor: pointer;
 }
 
+.bottom-products-list:nth-child(1) {
+    margin-top: 10vh;
+}
+
+.bottom-products-list p{
+    color: black;
+}
+
+.monetary {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.monetarycard {
+    margin: 2vh 0;
+    font-size: 2.5vw;
+    pointer-events: none;
+}
+
+.leftsidemonetary {
+    color: gray;
+    font-weight: 600;
+}
+
+.monetarytotal, .monetarytotal .leftsidemonetary {
+    color: black;
+    font-weight: 700;
+}
+
 /* TABLETS */
 @media screen and (max-width: 980px) {
     .titulo-sacola h1{
@@ -3172,6 +3221,13 @@ img#colar-- {
     
     .promocoes--itens li {
         list-style: none;
+    }
+
+    .pay-- i, .seu-endereco i, .dados-pessoais i {
+        background: black;
+        color: white;
+        padding: 1vw;
+        border-radius: 2vw;
     }
     
     .itens-natal h1.promocoes-{
