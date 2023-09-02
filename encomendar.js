@@ -353,7 +353,7 @@ function prata_colar_elos_de_coracao_indisponivel() {
         })();
         emailjs.send(`service_efrmdzr`,'template_jtb4ja7',{
             user: nomeaviso,
-            product: 'Colar Elos de Coração - Cy Pratas',
+            product: 'Colar Elos de Coração ',
             email: emailaviso,
             number: numberaviso,
         });
