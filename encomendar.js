@@ -4894,6 +4894,26 @@ function tornozeleirabolinha_enco() {
     salvarNoLocalStorage()
 }
 
+function colar_com_zirconia_enco() {
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Produto adicionado à sacola',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  tarefas.push({
+    name: 'Colar com Zircônias',
+    tamanho: tamanho.value,
+    qtd: parseInt(quantidade.value),
+    preco: 150.00,
+    photoURL: window.location.origin + '/imgs/COLAR-COM-ZIRCÔNIAS.webp',
+    onclick: window.location.origin + '/prata/colar-com-zirconias.html'
+  })
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
 function prata_pulseira_de_bolinha_enco() {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -6178,6 +6198,26 @@ function prata_brinco_argolazirconiacristais_enco() {
   salvarNoLocalStorage()
 }
 
+function prata_extensor_gratis_enco() {
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Produto adicionado à sacola',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  tarefas.push({
+    name: 'Extensor ( Incluído )',
+    tamanho: tamanho.value,
+    qtd: parseInt(quantidade.value),
+    preco: 0.00,
+    photoURL: window.location.origin + '/imgs/extensor%20(1).jpeg',
+    onclick: window.location.origin + '/prata/extensor.html'
+  })
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
 function prata_extensor_enco() {
   Swal.fire({
     position: 'top-end',
@@ -6213,6 +6253,46 @@ function prata_piercing_argolinha_crital_enco() {
     preco: 40.00,
     photoURL: window.location.origin + '/imgs/piercing-argolinha-cristal%20(1).jpeg',
     onclick: window.location.origin + '/prata/piercing-argolinha-cristal.html'
+  })
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function brinco_ponto_de_luz_enco() {
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Produto adicionado à sacola',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  tarefas.push({
+    name: 'Brinco Ponto de Luz',
+    tamanho: tamanho.value,
+    qtd: parseInt(quantidade.value),
+    preco: 25.00,
+    photoURL: window.location.origin + '/imgs/BRINCO-PONTO-DE-LUZ.webp',
+    onclick: window.location.origin + '/prata/brinco-ponto-de-luz.html'
+  })
+  mostraTarefas()
+  salvarNoLocalStorage()
+}
+
+function brinco_coracao_vazado_pequeno_enco() {
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Produto adicionado à sacola',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  tarefas.push({
+    name: 'Brinco Coração Vazado Pequeno',
+    tamanho: tamanho.value,
+    qtd: parseInt(quantidade.value),
+    preco: 25.00,
+    photoURL: window.location.origin + '/imgs/brinco-coração-vazado-pequeno.webp',
+    onclick: window.location.origin + '/prata/brinco-coracao-vazado-pequeno.html'
   })
   mostraTarefas()
   salvarNoLocalStorage()
